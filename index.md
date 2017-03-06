@@ -1,4 +1,6 @@
 ---
+layout: default
+title: Tjian's Blog
 ---
 #题记
 
