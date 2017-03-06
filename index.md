@@ -1,7 +1,3 @@
----
-layout: default
-title: Tjian's Blog
----
 #题记
 
 这里是Blog的首页，然而并没有想好要放些什么内容。
