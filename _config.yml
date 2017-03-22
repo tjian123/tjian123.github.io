@@ -1,4 +1,12 @@
-theme: jekyll-theme-slate
-
-name: 狐狸大叔
+#theme: jekyll-theme-slate
 markdown: kramdown
+
+#站点信息
+author: tjian
+nickname: 狐狸大叔
+
+
+#配置 sass
+sass:
+  sass_dir: _sass
+  style: compressed
