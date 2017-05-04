@@ -21,15 +21,31 @@ category: Jekyll
 
 参考二：grpc官网[^grpc_site_url]
 
-![gRPC官网]({{ site.baseurl }}/images/grpc_web_snap.png)
-
 ### 1. 统一浏览器默认外观
 
 这一部分直接引用`normalize`项目了，直接从github上下载源码。
 
 重命名为`_normalize.scss`，放在`_sass\base`[^_sass]目录下。
 
+### 2. 常量定义
 
+这里定义一些全局常量，主要包括颜色和尺寸两方面。
+
+在`_sass\base`目录下创建`_variables.scss`文件。
+
+### 3. 标题及段落文本
+
+定义各级标题的字体大小，段落字体大小。
+
+在`_sass\base`目录下创建`_text.scss`文件。
+
+### 4. 基本布局
+
+```
+.site-header {
+	...
+}
+```
 
 [^know_erery_bytes]: 记得曾有一位伟大的同行说过，优秀的程序员应该了解他程序中的每一个字节。
 [^jekyll_default_site]: 使用`jekyll new [site_name]`创建的初始状态站点。

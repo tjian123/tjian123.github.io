@@ -1,0 +1,49 @@
+// Layout
+
+// 标题
+
+.site-header {
+	display: block;
+	position: relative;
+
+    .site-title {
+
+    }
+}
+
+.site-nav {
+    float: right;
+
+    .menu-icon {
+        display: none;
+    }
+
+    .page-link {
+
+
+        &:not(:last-child) {
+            margin-right: $spacing--m;
+        }
+    }
+
+}
+
+// 内容
+
+.page-content {
+    display: block;
+    position: relative;
+}
+
+// 页尾
+
+.site-footer {
+    display: block;
+    position: relative;
+}
+
+// 控制内容显示范围
+
+.container {
+
+}

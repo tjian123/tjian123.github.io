@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
 
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
+<!-- 设置bodyClass来改变整体样式效果 -->
+<body class="{% if page.bodyClass %}{{ page.bodyClass }}{% endif %}">
 
-    {% include header.html %}
+  {% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+  <div class="page-content">
+    <div class="container">
+      {{ content }}
     </div>
+  </div>
 
-    {% include footer.html %}
+  {% include footer.html %}
 
-  </body>
+</body>
 
 </html>
