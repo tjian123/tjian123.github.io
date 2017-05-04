@@ -1,0 +1,15 @@
+// Responsive tools
+
+@mixin media-query($device) {
+	@media screen and (max-width: $device) {
+		@content;
+	}
+}
+
+// 用法：
+// @include media-query($mobile) {
+// 	.container {
+// 		padding-left: $space / 2;
+// 		padding-right: $space / 2;
+// 	}
+// }

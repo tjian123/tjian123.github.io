@@ -7,5 +7,12 @@
 @import
         "base/_normalize",
         "base/_variables",
-        "base/_text",
-        "base/_layout";
+        "base/_text";
+
+@import
+		"tools/_response";
+
+@import 
+		"layout/_default",
+		"layout/_page",
+		"layout/_post";

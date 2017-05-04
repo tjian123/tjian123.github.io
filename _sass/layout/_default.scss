@@ -1,5 +1,7 @@
 // Layout
 
+// 说明：默认是大屏幕的布局
+
 // 标题
 
 .site-header {
@@ -7,7 +9,7 @@
 	position: relative;
 
     .site-title {
-
+        text-decoration: none;
     }
 }
 
@@ -20,10 +22,15 @@
 
     .page-link {
 
-
         &:not(:last-child) {
-            margin-right: $spacing--m;
+            margin-right: $spacing--l;
         }
+    }
+
+    a,
+    a:hover,
+    a:link {
+        text-decoration: none;
     }
 
 }
@@ -45,5 +52,6 @@
 // 控制内容显示范围
 
 .container {
-
+    padding-left: $padding--l / 2;
+    padding-right: $padding--l / 2;
 }
