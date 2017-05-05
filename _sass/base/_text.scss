@@ -1,21 +1,17 @@
 // Text
+
 h1 {
   font-size: $font-size--xxl;
-  color: white;
-  margin: $spacing--xl 0;
 }
 
 h2 {
   font-size: $font-size--xl;
   font-weight: 300;
-  color: $black;
 }
 
 h3 {
   font-size: $font-size--l;
-  letter-spacing: 1px;
   font-weight: 500;
-  color: $black;
 }
 
 h4 {
@@ -26,13 +22,11 @@ h4 {
 h5 {
   font-size: $font-size--s;
   font-weight: 300;
-  color: $black;
 }
 
 h6 {
   font-size: .9rem;
   font-weight: 500;
-  color: $black;
 }
 
 p {
