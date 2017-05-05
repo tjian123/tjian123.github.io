@@ -1,6 +1,22 @@
+$nav_background_color: $mainBrandColor;
+$nav_frontend_color: $inverseBrandColor;
+
 .default-style {
 	.site-header {
-		background-color: $mainBrandColor;
-		color: $inverseBrandColor;
+		background-color: $nav_background_color;
+	}
+
+	.site-title {
+		color: $nav_frontend_color;
+	}
+	.site-nav {
+		.menu-icon {
+			color: $inverseBrandColor;
+		}
+		.menu {
+			.page-link {
+				color: $inverseBrandColor;
+			}
+		}
 	}
 }

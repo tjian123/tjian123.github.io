@@ -10,6 +10,7 @@
 
     .site-title {
         text-decoration: none;
+        font-size: $font-size--l;
     }
 }
 
@@ -54,4 +55,9 @@
 .container {
     padding-left: $padding--l / 2;
     padding-right: $padding--l / 2;
+
+    @include media-query($mobile) {
+        padding-left: $padding--m / 2;
+        padding-right: $padding--m / 2;
+    }
 }

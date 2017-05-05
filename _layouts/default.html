@@ -4,7 +4,7 @@
 {% include head.html %}
 
 <!-- 设置bodyClass来改变整体样式效果 -->
-<body class="{% if page.bodyClass %}{{ page.bodyClass }}{% endif %}">
+<body class="{% if page.bodyClass %}{{ page.bodyClass }}{% else %}{{ site.bodyClass }}{% endif %}">
 
   {% include header.html %}
 

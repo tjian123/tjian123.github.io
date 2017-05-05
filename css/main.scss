@@ -13,9 +13,11 @@
 		"tools/_response";
 
 @import 
-		"layout/_default",
 		"layout/_page",
-		"layout/_post";
+		"layout/_post",
+		"layout/_default";
 
 @import 
+		"theme/_light",
+		"theme/_dack",
 		"theme/_default";
