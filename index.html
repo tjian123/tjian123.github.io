@@ -2,22 +2,17 @@
 layout: default
 ---
 
-<div class="home">
+<div class="post-nav">
 
-  <h1 class="page-heading">文章列表</h1>
+  <h1 class="post-heading">文章列表</h1>
 
   <ul class="post-list">
     {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
+    <li>
+      <a class="post-item" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    </li>
     {% endfor %}
   </ul>
-
-  <p class="rss-subscribe">欢迎 <a href="{{ "/feed.xml" | prepend: site.baseurl }}">订阅</a></p>
 
 </div>

@@ -45,6 +45,33 @@
     position: relative;
 }
 
+.post-nav {
+
+    .post-heading {
+
+    }
+
+    .post-list {
+
+        .post-meta {
+            font-size: $font-size--xxs;
+        }
+        .post-item {
+            font-size: $font-size--m;
+        }
+        li {
+            &:not(last-child) {
+                margin-bottom: $spacing--l;
+            }
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+        }
+    }
+}
+
 // 页尾
 
 .site-footer {

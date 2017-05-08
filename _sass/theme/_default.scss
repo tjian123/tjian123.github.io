@@ -1,7 +1,11 @@
+// 只涉及配色定义
+
 $nav_background_color: $mainBrandColor;
 $nav_frontend_color: $inverseBrandColor;
 
 .default-style {
+
+	// 导航栏
 	.site-header {
 		background-color: $nav_background_color;
 	}
@@ -13,8 +17,8 @@ $nav_frontend_color: $inverseBrandColor;
 		.menu-icon {
 			color: $inverseBrandColor;
 		}
-		.menu {
-			.page-link {
+		.site-menu {
+			.menu-item {
 				color: $inverseBrandColor;
 			}
 		}
