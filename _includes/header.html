@@ -11,10 +11,10 @@
         </svg>
       </a>
 
-      <div class="menu">
+      <div class="site-menu">
         {% for my_page in site.pages %}
         {% if my_page.title %}
-        <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+        <a class="menu-item" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
         {% endif %}
         {% endfor %}
       </div>

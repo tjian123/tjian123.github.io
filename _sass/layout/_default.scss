@@ -11,6 +11,7 @@
     .site-title {
         text-decoration: none;
         font-size: $font-size--l;
+        line-height: $line-height--l;
     }
 }
 
@@ -19,10 +20,11 @@
 
     .menu-icon {
         display: none;
+        line-height: $line-height--l;
     }
 
-    .page-link {
-
+    .menu-item {
+        line-height: $line-height--l;
         &:not(:last-child) {
             margin-right: $spacing--l;
         }
