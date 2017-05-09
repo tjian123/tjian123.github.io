@@ -63,6 +63,7 @@
             font-size: $font-size--m;
         }
         li {
+            list-style: none;
             &:not(last-child) {
                 margin-bottom: $spacing--l;
             }
@@ -85,7 +86,6 @@
     padding-bottom: $padding--s;
     
     .site-title {
-        text-align: middle;
         font-size: $font-size--xxs;
     }
 }

@@ -22,6 +22,15 @@ $nav_frontend_color: $inverseBrandColor;
 		}
 	}
 
+	.post-nav {
+		.post-list {
+
+			.post-item {
+				color: $nav_background_color;
+			}
+		}
+	}
+
 	.site-footer {
 		background-color: $nav_background_color;
 	}
