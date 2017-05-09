@@ -1,0 +1,15 @@
+// highlight
+.post-content {
+	
+	.highlighter-rouge {
+		// inline code
+		font-size: $font-size--xxs;
+
+		// code block
+		.highlight {
+			code {
+
+			}
+		}
+	}
+}

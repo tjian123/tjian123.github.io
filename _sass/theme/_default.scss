@@ -5,22 +5,24 @@ $nav_frontend_color: $inverseBrandColor;
 
 .default-style {
 
-	// 导航栏
 	.site-header {
 		background-color: $nav_background_color;
 	}
-
 	.site-title {
 		color: $nav_frontend_color;
 	}
 	.site-nav {
 		.menu-icon {
-			color: $inverseBrandColor;
+			color: $nav_frontend_color;
 		}
 		.site-menu {
 			.menu-item {
-				color: $inverseBrandColor;
+				color: $nav_frontend_color;
 			}
 		}
+	}
+
+	.site-footer {
+		background-color: $nav_background_color;
 	}
 }

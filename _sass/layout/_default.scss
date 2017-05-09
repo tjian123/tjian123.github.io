@@ -9,10 +9,13 @@
 	position: relative;
 
     .site-title {
-        text-decoration: none;
         font-size: $font-size--l;
         line-height: $line-height--l;
     }
+}
+
+.site-title {
+    text-decoration: none;
 }
 
 .site-nav {
@@ -66,7 +69,8 @@
         }
 
         a,
-        a:link {
+        a:hover,
+        a:visited {
             text-decoration: none;
         }
     }
@@ -77,6 +81,13 @@
 .site-footer {
     display: block;
     position: relative;
+    padding-top: $padding--s;
+    padding-bottom: $padding--s;
+    
+    .site-title {
+        text-align: middle;
+        font-size: $font-size--xxs;
+    }
 }
 
 // 控制内容显示范围
