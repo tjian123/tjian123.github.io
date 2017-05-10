@@ -25,7 +25,7 @@ $brand_frontend_color: $white;
 	.post-nav {
 		.post-list {
 			.post-meta {
-				color: $light-gray;
+				color: darken($black, 20%);
 			}
 			.post-item {
 				color: $black;
