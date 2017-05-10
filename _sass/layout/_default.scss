@@ -41,6 +41,15 @@
 
 }
 
+.site-banner {
+    position: relative;
+    margin-top: 
+}
+
+.site-description {
+
+}
+
 // 内容
 
 .page-content {
@@ -63,7 +72,6 @@
             font-size: $font-size--m;
         }
         li {
-            list-style: none;
             &:not(last-child) {
                 margin-bottom: $spacing--l;
             }

@@ -1,0 +1,42 @@
+$dack-background-color: #333333;
+$dack-frontend-color: #F3F3F3;
+
+$brand_background_color: $black;
+$brand_frontend_color: $white;
+
+.dack-style{
+	background-color: $dack-background-color;
+	color: $dack-frontend-color;
+
+	.site-header {
+		background-color: $brand_background_color;
+	}
+	.site-title {
+		color: $brand_frontend_color;
+	}
+	.site-nav {
+		.menu-icon {
+			color: $brand_frontend_color;
+		}
+		.site-menu {
+			.menu-item {
+				color: $brand_frontend_color;
+			}
+		}
+	}
+
+	.post-nav {
+		.post-list {
+			.post-meta {
+				color: $light-gray;
+			}
+			.post-item {
+				color: $black;
+			}
+		}
+	}
+
+	.site-footer {
+		background-color: $brand_background_color;
+	}
+}

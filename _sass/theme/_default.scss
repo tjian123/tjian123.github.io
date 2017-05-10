@@ -1,37 +1,39 @@
 // 只涉及配色定义
 
-$nav_background_color: $mainBrandColor;
-$nav_frontend_color: $inverseBrandColor;
+$brand_background_color: $black;
+$brand_frontend_color: $white;
 
 .default-style {
 
 	.site-header {
-		background-color: $nav_background_color;
+		background-color: $brand_background_color;
 	}
 	.site-title {
-		color: $nav_frontend_color;
+		color: $brand_frontend_color;
 	}
 	.site-nav {
 		.menu-icon {
-			color: $nav_frontend_color;
+			color: $brand_frontend_color;
 		}
 		.site-menu {
 			.menu-item {
-				color: $nav_frontend_color;
+				color: $brand_frontend_color;
 			}
 		}
 	}
 
 	.post-nav {
 		.post-list {
-
+			.post-meta {
+				color: $light-gray;
+			}
 			.post-item {
-				color: $nav_background_color;
+				color: $black;
 			}
 		}
 	}
 
 	.site-footer {
-		background-color: $nav_background_color;
+		background-color: $brand_background_color;
 	}
 }

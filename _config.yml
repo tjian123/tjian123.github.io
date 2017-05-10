@@ -18,5 +18,5 @@ github_username:  tjian123
 # Build settings
 markdown: kramdown
 
-# Default style
-bodyClass: default-style
+# Default style: default, dack, light
+bodyClass: dack-style
