@@ -7,9 +7,11 @@
 .site-header {
 	display: block;
 	position: relative;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
 
     .site-title {
-        font-size: $font-size--m;
+        font-size: $font-size--s;
         line-height: $line-height--l;
     }
 }
@@ -44,9 +46,11 @@
 .site-banner {
     position: relative;
     margin-top: $spacing--l;
+    margin-bottom: $spacing--l;
 }
 
 .site-description {
+    display: inline-block;
     line-height: $line-height--m;
     font-size: $font-size--s;
     text-indent: 2em;
@@ -62,7 +66,7 @@
 .post-nav {
 
     .post-heading {
-
+        // TODO
     }
 
     .post-list {

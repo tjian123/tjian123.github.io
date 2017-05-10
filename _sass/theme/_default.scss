@@ -1,12 +1,18 @@
 // 只涉及配色定义
 
-$brand_background_color: $black;
-$brand_frontend_color: $white;
+$brand_background_color: #FFFFFF;
+$brand_frontend_color: #333333;
+
+$brand_border_color: #e7e7e7;
+
+$body_background_color: #FFFFFF;
+$body_frontend_color: #333333;
 
 .default-style {
 
 	.site-header {
 		background-color: $brand_background_color;
+		border-color: $brand_border_color;
 	}
 	.site-title {
 		color: $brand_frontend_color;
@@ -25,10 +31,10 @@ $brand_frontend_color: $white;
 	.post-nav {
 		.post-list {
 			.post-meta {
-				color: darken($black, 20%);
+				color: lighten($brand_frontend_color, 20%);
 			}
 			.post-item {
-				color: $black;
+				color: $body_frontend_color;
 			}
 		}
 	}
