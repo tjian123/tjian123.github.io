@@ -47,7 +47,9 @@
 }
 
 .site-description {
-
+    line-height: $line-height--m;
+    font-size: $font-size--s;
+    text-indent: 2em;
 }
 
 // 内容
