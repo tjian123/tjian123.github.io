@@ -36,6 +36,10 @@ $body_frontend_color: #333333;
 			.post-item {
 				color: $body_frontend_color;
 			}
+			.post-category {
+				color: lighten($brand_frontend_color, 20%);
+				border: $light-gray 1px solid;
+			}
 		}
 	}
 

@@ -72,7 +72,15 @@
     .post-list {
 
         .post-meta {
+            display: inline-block;
             font-size: $font-size--xxs;
+            padding-right: $spacing--s;
+        }
+        .post-category {
+            display: inline-block;
+            font-size: $font-size--xxs;
+            padding-right: $spacing--xs;
+            border-radius: 3px;
         }
         .post-item {
             font-size: $font-size--m;
