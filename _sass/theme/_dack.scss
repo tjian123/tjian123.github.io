@@ -1,8 +1,9 @@
 $dack-background-color: #333333;
 $dack-frontend-color: #F3F3F3;
 
-$brand_background_color: $black;
-$brand_frontend_color: $white;
+$brand_background_color: #222222;
+$brand_frontend_color: #F3F3F3;
+$brand_border_color: #464646;
 
 .dack-style{
 	background-color: $dack-background-color;
@@ -10,6 +11,7 @@ $brand_frontend_color: $white;
 
 	.site-header {
 		background-color: $brand_background_color;
+		border-bottom: $brand_border_color 1px solid;
 	}
 	.site-title {
 		color: $brand_frontend_color;

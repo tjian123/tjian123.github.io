@@ -9,7 +9,7 @@
 	position: relative;
 
     .site-title {
-        font-size: $font-size--l;
+        font-size: $font-size--m;
         line-height: $line-height--l;
     }
 }
@@ -43,7 +43,7 @@
 
 .site-banner {
     position: relative;
-    margin-top: 
+    margin-top: $spacing--l;
 }
 
 .site-description {
