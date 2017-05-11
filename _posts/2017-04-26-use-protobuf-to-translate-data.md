@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 使用ProtoBuf进行数据传输
-category: protobuf, thrift
+categories: [Protobuf, Thrift]
 ---
 
 | 类型 | 说明 | C++ | Java | PHP |

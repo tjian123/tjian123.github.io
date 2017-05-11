@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 手动创建一个 OSGi bundle
-category: Java, OSGi
+categories: [Java, OSGi]
 ---
 
 ### 前言

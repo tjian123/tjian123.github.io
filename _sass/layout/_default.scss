@@ -79,8 +79,9 @@
         .post-category {
             display: inline-block;
             font-size: $font-size--xxs;
-            padding-right: $spacing--xs;
-            border-radius: 3px;
+            padding-left: $spacing-s;
+            padding-right: $spacing--s;
+            border-radius: 4px;
         }
         .post-item {
             font-size: $font-size--m;
