@@ -105,10 +105,10 @@
 .site-footer {
     display: block;
     position: relative;
-    padding-top: $padding--m;
-    padding-bottom: $padding--m;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
+    padding-top: $padding--s;
+    padding-bottom: $padding--s;
+    border-top-width: 1px;
+    border-top-style: solid;
     
     .site-title {
         font-size: $font-size--xxs;
