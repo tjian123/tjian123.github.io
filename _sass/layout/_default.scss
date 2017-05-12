@@ -50,9 +50,18 @@
     text-align: center;
 
     .site-profile-img {
-        max-width: 125px;
-        border-radius: 100%;
+        width: 125px;
         height: 100%
+        max-width: 100%;
+        border-radius: 100%;
+        border-width: 0;
+        margin-top: $line-height--l;
+        margin-bottom: $line-height--s;
+    }
+
+    .site-title {
+        font-size: $font-size--s;
+        line-height: $line-height--l;
     }
     
     .site-description {
@@ -84,14 +93,18 @@
 
 .post-nav {
 
+    width: 800px;
+    margin: 0 auto;
+
     .post-heading {
         // TODO
     }
 
     .post-list {
+        list-style: none;
 
         .post-meta {
-            display: inline-block;
+            float: right;
             font-size: $font-size--xxs;
             padding-right: $spacing--s;
         }
@@ -115,6 +128,16 @@
         a:hover,
         a:visited {
             text-decoration: none;
+        }
+
+        &:before {
+            display: block;
+            content: " ";
+            width: 7px;
+            height: 7px;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 3px;
         }
     }
 }

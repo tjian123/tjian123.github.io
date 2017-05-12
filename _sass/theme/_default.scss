@@ -28,6 +28,12 @@ $body_frontend_color: #333333;
 		}
 	}
 
+	.site-profile {
+		.site-title {
+			color: #E33333;
+		}
+	}
+
 	.post-nav {
 		.post-list {
 			.post-meta {
@@ -39,6 +45,9 @@ $body_frontend_color: #333333;
 			.post-category {
 				color: lighten($brand_frontend_color, 20%);
 				border: $dark-gray 1px solid;
+			}
+			&:before {
+				border-color: $brand_border_color;
 			}
 		}
 	}
