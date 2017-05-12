@@ -133,20 +133,20 @@
         a:visited {
             text-decoration: none;
         }
-
-        &:before {
-            display: block;
-            position: absolute;
-            top: -5px;
-            left: 50%;
-            margin-left: -5px;
-            content: " ";
-            width: 7px;
-            height: 7px;
-            border-width: 1px;
-            border-style: solid;
-            border-radius: 3px;
-        }
+    }
+    
+    &:before {
+        display: block;
+        position: absolute;
+        top: -3px;
+        left: 50%;
+        margin-left: -5px;
+        content: " ";
+        width: 7px;
+        height: 7px;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 3px;
     }
 }
 
