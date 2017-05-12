@@ -14,46 +14,64 @@
         font-size: $font-size--s;
         line-height: $line-height--l;
     }
+
+    .site-nav {
+        float: right;
+
+        .menu-icon {
+            display: none;
+            line-height: $line-height--l;
+        }
+
+        .menu-item {
+            line-height: $line-height--l;
+            &:not(:last-child) {
+                margin-right: $spacing--l;
+            }
+        }
+
+        a,
+        a:hover,
+        a:link {
+            text-decoration: none;
+        }
+
+    }
 }
 
 .site-title {
     text-decoration: none;
 }
 
-.site-nav {
-    float: right;
+// 配置项
 
-    .menu-icon {
-        display: none;
-        line-height: $line-height--l;
+.site-profile {
+
+    text-align: center;
+
+    .site-profile-img {
+        border-radius: 100%;
+        height: 100%
     }
+    
+    .site-description {
 
-    .menu-item {
-        line-height: $line-height--l;
-        &:not(:last-child) {
-            margin-right: $spacing--l;
-        }
     }
-
-    a,
-    a:hover,
-    a:link {
-        text-decoration: none;
-    }
-
 }
+
+// banner
 
 .site-banner {
     position: relative;
     margin-top: $spacing--l;
     margin-bottom: $spacing--l;
-}
 
-.site-description {
-    display: inline-block;
-    line-height: $line-height--m;
-    font-size: $font-size--s;
-    text-indent: 2em;
+    .site-description {
+        display: inline-block;
+        line-height: $line-height--m;
+        font-size: $font-size--s;
+        text-indent: 2em;
+    }
 }
 
 // 内容
@@ -118,11 +136,11 @@
 // 控制内容显示范围
 
 .container {
-    padding-left: $padding--l / 2;
-    padding-right: $padding--l / 2;
+    // padding-left: $padding--l / 2;
+    // padding-right: $padding--l / 2;
 
-    @include media-query($mobile) {
-        padding-left: $padding--m / 2;
-        padding-right: $padding--m / 2;
-    }
+    // @include media-query($mobile) {
+    //     padding-left: $padding--m / 2;
+    //     padding-right: $padding--m / 2;
+    // }
 }
