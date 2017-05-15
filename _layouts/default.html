@@ -1,23 +1,13 @@
-<!DOCTYPE html>
-<html>
+---
+layout: base
+---
 
-{% include head.html %}
+{% include header.html %}
+<div class="page-content">
+	<div class="container">
+		{{ content }}
+	</div>
+</div>
+{% include footer.html %}
 
-<!-- 设置bodyClass来改变整体样式效果 -->
-<body class="{% if page.bodyClass %}{{ page.bodyClass }}{% else %}{{ site.bodyClass }}{% endif %}">
 
-  {% include header.html %}
-
-  {% include base/profile.html %}
-
-  <div class="page-content">
-    <div class="container">
-      {{ content }}
-    </div>
-  </div>
-
-  {% include footer.html %}
-
-</body>
-
-</html>

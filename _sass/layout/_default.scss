@@ -2,6 +2,12 @@
 
 // 说明：默认是大屏幕的布局
 
+a,
+a:hover,
+a:link {
+    text-decoration: none;
+}
+
 // 标题
 
 .site-header {
@@ -30,17 +36,9 @@
             }
         }
 
-        a,
-        a:hover,
-        a:link {
-            text-decoration: none;
-        }
+
 
     }
-}
-
-.site-title {
-    text-decoration: none;
 }
 
 // 配置项
@@ -78,7 +76,24 @@
         border-width: 1px;
         border-style: solid;
         border-radius: $line-height--s/2;
-        text-align: center;
+    }
+
+    .site-separator {
+        border-width: 1px;
+        border-style: solid;
+        &:before {
+            display: block;
+            position: absolute;
+            top: -3px;
+            left: 50%;
+            margin-left: -5px;
+            content: " ";
+            width: 7px;
+            height: 7px;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 3px;
+        }
     }
 }
 
@@ -115,9 +130,7 @@
 
     .post-list {
         list-style: none;
-        border-top-width: 1px;
-        border-top-style: solid;
-        padding: $spacing--l/2 0;
+        padding: $spacing--l 0;
 
         .post-meta {
             float: right;
@@ -139,26 +152,6 @@
                 margin-bottom: $spacing--l;
             }
         }
-
-        a,
-        a:hover,
-        a:visited {
-            text-decoration: none;
-        }
-    }
-    
-    &:before {
-        display: block;
-        position: absolute;
-        top: -3px;
-        left: 50%;
-        margin-left: -5px;
-        content: " ";
-        width: 7px;
-        height: 7px;
-        border-width: 1px;
-        border-style: solid;
-        border-radius: 3px;
     }
 }
 

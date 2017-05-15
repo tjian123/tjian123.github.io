@@ -3,6 +3,7 @@
 		<img class="site-profile-img" src="{{ site.baseurl }}/images/profile.jpg" />
 		<h1 class="site-title">{{ site.title }}</h1>
 		<h3 class="site-description">{{ site.description }}</h3>
+		<hr class="site-separator" />
 		{% for my_category in site.categories%}
 		<a class="site-category" href="">{{ my_category | first }}({{ my_category | last | size }})</a>
 		{% endfor %}
