@@ -33,9 +33,11 @@ $body_frontend_color: #333333;
 			color: #E33333;
 		}
 		.site-category {
-			border-color: #E33333;
+			color: $gray;
+			border-color: $brand_border_color;
 
 			&:hover {
+				color: $black;
 				border-color: darken(#E33333, 20%);
 			}
 		}
