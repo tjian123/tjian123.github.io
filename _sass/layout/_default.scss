@@ -64,10 +64,22 @@ a:link {
         font-size: $font-size--xxs;
     }
 
+    .site-author {
+        .site-author-icon {
+            display: inline-block;
+            height: 24px;
+            width: 24px;
+
+            &:not(last-child) {
+                margin-left: $spacing--xxxs;
+            }
+        }
+    }
+
     .site-category {
         display: inline-block;
         font-size: $font-size--xxs;
-        line-height: $line-height--s;
+        line-height: $line-height--m;
         padding-left: $spacing--xxxs;
         padding-right: $spacing--xxxs;
         border-width: 1px;
