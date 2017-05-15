@@ -4,7 +4,7 @@
 		<h1 class="site-title">{{ site.title }}</h1>
 		<h3 class="site-description">{{ site.description }}</h3>
 		{% for my_category in site.categories%}
-		<span class="site-category">{{ my_category | first }}({{ my_category | last | size }})</span>
+		<a class="site-category" href="">{{ my_category | first }}({{ my_category | last | size }})</a>
 		{% endfor %}
 	</div>
 </div>

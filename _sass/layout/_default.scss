@@ -72,8 +72,9 @@
     .site-category {
         display: inline-block;
         font-size: $font-size--xxs;
-        font-style: capitalize;
         line-height: $line-height--s;
+        padding-left: $spacing--xxxs;
+        padding-right: $spacing--xxxs;
         border-width: 1px;
         border-style: solid;
         border-radius: $line-height--s/2;
