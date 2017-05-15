@@ -39,6 +39,13 @@ $body_frontend_color: #333333;
 				border-color: darken(#E33333, 20%);
 			}
 		}
+		.site-separator {
+			border-color: $brand_border_color;
+			&:before {
+				background-color: $brand_background_color;
+				border-color: $brand_border_color;
+			}
+		}
 	}
 
 	.post-nav {
@@ -54,10 +61,6 @@ $body_frontend_color: #333333;
 				color: lighten($brand_frontend_color, 20%);
 				border: $dark-gray 1px solid;
 			}
-		}
-		&:before {
-			background-color: $brand_background_color;
-			border-color: $brand_border_color;
 		}
 	}
 

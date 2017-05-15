@@ -35,9 +35,6 @@ a:link {
                 margin-right: $spacing--l;
             }
         }
-
-
-
     }
 }
 
@@ -47,7 +44,7 @@ a:link {
 
     text-align: center;
     padding-top: $line-height--l;
-    padding-bottom: $line-height--l / 2;
+    padding-bottom: $line-height--l;
 
     .site-profile-img {
         width: 125px;
@@ -79,12 +76,20 @@ a:link {
     }
 
     .site-separator {
-        border-width: 1px;
-        border-style: solid;
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+        margin: $line-height--m auto;
+        content: "";
+        height: 0;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+
+
         &:before {
             display: block;
             position: absolute;
-            top: -3px;
+            top: -4px;
             left: 50%;
             margin-left: -5px;
             content: " ";
