@@ -9,11 +9,11 @@
 title: 狐狸哒黍.小馒头
 email: tjian123@foxmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  狐狸哒黍的个人小站，包括但不限于以下内容：技术积累、生活感想、书籍推荐和创意点子.
+  狐狸哒黍的个人小站，包括但不限于以下内容：技术积累、生活感想、书籍推荐和创意点子。
 baseurl: "" # the subpath of your site, e.g. /blog
 #url: "http://yourdomain.com" # the base hostname & protocol for your site
 #twitter_username: tjian123
-github_username:  tjian123
+github_user:  tjian123
 
 # Build settings
 markdown: kramdown

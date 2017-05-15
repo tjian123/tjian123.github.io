@@ -65,10 +65,12 @@ a:link {
     }
 
     .site-author {
+        padding-top: $line-height--s;
+        padding-bottom: $line-height--s;
         .site-author-icon {
             display: inline-block;
-            height: 24px;
-            width: 24px;
+            height: 36px;
+            width: 36px;
 
             &:not(last-child) {
                 margin-left: $spacing--xxxs;
@@ -79,7 +81,6 @@ a:link {
     .site-category {
         display: inline-block;
         font-size: $font-size--xxs;
-        line-height: $line-height--m;
         padding-left: $spacing--xxxs;
         padding-right: $spacing--xxxs;
         border-width: 1px;

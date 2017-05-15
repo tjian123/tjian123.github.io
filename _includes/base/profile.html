@@ -2,10 +2,10 @@
 	<div class="container">
 		<img class="site-profile-img" src="{{ site.baseurl }}/images/profile.jpg" />
 		<h1 class="site-title">{{ site.title }}</h1>
-		<h3 class="site-description">{{ site.description }}</h3>
 		<div class="site-author">
 			{% include base/icons_svg.html github_user=site.github_user %}
 		</div>
+		<h3 class="site-description">{{ site.description }}</h3>
 		<div class="site-separator"></div>
 		{% for site_category in site.categories%}
 		<a class="site-category" href="#">{{ site_category | first }}({{ site_category | last | size }})</a>
