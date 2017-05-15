@@ -68,6 +68,17 @@
     .site-description {
         font-size: $font-size--xxs;
     }
+
+    .site-category {
+        display: inline-block;
+        font-size: $font-size--xxs;
+        font-style: capitalize;
+        line-height: $line-height--s;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: $line-height--s/2;
+        text-align: center;
+    }
 }
 
 // banner
