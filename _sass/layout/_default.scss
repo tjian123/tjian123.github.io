@@ -65,15 +65,17 @@ a:link {
     }
 
     .site-author {
-        padding-top: $line-height--s;
-        padding-bottom: $line-height--s;
+        padding: $line-height--s 0;
+
+        li {
+            list-style: none;
+        }
+
         .site-author-icon {
             display: inline-block;
-            list-style: none;
-            padding: 0 auto;
 
             &:not(last-child) {
-                margin-left: $spacing--xxxs;
+                margin-right: $spacing--xxxs;
             }
         }
     }

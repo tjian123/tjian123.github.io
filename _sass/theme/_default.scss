@@ -28,6 +28,12 @@ $body_frontend_color: #333333;
 		}
 	}
 
+	.site-author {
+		.site-author-icon {
+			color: $brand_frontend_color;
+		}
+	}
+
 	.site-profile {
 		.site-title {
 			color: #E33333;
@@ -35,12 +41,11 @@ $body_frontend_color: #333333;
 		.site-category {
 			.site-category-item {
 				color: $gray;
-				border-color: #E00000;
-
-				&:hover {
-					color: $black;
-					border-color: darken(#E33333, 20%);
-				}
+				border-color: #E05555;
+			}
+			a:hover {
+				color: $black;
+				border-color: darken(#E33333, 20%);
 			}
 		}
 		.site-separator {
