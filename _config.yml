@@ -23,3 +23,6 @@ markdown: kramdown
 
 # Default style: default, dack, light
 bodyClass: default-style
+
+
+include: [_navs, _pages]
