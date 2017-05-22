@@ -2,9 +2,12 @@
 	<div class="container">
 		<img class="site-profile-img" src="{{ site.baseurl }}/images/profile.jpg" />
 		<h1 class="site-title">{{ site.title }}</h1>
-		<h3 class="site-description">{{ site.description }}</h3>
 		{% include base/icons.html %}
 		<div class="site-separator"></div>
+		<h2 class="site-leading">简介</h2>
+		<p class="site-description">{{ site.description }}</p>
+		<div class="site-separator"></div>
+		<h2 class="site-leading">分类</h2>
 		<div class="site-category">
 			{% for site_category in site.categories%}
 			<a class="site-category-item" href="#">{{ site_category | first }}({{ site_category | last | size }})</a>

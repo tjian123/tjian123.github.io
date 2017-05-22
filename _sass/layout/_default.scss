@@ -59,6 +59,12 @@ a:link {
         font-weight: normal;
         line-height: $line-height--l;
     }
+
+    .site-leading {
+        font-size: $font-size--s;
+        font-weight: normal;
+        line-height: $line-height--m;
+    }
     
     .site-description {
         font-size: $font-size--xxs;
