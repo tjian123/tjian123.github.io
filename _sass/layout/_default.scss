@@ -69,8 +69,8 @@ a:link {
         padding-bottom: $line-height--s;
         .site-author-icon {
             display: inline-block;
-            height: 36px;
-            width: 36px;
+            list-style: none;
+            padding: 0 auto;
 
             &:not(last-child) {
                 margin-left: $spacing--xxxs;
@@ -79,14 +79,16 @@ a:link {
     }
 
     .site-category {
-        display: inline-block;
-        font-size: $font-size--xxs;
-        padding-left: $spacing--xxxs;
-        padding-right: $spacing--xxxs;
-        border-width: 1px;
-        border-style: solid;
-        border-radius: $line-height--s/2;
-        margin-bottom: $spacing--xxxs;
+        .site-category-item {
+            display: inline-block;
+            font-size: $font-size--xxs;
+            padding-left: $spacing--xxxs;
+            padding-right: $spacing--xxxs;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: $line-height--s/2;
+            margin: $spacing--xxxs;
+        }
     }
 
     .site-separator {
@@ -187,6 +189,10 @@ a:link {
     .site-title {
         font-size: $font-size--xxs;
     }
+}
+
+.site-btn {
+    
 }
 
 // 控制内容显示范围

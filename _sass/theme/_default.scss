@@ -33,12 +33,14 @@ $body_frontend_color: #333333;
 			color: #E33333;
 		}
 		.site-category {
-			color: $gray;
-			border-color: $brand_border_color;
+			.site-category-item {
+				color: $gray;
+				border-color: #E00000;
 
-			&:hover {
-				color: $black;
-				border-color: darken(#E33333, 20%);
+				&:hover {
+					color: $black;
+					border-color: darken(#E33333, 20%);
+				}
 			}
 		}
 		.site-separator {
@@ -69,5 +71,14 @@ $body_frontend_color: #333333;
 	.site-footer {
 		background-color: $brand_background_color;
 		border-color: $brand_border_color;
+	}
+
+	.site-btn {
+		border-color: $brand_border_color;
+
+		&:hover {
+			color: $black;
+			border-color: darken(#E33333, 20%);
+		}
 	}
 }
