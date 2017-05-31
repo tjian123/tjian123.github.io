@@ -1,13 +1,14 @@
 <div class="site-profile">
 	<div class="container">
 		<img class="site-profile-img" src="{{ site.baseurl }}/images/profile.jpg" />
-		<a href="{{ site.baseurl }}/blog"><h1 class="site-title">{{ site.title }}</h1></a>
+		<h1 class="site-title">{{ site.title }}</h1>
 		{% include base/icons.html %}
 		<div class="site-separator"></div>
 		<h2 class="site-leading">简介</h2>
 		<p class="site-description">{{ site.description }}</p>
 		<div class="site-separator"></div>
-		<h2 class="site-leading">分类</h2>
+		<h2 class="site-leading"><a href="{{ site.baseurl }}/blog">博文</a></h2>
+		<p class="site-description">点击下列分类标签快速浏览</p>
 		<div class="site-category">
 			{% for site_category in site.categories%}
 			<a class="site-category-item" href="#">{{ site_category | first }}({{ site_category | last | size }})</a>
