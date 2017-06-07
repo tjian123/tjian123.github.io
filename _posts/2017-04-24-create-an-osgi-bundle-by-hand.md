@@ -26,83 +26,87 @@ categories: [Java, OSGi]
 
 > Activator.java
 
-    package simple;
+```
+package simple;
 
-    import org.osgi.framework.Bundle;
-    import org.osgi.framework.BundleActivator;
-    import org.osgi.framework.BundleContext;
-    import org.osgi.framework.BundleEvent;
-    import org.osgi.framework.BundleListener;
-    import org.osgi.framework.ServiceEvent;
-    import org.osgi.framework.ServiceListener;
+import org.osgi.framework.Bundle;
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.BundleEvent;
+import org.osgi.framework.BundleListener;
+import org.osgi.framework.ServiceEvent;
+import org.osgi.framework.ServiceListener;
 
-    public class Activator implements BundleActivator {
+public class Activator implements BundleActivator {
 
-        private ServiceListener serviceListener = null;
-        private BundleListener bundleListener = null;
+    private ServiceListener serviceListener = null;
+    private BundleListener bundleListener = null;
 
-        public Activator() {
-            serviceListener = new InternalServiceListener();
-            bundleListener = new InternalBundleListener();
-				        }
+    public Activator() {
+        serviceListener = new InternalServiceListener();
+        bundleListener = new InternalBundleListener();
+			        }
 
-        public void start(BundleContext context) throws Exception {
-            context.addServiceListener(serviceListener);
-            context.addBundleListener(bundleListener);
-            System.out.println("Starting bundle listener......");
-        }
+    public void start(BundleContext context) throws Exception {
+        context.addServiceListener(serviceListener);
+        context.addBundleListener(bundleListener);
+        System.out.println("Starting bundle listener......");
+    }
 
-        public void stop(BundleContext context) throws Exception {
-            context.removeServiceListener(serviceListener);
-            context.removeBundleListener(bundleListener);
-            System.out.println("Stopping bundle listener......");
-        }
+    public void stop(BundleContext context) throws Exception {
+        context.removeServiceListener(serviceListener);
+        context.removeBundleListener(bundleListener);
+        System.out.println("Stopping bundle listener......");
+    }
 
-        public final class InternalServiceListener implements  ServiceListener {
-            public void serviceChanged(ServiceEvent event) {
-                String[] objectClass = (String[]) event.getServiceReference()
-							.getProperty("objectClass");
-                if (event.getType() == ServiceEvent.REGISTERED) {
-                    System.out.println("[Service Registered] : " + objectClass[0]);
-                } else if (event.getType() == ServiceEvent.UNREGISTERING) {
-                    System.out.println("[Service Unregistered] : " + objectClass[0]);
-                } else if (event.getType() == ServiceEvent.MODIFIED) {
-                    System.out.println("[Service Modified] : " + objectClass[0]);
-                }
-            }
-        }
-
-        public final class InternalBundleListener implements BundleListener {
-            public void bundleChanged(BundleEvent event) {
-                Bundle bundle = event.getBundle();
-                String bundleName = bundle.getSymbolicName();
-                if (event.getType() == BundleEvent.INSTALLED) {
-                    System.out.println("[Bundle installed] : " + bundleName);
-                } else if (event.getType() == BundleEvent.RESOLVED) {
-                    System.out.println("[Bundle Resolved] : " + bundleName);
-                } else if (event.getType() == BundleEvent.LAZY_ACTIVATION) {
-                    System.out.println("[Bundle lazy Activated] : " + bundleName);
-                } else if (event.getType() == BundleEvent.STARTED) {
-                    System.out.println("[Bundle Started] : " + bundleName);
-                } else if (event.getType() == BundleEvent.UNINSTALLED) {
-                    System.out.println("[Bundle Uninstalled] : " + bundleName);
-                } else if (event.getType() == BundleEvent.UPDATED) {
-                    System.out.println("[Bundle Updated] : " + bundleName);
-                } else if (event.getType() == BundleEvent.STOPPED) {
-                    System.out.println("[Bundle Stopped] : " + bundleName);
-                }
+    public final class InternalServiceListener implements  ServiceListener {
+        public void serviceChanged(ServiceEvent event) {
+            String[] objectClass = (String[]) event.getServiceReference()
+						.getProperty("objectClass");
+            if (event.getType() == ServiceEvent.REGISTERED) {
+                System.out.println("[Service Registered] : " + objectClass[0]);
+            } else if (event.getType() == ServiceEvent.UNREGISTERING) {
+                System.out.println("[Service Unregistered] : " + objectClass[0]);
+            } else if (event.getType() == ServiceEvent.MODIFIED) {
+                System.out.println("[Service Modified] : " + objectClass[0]);
             }
         }
     }
 
+    public final class InternalBundleListener implements BundleListener {
+        public void bundleChanged(BundleEvent event) {
+            Bundle bundle = event.getBundle();
+            String bundleName = bundle.getSymbolicName();
+            if (event.getType() == BundleEvent.INSTALLED) {
+                System.out.println("[Bundle installed] : " + bundleName);
+            } else if (event.getType() == BundleEvent.RESOLVED) {
+                System.out.println("[Bundle Resolved] : " + bundleName);
+            } else if (event.getType() == BundleEvent.LAZY_ACTIVATION) {
+                System.out.println("[Bundle lazy Activated] : " + bundleName);
+            } else if (event.getType() == BundleEvent.STARTED) {
+                System.out.println("[Bundle Started] : " + bundleName);
+            } else if (event.getType() == BundleEvent.UNINSTALLED) {
+                System.out.println("[Bundle Uninstalled] : " + bundleName);
+            } else if (event.getType() == BundleEvent.UPDATED) {
+                System.out.println("[Bundle Updated] : " + bundleName);
+            } else if (event.getType() == BundleEvent.STOPPED) {
+                System.out.println("[Bundle Stopped] : " + bundleName);
+            }
+        }
+    }
+}
+```
+
 > Manifest.mf
 
-    Manifest-Version: 1.0
-    Bundle-Activator: simple.Activator
-    Bundle-ManifestVersion: 2
-    Bundle-Name: common-bundle-listener
-    Bundle-SymbolicName: common-bundle-listener
-    Bundle-Version: 0.0.1
+```
+Manifest-Version: 1.0
+Bundle-Activator: simple.Activator
+Bundle-ManifestVersion: 2
+Bundle-Name: common-bundle-listener
+Bundle-SymbolicName: common-bundle-listener
+Bundle-Version: 0.0.1
+```
 
 ### 编译为 OSGi Bundle
 
