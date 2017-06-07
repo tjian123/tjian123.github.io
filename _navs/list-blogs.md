@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 博客列表
+title: 博客
 permalink: /blog/
 ---
 

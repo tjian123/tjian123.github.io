@@ -206,11 +206,11 @@ a:link {
 // 控制内容显示范围
 
 .container {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 180px;
+    padding-right: 180px;
 
-    // @include media-query($mobile) {
-    //     padding-left: $padding--m / 2;
-    //     padding-right: $padding--m / 2;
-    // }
+    @include media-query($mobile) {
+        padding-left: $padding--m / 2;
+        padding-right: $padding--m / 2;
+    }
 }
