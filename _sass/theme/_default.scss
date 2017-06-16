@@ -10,6 +10,8 @@ $body_frontend_color: #333333;
 
 .default-style {
 
+	max-width: 960px;
+
 	.site-header {
 		background-color: $brand_background_color;
 		border-color: $brand_border_color;
