@@ -41,6 +41,9 @@ $transition--tertiary       : all .3s cubic-bezier(0.93,0.7,0.4,0.57);
 $transition-fast            : all .2s ease;
 $transition-slow            : all 1s ease;
 
+// content-width
+$content-width				: 960px;
+
 // Responsive
 $phone-small                : 320px;
 $phone-medium               : 480px;
