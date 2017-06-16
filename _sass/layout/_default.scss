@@ -164,6 +164,10 @@
             padding-left: 6px;
             padding-right: 6px;
             border-radius: 4px;
+
+            @include media-query($phone-xlarge) {
+                display: none;
+            }
         }
         .post-item {
             font-size: $font-size--s;
