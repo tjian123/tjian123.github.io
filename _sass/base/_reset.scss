@@ -17,21 +17,18 @@ body {
 }
 
 table {
+	display: block;
 	width: 100%;
 	word-break: keep-all;
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
+th,
 td {
 	border: 1px solid #dddddd;
 	line-height: 1.6;
-}
-
-thead {
-	tr {
-		font-weight: bold;
-	}
+	padding: 6px 13px;
 }
 
 tbody {
