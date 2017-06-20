@@ -50,5 +50,10 @@ blockquote {
 	border-left: 4px solid #dddddd;
 	margin: 0;
 	padding-left: 1em;
-	
+
+	p {
+		font-size: 0.85rem;
+		line-height: 1.2rem;
+		font-style: italic;
+	}
 }
