@@ -40,13 +40,11 @@ SUBDIRS=src/lib
 ```
 noinst_LIBRARIES=libdemo.a
 libdemo_a_SOURCES=demo.cpp
-# 如果有引用其他头文件则需要下面一步
-libdemo_a_CPPFLAGS=-I$(top_srcdir)/src/include
+libdemo_a_CPPFLAGS=-I$(top_srcdir)/src/include # 如果有引用其他头文件则需要
 ```
 
 ### 3. 所有文件都分布在子目录下
 
 需要修改configure.ac文件的`AM_INIT_AUTOMAKE`项，
 
-```
-AM_INIT_AUTOMAKE([foreign subdir-KBobjects])
+	AM_INIT_AUTOMAKE([foreign subdir-KBobjects])
