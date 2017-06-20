@@ -8,12 +8,16 @@ a:link {
     text-decoration: none;
 }
 
+html {
+	color: $font-color-base;
+	font-family: $base-font;
+}
+
 body {
 	// for center and responsive.
 	max-width: $content-width;
 	margin: 0 auto;
 	padding: 0 $padding-content--l;
-	color: $font-color-base;
 }
 
 table {
