@@ -40,6 +40,13 @@ tbody {
 		&:nth-child(2n) {
 			background-color: #f8f8f8;
 		}
-
+		&:hover {
+			background-color: #f8f8f8;
+		}
 	}
+}
+
+blockquote {
+	border-left: 4px solid #dddddd;
+	margin: 0;
 }
