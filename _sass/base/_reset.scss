@@ -13,4 +13,32 @@ body {
 	max-width: $content-width;
 	margin: 0 auto;
 	padding: 0 $padding-content--l;
+	color: $font-color-base;
+}
+
+table {
+	width: 100%;
+	word-break: keep-all;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+td {
+	border: 1px solid #dddddd;
+	line-height: 1.6;
+}
+
+thead {
+	tr {
+		font-weight: bold;
+	}
+}
+
+tbody {
+	tr {
+		&::nth-child(2n) {
+			background-color: #f8f8f8;
+		}
+
+	}
 }
