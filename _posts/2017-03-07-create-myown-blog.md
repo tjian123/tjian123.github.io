@@ -12,40 +12,143 @@ category: Jekyll
 *	**布局**
 	1. 要灵活，便于组装、变化和扩展
 	2. 要可继承
+	3. 自适应
 *	**样式**
 	1. 组件式，以最少的代码定义功能
-	2. 尺寸和色彩分离
-	3. 自适应
+	2. 尺寸和色彩分离	
 
-参考一：Jekyll默认生成的站点[^jekyll_default_site]
+>	参考一：Jekyll默认生成的站点[^jekyll_default_site]
 
-参考二：grpc官网[^grpc_site_url]
+>	参考二：grpc官网[^grpc_site_url]
+
+### 概览
+
+目录结构：
+
+```
+-scss
+	-base
+		_normalize.scss
+		_reset.scss
+		_text.scss
+		_variables.scss
+	-layout
+		_default.scss
+		_page.scss
+		_post.scss
+	-markdown
+		_code-highlight.scss
+	-theme
+		_dark.scss
+		_default.scss
+		_light.scss
+	-third-party
+		_font-awesome.scss
+	-tools
+		_response.scss
+-css
+	main.scss
+```
+
+`main.scss`内容
+
+```
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base/_normalize",
+        "base/_variables",
+        "base/_text",
+        "base/_reset";
+
+@import 
+		"third-party/_font-awesome";
+
+@import
+		"tools/_response";
+
+@import
+		"markdown/_code-highlight";
+
+@import 
+		"layout/_page",
+		"layout/_post",
+		"layout/_default";
+
+@import 
+		"theme/_light",
+		"theme/_dack",
+		"theme/_default";
+```
 
 ### 1. 统一浏览器默认外观
 
 这一部分直接引用`normalize`项目了，直接从github上下载源码。
 
-重命名为`_normalize.scss`，放在`_sass\base`[^_sass]目录下。
+重命名为`_normalize.scss`，放在`_sass/base`[^_sass]目录下。
 
 ### 2. 常量定义
 
-这里定义一些全局常量，主要包括颜色和尺寸两方面。
+这里定义一些全局常量，主要包括颜色和尺寸两方面的内容。
 
-在`_sass\base`目录下创建`_variables.scss`文件。
+在`_sass/base`目录下创建`_variables.scss`文件。
 
 ### 3. 标题及段落文本
 
 定义各级标题的字体大小，段落字体大小。
 
-在`_sass\base`目录下创建`_text.scss`文件。
+在`_sass/base`目录下创建`_text.scss`文件。
 
 ### 4. 基本布局
 
+-	站点`site`相关的定义：
+
 ```
+// 1. header
 .site-header {
 	...
 }
+// 2. profile
+.site-profile {
+	...
+}
+// 3. footer
+.site-footer {
+	...
+}
+// 4. nav
+.site-nav {
+	...
+}
 ```
+
+-	页面`page`相关的定义：
+
+```
+// page
+```
+
+-	博客`post`相关的定义：
+```
+// title
+.post-title {
+	...
+}
+// meta
+.post-meta {
+	...
+}
+// content 
+.post-content {
+	...
+}
+
+### 5. 风格
+
 
 [^know_erery_bytes]: 记得曾有一位伟大的同行说过，优秀的程序员应该了解他程序中的每一个字节。
 [^jekyll_default_site]: 使用`jekyll new [site_name]`创建的初始状态站点。

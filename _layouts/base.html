@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
-{% include head.html %}
+{% include base/html-header.html %}
 <!-- 设置bodyClass来改变整体样式效果 -->
 <body class="{% if page.bodyClass %}{{ page.bodyClass }}{% else %}{{ site.bodyClass }}{% endif %}">
 	{{ content }}
 </body>
+{% include base/html-footer.html %}
 </html>

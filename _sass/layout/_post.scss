@@ -1,6 +1,47 @@
 // 文章页面
 
-.post {
+// 博客文章列表样式
+.post-nav {
+
+    .post-heading {
+        // TODO
+    }
+
+    .post-list {
+        list-style: none;
+        padding: $spacing--l 0;
+
+        .post-meta {
+            float: right;
+            font-size: $font-size--xxs;
+            padding-right: $spacing--s;
+        }
+
+        .post-category {
+            display: inline-block;
+            font-size: $font-size--xxs;
+            padding-left: 6px;
+            padding-right: 6px;
+            border-radius: 4px;
+
+            @include media-query($phone-xlarge) {
+                display: none;
+            }
+        }
+
+        .post-item {
+            font-size: $font-size--s;
+        }
+        
+        li {
+            &:not(last-child) {
+                margin-bottom: $spacing--l;
+            }
+        }
+    }
+}
+
+.site-post {
 
 	.post-header {
 
