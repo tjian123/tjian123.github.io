@@ -52,7 +52,7 @@ category: Jekyll
 
 `main.scss`内容
 
-```
+{% highlight scss %}
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
@@ -83,7 +83,9 @@ category: Jekyll
 		"theme/_light",
 		"theme/_dack",
 		"theme/_default";
-```
+
+// maybe[^_support]
+{% endhighlight %}
 
 ### 1. 统一浏览器默认外观
 
@@ -157,3 +159,4 @@ category: Jekyll
 [^grpc_site_url]: 可访问[grpc官网](http://www.grpc.io) 。
 [^_sass]: `scss`源文件存放于此目录。
 [^_drafts]: 还没有编写完成的，以及还没有确定要发布的文章，暂时存放在`_drafts`目录下。
+[^support]: for test
