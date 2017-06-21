@@ -63,26 +63,37 @@
         }
     }
 
-	.post-meta {
+    .post-meta {
         display: inline-block;
         font-size: 0.85rem;
         padding: 3px;
-	}
+    }
 
-	.post-content {
+    .post-content {
 
-	}
+    }
 
     .post-nav {
         position: relative;
         width: 100%;
         height: 56px;
+        padding-top: 20px;
 
         .post-nav-prev {
             float: left;
+
+            @include media-query($phone-medium) {
+                display: block;
+                float: none;
+            }
         }
         .post-nav-next {
             float: right;
+
+            @include media-query($phone-medium) {
+                display: block;
+                float: none;
+            }
         }
     }
 
