@@ -3,9 +3,9 @@
 		<img class="site-profile-img" src="{{ site.baseurl }}/images/profile.jpg" />
 		<h1 class="site-title">{{ site.title }}</h1>
 		{% include option/social-icons.html %}
-		<div class="site-separator"></div>
+		<!-- <div class="site-separator"></div> -->
 		<!-- <h2 class="site-leading"><a href="{{ site.baseurl }}/about">简介</a></h2> -->
-		<!-- <p class="site-description">{{ site.description }}</p> -->
+		<p class="site-description">{{ site.description }}</p>
 		<div class="site-quick-nav">
 			{% for my_page in site.pages %}
 			{% if my_page.title %}
