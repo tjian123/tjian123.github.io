@@ -31,6 +31,23 @@
             }
         }
     }
+
+    .site-quick-nav {
+        margin: 0 auto;
+
+        .nav-item {
+            display: inline-block;
+            padding: 3px;
+            border: 1px solid #333333;
+        }
+
+        a.nav-item {
+            &:hover {
+                font-size: 1.1rem;
+                border-color: #FFFFFF;
+            }
+        }
+    }
 }
 
 // 配置项

@@ -4,10 +4,17 @@
 		<h1 class="site-title">{{ site.title }}</h1>
 		{% include option/social-icons.html %}
 		<div class="site-separator"></div>
-		<a href="{{ site.baseurl }}/about"><h2 class="site-leading">简介</h2></a>
-		<p class="site-description">{{ site.description }}</p>
+		<!-- <h2 class="site-leading"><a href="{{ site.baseurl }}/about">简介</a></h2> -->
+		<!-- <p class="site-description">{{ site.description }}</p> -->
+		<div class="site-quick-nav">
+			{% for my_page in site.pages %}
+			{% if my_page.title %}
+			<a class="nav-item" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+			{% endif %}
+			{% endfor %}
+		</div>
 		<div class="site-separator"></div>
-		<a href="{{ site.baseurl }}/blog"><h2 class="site-leading">博文</h2></a>
+		<h2 class="site-leading"><a href="{{ site.baseurl }}/blog">博文</a></h2>
 		<p class="site-description">点击下列分类标签快速浏览</p>
 		<div class="site-category">
 			{% for site_category in site.categories %}
