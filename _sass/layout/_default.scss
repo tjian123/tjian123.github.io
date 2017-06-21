@@ -30,6 +30,10 @@
                 margin-right: $spacing--l;
             }
         }
+
+        @include media-query($phone-medium) {
+            display: none;
+        }
     }
 }
 

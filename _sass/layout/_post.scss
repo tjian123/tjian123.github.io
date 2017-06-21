@@ -81,19 +81,22 @@
 
         .post-nav-prev {
             float: left;
-
-            @include media-query($phone-medium) {
-                display: block;
-                float: none;
-            }
         }
         .post-nav-next {
             float: right;
+        }
 
-            @include media-query($phone-medium) {
+        @include media-query($phone-medium) {
+            height: auto;
+            padding-bottom: 20px;
+
+            .post-nav-prev,
+            .post-nav-next {
                 display: block;
                 float: none;
+                font-size: 0.85rem;
             }
+
         }
     }
 
