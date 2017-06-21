@@ -6,17 +6,20 @@ description: 用于博客文章页面的布局
 
 	<header class="post-header">
 		<h1 class="post-title">{{ page.title }}</h1>
-		<p class="post-meta">
+		<p class="post-meta-info">
 			<time datetime="{{ page.date | date_to_xmlschema }}">
 				{{ page.date | date: "%b %-d, %Y" }}
 			</time>
-			{% if page.author %} • 
-			<span>
-				<span>
-					{{ page.author }}
-				</span>
+			{% if page.author %}
+			<span class="post-meta">
+				{{ page.author }}
 			</span>
 			{% endif %}
+			{% for page-category in page.categories %}
+			<span class="post-meta">
+				{{ page-category | first }}
+			</span>
+			{% endfor %}
 		</p>
 	</header>
 

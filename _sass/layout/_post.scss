@@ -51,8 +51,22 @@
 
 	}
 
-	.post-meta {
+    .post-meta-info {
+        display: block;
 
+        &:first-child {
+            margin-left: 3px;
+        }
+
+        &:last-child {
+            margin-right: 3px;
+        }
+    }
+
+	.post-meta {
+        display: inline-block;
+        font-size: 0.85rem;
+        padding: 3px;
 	}
 
 	.post-content {
