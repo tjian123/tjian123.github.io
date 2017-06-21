@@ -10,7 +10,7 @@
 		<a href="{{ site.baseurl }}/blog"><h2 class="site-leading">博文</h2></a>
 		<p class="site-description">点击下列分类标签快速浏览</p>
 		<div class="site-category">
-			{% for site_category in site.categories%}
+			{% for site_category in site.categories %}
 			<a class="site-category-item" href="#">{{ site_category | first }}({{ site_category | last | size }})</a>
 			{% endfor %}
 		</div>

@@ -17,7 +17,7 @@ description: 用于博客文章页面的布局
 			{% endif %}
 			{% for page-category in page.categories %}
 			<span class="post-meta">
-				{{ page-category | first }}
+				{{ page-category }}
 			</span>
 			{% endfor %}
 		</p>
@@ -25,6 +25,15 @@ description: 用于博客文章页面的布局
 
 	<div class="post-content">
 		{{ content }}
+	</div>
+
+	<div class="post-nav">
+		{% if page.previous %}
+		<a class="post-nav-prev" href="#">上一篇：{{ page.previous.title }}</a>
+		{% endif%}
+		{% if page.next %}
+		<a class="post-nav-next" href="#">下一篇：{{ page.next.title }}</a>
+		{% endif%}
 	</div>
 
 </article>
