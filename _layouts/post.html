@@ -29,11 +29,11 @@ description: 用于博客文章页面的布局
 
 	<div class="post-nav">
 		{% if page.previous %}
-		<a class="post-nav-prev" href="#">上一篇：{{ page.previous.title }}</a>
-		{% endif%}
+		<a class="post-nav-prev" href="{{ page.previous.url | prepend: site.baseurl }}">上一篇：{{ page.previous.title }}</a>
+		{% endif %}
 		{% if page.next %}
-		<a class="post-nav-next" href="#">下一篇：{{ page.next.title }}</a>
-		{% endif%}
+		<a class="post-nav-next" href="{{ page.next.url | prepend: site.baseurl }}">下一篇：{{ page.next.title }}</a>
+		{% endif %}
 	</div>
 
 </article>
