@@ -37,4 +37,4 @@ exclude: [TODO, README.md]
 # 分页
 paginate            : 10          # 定义每页数量
 paginate_path       : "page:num"  # 定义分页结果
-gems                : [jekyll-paginate]
+gems                : ['jekyll-paginate']
