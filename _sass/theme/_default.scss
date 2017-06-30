@@ -31,7 +31,15 @@ $body_frontend_color: #333333;
 
 	.site-author {
 		.site-author-icon {
+			border-color: $brand_background_color;
 			color: $brand_frontend_color;
+			transition: $transition--primary;
+
+			&:hover {
+				border-color: $brand_frontend_color;
+				color: $brand_background_color;
+				transition: $transition--primary;
+			}
 		}
 	}
 

@@ -78,6 +78,12 @@
 
         .site-author-icon {
             display: inline-block;
+            margin: 0;
+            padding: 5px;
+            text-align: center;
+            border-width: 1px;
+            border-radius: 50%;
+            border-style: solid;
 
             &:not(last-child) {
                 margin-right: $spacing--xxxs;
