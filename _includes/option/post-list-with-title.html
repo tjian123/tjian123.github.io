@@ -1,6 +1,6 @@
 <div class="post-nav">
   <ul class="post-list">
-<!--     {% for post in site.posts %}
+    {% for post in site.posts %}
     <li>
       <a class="post-item" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> 
@@ -8,17 +8,6 @@
         {% for my_category in post.categories  %}
           <span class="post-category">{{ my_category }}</span>
         {% endfor %}
-      {% endif %}
-    </li>
-    {% endfor %} -->
-    {% for post in paginator.posts %}
-    <li>
-      <a class="post-item" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> 
-      {% if post.categories.size > 0 %}
-      {% for my_category in post.categories  %}
-      <span class="post-category">{{ my_category }}</span>
-      {% endfor %}
       {% endif %}
     </li>
     {% endfor %}
