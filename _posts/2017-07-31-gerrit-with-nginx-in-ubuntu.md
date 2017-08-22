@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Ubuntu 16.04中使用nginx反向代理gerrit服务器
-categories: [Gerrit，Nginx]
+categories: [Gerrit, Nginx]
 ---
 
 > 这里使用的测试机器，因为之前安装过其他软件，故已经具备了本文安装的一些基本前提，如jdk1.8、libtool等等。故本文只记录相关gerrit和nginx配置部分。
@@ -37,7 +37,7 @@ categories: [Gerrit，Nginx]
 
 这里新建一个`admin`用户，
 
-	htpasswd -c /home/onos3/Server/gerrit-server/gerrit.password admin
+	htpasswd -c /home/demo/Server/gerrit-server/gerrit.password admin
 
 随后会要求输入密码并确认。
 
@@ -73,10 +73,10 @@ gerrit命令：
 [gerrit]                                                                   
         basePath = git                                                     
         serverId = 6db05f8c-90ce-42c0-ab15-5763c2617f3d                    
-        canonicalWebUrl = http://10.42.94.176:8089/                        
+        canonicalWebUrl = http://10.0.0.7:8089/                        
 [database]                                                                 
         type = h2                                                          
-        database = /home/onos3/Application/gerrit-2.14.2/db/ReviewDB       
+        database = /home/demo/Application/gerrit-2.14.2/db/ReviewDB       
 [index]                                                                    
         type = LUCENE                                                      
 [auth]                                                                     
@@ -86,8 +86,8 @@ gerrit命令：
 [sendemail]                                                                
         smtpServer = localhost                                             
 [container]                                                                
-        user = onos3                                                       
-        javaHome = /home/onos3/Application/jdk1.8.0_102/jre                
+        user = demo                                                       
+        javaHome = /home/demo/Application/jdk1.8.0_102/jre                
 [sshd]                                                                     
         listenAddress = *:29418                                            
 [httpd]                                                                    
@@ -102,17 +102,17 @@ gerrit命令：
 
 添加配置文件`/etc/nginx/conf.d/gerrit.conf`，保存修改后重启nginx。
 
-这里为`gerrit`配置了反向代理，并指定密码存放位置为`/home/onos3/Server/gerrit-server/gerrit.password`。
+这里为`gerrit`配置了反向代理，并指定密码存放位置为`/home/demo/Server/gerrit-server/gerrit.password`。
 
 ```
 server {
     listen *:8981;
-    server_name 10.42.94.176;
+    server_name 10.0.0.7;
     allow all;
     deny all;
 
     auth_basic "Welcome to OpenSDN Gerrit Code Review Site.";
-    auth_basic_user_file /home/onos3/Server/gerrit-server/gerrit.password;
+    auth_basic_user_file /home/demo/Server/gerrit-server/gerrit.password;
 
     location / {
         proxy_pass http://127.0.0.1:8089;
