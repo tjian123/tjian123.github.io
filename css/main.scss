@@ -5,13 +5,15 @@
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base/_normalize",
-        "base/_variables",
-        "base/_text",
-        "base/_reset";
+        "third-party/_normalize",
+        "third-party/_font-awesome";
 
 @import 
-		"third-party/_font-awesome";
+		"const/_const";
+
+@import 
+		"base/_text",
+        "base/_reset";
 
 @import
 		"tools/_response";
