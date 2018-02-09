@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 软件开发中常用的UML图
-categories: [Maven, Java]
+categories: [Coding]
+tags: [Maven, Java]
 ---
 
 常用的UML图可分为静（态）图和动（态）图两类，静态图主要描绘软件的静态结构，而动态图主要描绘软件的动态行为。

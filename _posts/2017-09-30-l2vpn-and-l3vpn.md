@@ -1,7 +1,8 @@
 ---
 layout: post
 title: L2VPN和L3VPN的基本理解
-categories: [Network]
+categories: [Coding]
+tags: [Network]
 ---
 
 ## L2VPN

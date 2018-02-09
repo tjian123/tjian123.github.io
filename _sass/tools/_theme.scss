@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+@mixin generate-theme($brand_background_color, $brand_border_color, $brand_leading_color, $brand_frontend_color, $body_background_color, $body_frontend_color) {
+
+	@include site-header-theme($brand_background_color, $brand_leading_color, $brand_border_color, $brand_frontend_color);
+
+		.site-author {
+		.site-author-icon {
+			border-color: $brand_background_color;
+			color: $brand_frontend_color;
+			background-color: $brand_background_color;
+
+			&:hover {
+				border-color: $brand_frontend_color;
+				background-color: $brand_frontend_color;
+				color: $brand_background_color;
+			}
+		}
+	}
+
+	.site-btn {
+		border-color: $brand_border_color;
+
+		&:hover {
+			color: $black;
+			border-color: darken($brand_leading_color, 20%);
+		}
+	}
+}
+
+@mixin site-header-theme($headerBg, $leading, $border, $color) {
+	.site-header {
+		background-color: $headerBg;
+		border-bottom-color: $border;
+	}
+
+	.site-title,
+	.site-leading {
+		color: $leading;
+	}
+
+	.site-nav {
+		.menu-icon {
+			color: $color;
+		}
+		.site-menu {
+			.menu-item {
+				color: $color;
+			}
+		}
+	}
+}
+
+@mixin site-profile-theme($leading, $border, $separator, $bg) {
+	.site-profile {
+		.site-title {
+			color: $leading;
+		}
+		.site-category {
+			.site-category-item {
+				color: $gray;
+				border-color: #E05555;
+			}
+			a:hover {
+				color: $black;
+				border-color: darken($leading, 20%);
+			}
+		}
+		.site-separator {
+			border-color: $border;
+			&:before {
+				background-color: $bg;
+				border-color: $border;
+			}
+		}
+	}
+}
+
+@mixin post-theme($border, $front) {
+	.post-nav {
+		.post-list {
+			border-top-color: $border;
+			.post-meta {
+				color: lighten($front, 20%);
+			}
+			.post-item {
+				color: $front;
+			}
+			.post-category {
+				color: lighten($front, 20%);
+				border: $dark-gray 1px solid;
+			}
+		}
+	}
+}
+
+@mixin site-footer-theme() {
+	.site-footer {
+		background-color: $brand_background_color;
+		border-color: $brand_border_color;
+	}
+}

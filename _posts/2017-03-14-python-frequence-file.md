@@ -1,7 +1,8 @@
 ---
 layout: post
 title: python项目中一些常见的文件
-categories: [Python]
+categories: [Coding]
+tags: [Python]
 ---
 
 ### __init__.py

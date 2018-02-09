@@ -9,14 +9,24 @@
         "third-party/_font-awesome";
 
 @import 
-		"const/_const";
+		"const/_const",
+		"const/_variable";
+
+@import
+		"tools/_spacing",
+		"tools/_theme",
+		"tools/_response";
 
 @import 
 		"base/_text",
         "base/_reset";
 
-@import
-		"tools/_response";
+@import 
+		"component/_header",
+		"component/_footer",
+		"component/_dynamic-content",
+		"component/_offset-left",
+		"component/_profile";
 
 @import
 		"markdown/_code-highlight",

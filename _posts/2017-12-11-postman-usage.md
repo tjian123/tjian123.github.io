@@ -1,7 +1,8 @@
 ---
 layout: post
 title: postman简明使用说明
-categories: [Tool]
+categories: [Coding]
+tags: [Tool]
 ---
 
 > `postman`是一个用来测试REST API的工具。

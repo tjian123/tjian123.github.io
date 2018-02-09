@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Makefile的一些基本用法
-categories: [Makefile]
+categories: [Coding]
+tags: [Makefile]
 ---
 
 ### 使用`.PHONY`来声明伪工作目标

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 设计模式——建造者模式
-categories: [Pattern]
+categories: [Coding]
+tags: [Pattern]
 ---
 
 

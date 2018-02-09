@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 // 文章页面
 
 // 博客文章列表样式
@@ -11,20 +13,16 @@
         list-style: none;
         padding: $spacing--l 0;
 
+        .post-index {
+            display: inline-block;
+        }
+
         .post-meta {
             float: right;
             font-size: $font-size--xxs;
             padding-right: $spacing--s;
-        }
 
-        .post-category {
-            display: inline-block;
-            font-size: $font-size--xxs;
-            padding-left: 6px;
-            padding-right: 6px;
-            border-radius: 4px;
-
-            @include media-query($phone-xlarge) {
+            @include media-query($mobile) {
                 display: none;
             }
         }
@@ -35,7 +33,7 @@
         
         li {
             &:not(last-child) {
-                margin-bottom: $spacing--l;
+                margin-bottom: $spacing--s;
             }
         }
     }
@@ -73,6 +71,18 @@
 
     }
 
+    .post-category {
+        display: inline-block;
+        font-size: $font-size--xxs;
+        padding-left: 6px;
+        padding-right: 6px;
+        border-radius: 4px;
+
+        @include media-query($mobile) {
+            display: none;
+        }
+    }
+
     .post-nav {
         position: relative;
         width: 100%;
@@ -86,7 +96,7 @@
             float: right;
         }
 
-        @include media-query($phone-medium) {
+        @include media-query($mobile) {
             height: auto;
             padding-bottom: 20px;
 

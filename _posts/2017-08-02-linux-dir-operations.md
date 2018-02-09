@@ -1,7 +1,8 @@
 ---
 layout: post
 title: linux系统下目录操作
-categories: [Linux, Dir]
+categories: [Coding]
+tags: [Linux, Dir]
 ---
 
 一、文件目录的切换相关命令方式总结

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: ubuntu下搭建本地邮件服务器
-categories: [Mail]
+categories: [Coding]
+tags: [Mail]
 ---
 
 > 我们平时使用邮件服务特别简单，但Internet上的邮件系统是几个复杂的部分连接而成的，对于最终用户而言，我们熟悉的outlook，foxmail等都是用来收发信的，称之为MUA(Mail User Agent)。MUA并不能直接将邮件传递至收件人手中，而是通过MTA(Mail Transfer Agent)，SendMail和Postfix就是扮演MTA的角色。

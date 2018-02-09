@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 使用cookiecutter创建项目
-categories: [Tools]
+categories: [Coding]
+tags: [Tools]
 ---
 
 安装`cookiecutter`:

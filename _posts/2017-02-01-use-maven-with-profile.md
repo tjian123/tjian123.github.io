@@ -1,7 +1,8 @@
 ---
 layout: post
 title: maven中profile实践
-categories: [Maven, Java]
+categories: [Coding]
+tags: [Maven, Java]
 ---
 
 ### 作用

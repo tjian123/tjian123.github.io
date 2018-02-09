@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+// 页尾
+
+.site-footer {
+    display: block;
+    position: relative;
+    padding-top: $spacing--s;
+    padding-bottom: $spacing--s;
+    border-top-width: 1px;
+    border-top-style: solid;
+
+    .site-title {
+        font-size: $font-size--xxs;
+    }
+}

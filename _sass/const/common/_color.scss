@@ -1,14 +1,14 @@
+@charset "utf-8";
+
 // General Colors
 $black						: #2E2E2E;
-$white						: #FFFFFF;
+$white						: #F2F2F2;
 $gray						: #737373;
 $light-gray					: lighten($gray, 52%);
 $dark-gray					: darken($gray, 20%);
 
 $font-color-base			: #333333;
 
-$codeColor					: darken($linkColor, 20%);
-$codeBkColor				: #ebfaf8;
 $wellColor					: #F9F9F9;
 $textColor					: #535f61;
 $titleColor					: #555555;
@@ -29,6 +29,9 @@ $lightPopBrandColor			: lighten($popBrandColor, 15%);
 
 $linkColor					: $mainBrandColor;
 $linkHoverColor				: darken($linkColor, 10%);
+
+$codeColor					: darken($linkColor, 20%);
+$codeBkColor				: #ebfaf8;
 
 $linkColorSecondary			: $white;
 $linkColorTertiary			: $gray;

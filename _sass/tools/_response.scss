@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 // Responsive tools
 
 @mixin media-query($device) {
@@ -6,18 +8,17 @@
 	}
 }
 
-// 用法1：
-// @include media-query($mobile) {
-// 	.container {
-// 		padding-left: $space / 2;
-// 		padding-right: $space / 2;
-// 	}
-// }
-// 
-// 用法2：
-// .container {
-// 	width: 80%;
-// 	@include media-query($mobile) {
-// 		width: 100%;
-// 	}
-// }
+// 用法
+/* @include media-query($mobile) {
+	.container {
+		padding-left: $space / 2;
+		padding-right: $space / 2;
+	}
+}
+
+.container {
+	width: 80%;
+	@include media-query($mobile) {
+		width: 100%;
+	}
+} */

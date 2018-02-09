@@ -1,155 +1,20 @@
-// Layout
+@charset "utf-8";
 
-// 说明：默认是大屏幕的布局
+// // Layout
 
+// // 说明：默认是大屏幕的布局
 
-// 标题
+// 控制内容显示范围
+.container {
+    display: block;
+    position: relative;
+    @include set-v-padding($spacing--xxxl);
 
-.site-header {
-	display: block;
-	position: relative;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-
-    .site-title {
-        font-size: $font-size--s;
-        line-height: $line-height--l;
-    }
-
-    .site-nav {
-        float: right;
-
-        .menu-icon {
-            display: none;
-            line-height: $line-height--l;
-        }
-
-        .menu-item {
-            line-height: $line-height--l;
-            &:not(:last-child) {
-                margin-right: $spacing--l;
-            }
-        }
-
-        @include media-query($phone-medium) {
-            display: none;
-        }
+    @include media-query($mobile) {
+        @include set-v-padding($spacing--m);
     }
 }
 
-// 配置项
-
-.site-profile {
-
-    text-align: center;
-    padding-top: $line-height--l;
-    padding-bottom: $line-height--l;
-
-    .site-profile-img {
-        width: 125px;
-        height: 100%;
-        max-width: 100%;
-        border-radius: 100%;
-        border-width: 0;
-    }
-
-    .site-title {
-        font-size: $font-size--m;
-        font-weight: normal;
-        line-height: $line-height--l;
-    }
-
-    .site-leading {
-        font-size: $font-size--s;
-        font-weight: normal;
-        line-height: $line-height--m;
-    }
-    
-    .site-description {
-        font-size: $font-size--xxs;
-    }
-
-    .site-author {
-        padding: $line-height--s 0;
-
-        li {
-            list-style: none;
-        }
-
-        .site-author-icon {
-            display: inline-block;
-            margin: 0;
-            padding: 5px;
-            text-align: center;
-            border-width: 1px;
-            border-radius: 50%;
-            border-style: solid;
-
-            &:not(last-child) {
-                margin-right: $spacing--xxxs;
-            }
-        }
-    }
-
-    .site-category {
-        .site-category-item {
-            display: inline-block;
-            font-size: $font-size--xxs;
-            padding-left: $spacing--xxxs;
-            padding-right: $spacing--xxxs;
-            border-width: 1px;
-            border-style: solid;
-            border-radius: $line-height--s/2;
-            margin: $spacing--xxxs;
-        }
-    }
-
-    .site-separator {
-        position: relative;
-        width: 100%;
-        max-width: 800px;
-        margin: $line-height--m auto;
-        content: "";
-        height: 0;
-        border-bottom-width: 1px;
-        border-bottom-style: solid;
-
-
-        &:before {
-            display: block;
-            position: absolute;
-            top: -4px;
-            left: 50%;
-            margin-left: -5px;
-            content: " ";
-            width: 7px;
-            height: 7px;
-            border-width: 1px;
-            border-style: solid;
-            border-radius: 3px;
-        }
-    }
-
-    .site-quick-nav {
-        margin: 5px auto;
-
-        .nav-item {
-            display: inline-block;
-            padding: 3px 5px;
-            border: 1px solid #333333;
-            font-size: 0.85rem;
-            transition: $transition--primary;
-        }
-
-        a.nav-item {
-            &:hover {
-                color: #FFF;
-                background-color: #333;
-                transition: $transition--primary;
-            }
-        }
-    }
-}
 
 // banner
 
@@ -166,20 +31,6 @@
     }
 }
 
-// 页尾
-
-.site-footer {
-    display: block;
-    position: relative;
-    padding-top: $padding--s;
-    padding-bottom: $padding--s;
-    border-top-width: 1px;
-    border-top-style: solid;
-    
-    .site-title {
-        font-size: $font-size--xxs;
-    }
-}
 
 // 内容
 
@@ -188,14 +39,25 @@
     position: relative;
 }
 
-// 控制内容显示范围
+.collapse-base {
+    position: relative;
 
-.container {
-    // padding-left: 180px;
-    // padding-right: 180px;
+    &.collapse-item-inactive {
+        display: none;
+    }
+}
 
-    // @include media-query($mobile) {
-    //     padding-left: $padding--m / 2;
-    //     padding-right: $padding--m / 2;
-    // }
+.item-hidden {
+	display: none;
+}
+
+.clearfix {
+    display: block;
+    &:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
 }

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: linux管理当前在线用户
-categories: [Linux]
+categories: [Coding]
+tags: [Linux]
 ---
 
 > 查看当前登录的用户：

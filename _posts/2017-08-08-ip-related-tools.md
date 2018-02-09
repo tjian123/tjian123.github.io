@@ -1,7 +1,8 @@
 ---
 layout: post
 title: ip和域名相关操作
-categories: [Tools]
+categories: [Coding]
+tags: [Tools]
 ---
 
 #### windows 根据域名查ip:

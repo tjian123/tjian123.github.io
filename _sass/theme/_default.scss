@@ -1,8 +1,11 @@
+@charset "utf-8";
+
 // 只涉及配色定义
 
 $brand_background_color: #FFFFFF;
 $brand_frontend_color: #333333;
 
+$brand_leading_color: #E33333;
 $brand_border_color: #E7E7E7;
 
 $body_background_color: #FFFFFF;
@@ -10,91 +13,5 @@ $body_frontend_color: #333333;
 
 .default-style {
 
-	.site-header {
-		background-color: $brand_background_color;
-		border-color: $brand_border_color;
-	}
-	.site-title,
-	.site-leading {
-		color: #E33333;
-	}
-	.site-nav {
-		.menu-icon {
-			color: $brand_frontend_color;
-		}
-		.site-menu {
-			.menu-item {
-				color: $brand_frontend_color;
-			}
-		}
-	}
-
-	.site-author {
-		.site-author-icon {
-			border-color: $brand_background_color;
-			color: $brand_frontend_color;
-			background-color: $brand_background_color;
-			transition: $transition--primary;
-
-			&:hover {
-				border-color: $brand_frontend_color;
-				background-color: $brand_frontend_color;
-				color: $brand_background_color;
-				transition: $transition--primary;
-			}
-		}
-	}
-
-	.site-profile {
-		.site-title {
-			color: #E33333;
-		}
-		.site-category {
-			.site-category-item {
-				color: $gray;
-				border-color: #E05555;
-			}
-			a:hover {
-				color: $black;
-				border-color: darken(#E33333, 20%);
-			}
-		}
-		.site-separator {
-			border-color: $brand_border_color;
-			&:before {
-				background-color: $brand_background_color;
-				border-color: $brand_border_color;
-			}
-		}
-	}
-
-	.post-nav {
-		.post-list {
-			border-top-color: $brand_border_color;
-			.post-meta {
-				color: lighten($brand_frontend_color, 20%);
-			}
-			.post-item {
-				color: $body_frontend_color;
-			}
-			.post-category {
-				color: lighten($brand_frontend_color, 20%);
-				border: $dark-gray 1px solid;
-			}
-		}
-	}
-
-	.site-footer {
-		background-color: $brand_background_color;
-		border-color: $brand_border_color;
-	}
-
-	.site-btn {
-		border-color: $brand_border_color;
-
-		&:hover {
-			color: $black;
-			border-color: darken(#E33333, 20%);
-		}
-	}
+	@include generate-theme($brand_background_color, $brand_frontend_color, $brand_leading_color, $brand_border_color, $body_background_color, $body_frontend_color);
 }

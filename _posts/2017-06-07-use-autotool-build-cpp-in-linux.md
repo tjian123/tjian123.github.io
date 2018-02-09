@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Linux环境下使用Autotool编译C++程序
-categories: [Linux, Autotool]
+categories: [Coding]
+tags: [Linux, Autotool]
 ---
 
 使用`AutoTool`构建一个标准GNU项目的步骤：

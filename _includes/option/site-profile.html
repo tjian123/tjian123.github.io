@@ -1,25 +1,30 @@
 <div class="site-profile">
 	<div class="container">
-		<img class="site-profile-img" src="{{ site.baseurl }}/images/profile.jpg" />
-		<h1 class="site-title">{{ site.title }}</h1>
+		<a href="{{ site.baseurl }}"><img class="site-profile-img" src="{{ "/images/profile.jpg" | prepend: site.baseurl }}"/></a>
+		<h2 class="site-title">{{ site.title }}</h2>
 		{% include option/social-icons.html %}
-		<!-- <div class="site-separator"></div> -->
+		<p class="site-profile-description">{{ site.description }}</p>
+		<div class="site-profile-separator"></div>
 		<!-- <h2 class="site-leading"><a href="{{ site.baseurl }}/about">简介</a></h2> -->
-		<p class="site-description">{{ site.description }}</p>
-		<div class="site-quick-nav">
+		<ul class="site-profile-quick-nav">
 			{% for my_page in site.pages %}
 			{% if my_page.title %}
-			<a class="nav-item" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+			<li class="nav-item"><a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
 			{% endif %}
 			{% endfor %}
-		</div>
-		<div class="site-separator"></div>
-		<h2 class="site-leading"><a href="{{ site.baseurl }}/blog">博文</a></h2>
-		<p class="site-description">点击下列分类标签快速浏览</p>
-		<div class="site-category">
+		</ul>
+		<!-- <div class="site-profile-separator"></div> -->
+<!-- 		<h2 class="site-profile-leading"><a href="{{ site.baseurl }}/blog">博文</a></h2>
+		<p class="site-profile-description">点击下列分类标签快速浏览</p>
+		<div class="site-profile-category">
 			{% for site_category in site.categories %}
-			<a class="site-category-item" href="#">{{ site_category | first }}({{ site_category | last | size }})</a>
+			<a class="site-profile-category-item" href="{{ "categories.html#" | append: site_category[0] | prepend: site.baseurl }}">
+			{{ site_category | first }}({{ site_category | last | size }})
+			</a>
 			{% endfor %}
-		</div>
+		</div> -->
 	</div>
 </div>
+{% if site.enable_bg_img %}
+<div class="site-bg"></div>
+{% endif %}

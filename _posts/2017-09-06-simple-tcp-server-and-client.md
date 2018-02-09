@@ -1,7 +1,8 @@
 ---
 layout: post
 title: TCP客户端服务器端程序示例
-categories: [TCP]
+categories: [Coding]
+tags: [TCP]
 ---
 
 Client

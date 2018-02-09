@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 好用的Sublime Text 3 插件
-category: Tool
+categories: [Coding]
+tags: [Tool]
 ---
 
 > Emmet

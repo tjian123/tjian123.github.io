@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
+<!-- header 放样式定义以及头部定义 -->
 {% include base/html-header.html %}
 <!-- 设置bodyClass来改变整体风格 -->
 <body class="{% if page.bodyClass %}{{ page.bodyClass }}{% else %}{{ site.bodyClass }}{% endif %}">
 	{{ content }}
 </body>
+<!-- footer 中放 js 脚本 -->
 {% include base/html-footer.html %}
 </html>

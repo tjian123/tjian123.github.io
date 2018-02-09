@@ -1,3 +1,10 @@
+---
+layout: post
+title: 设计模式
+categories: [Coding]
+tags: [Java]
+---
+
 ## 单一职责原则（SBP）
 
 > There should never be more than one reason for a class to change.

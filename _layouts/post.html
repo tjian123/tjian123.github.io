@@ -17,7 +17,7 @@ description: 用于博客文章页面的布局
 			{% endif %}
 			{% for page-category in page.categories %}
 			<span class="post-meta">
-				{{ page-category }}
+				<a href="/categories#tag-{{ page-category }}">{{ page-category }}</a>
 			</span>
 			{% endfor %}
 		</p>

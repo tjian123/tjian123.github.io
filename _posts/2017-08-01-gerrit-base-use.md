@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Gerrit基本用法
-categories: [Gerrit, Tools]
+categories: [Coding]
+tags: [Gerrit, Tools]
 ---
 
 ## 新建一个项目

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 巧用 Git 远程仓库解决多环境代码编写和编译问题
-categories: [Git, Tool]
+categories: [Coding]
+tags: [Git, Tool]
 ---
 
 > 在做 ONOS 项目时，遇到这样一种尴尬的编码环境，ONOS 源码只能在 linux 环境下编译和运行，而我的 linux 环境只能通过 ssh 远程登录使用（远程桌面奇卡无比），本地 window 环境虽然可以秒开 IDE，编译时却只能干瞪眼。手动拷贝粘贴源码确实可以解决问题，但实在是太低级；有同事推荐使用源码比较工具，也总觉得不高明；随着对 Git 使用的增多，发现了一种极其巧妙的方式，嗯，感觉阵痛解决了。

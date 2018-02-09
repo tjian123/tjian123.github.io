@@ -1,3 +1,4 @@
+@charset "utf-8";
 // reset
 
 // 说明：该文件定义对站点元素样式的重置
@@ -9,16 +10,10 @@ a:link {
     color: inherit;
 }
 
-html {
-	color: $font-color-base;
-	font-family: $base-font;
-}
-
+html,
 body {
-	// for center and responsive.
-	max-width: $content-width;
-	margin: 0 auto;
-	padding: 0 $padding-content--l;
+	margin: 0;
+	padding: 0;
 }
 
 table {
@@ -27,42 +22,4 @@ table {
 	word-break: keep-all;
 	border-collapse: collapse;
 	border-spacing: 0;
-}
-
-th,
-td {
-	border: 1px solid #dddddd;
-	line-height: 1.6;
-	padding: 6px 13px;
-}
-
-tbody {
-	tr {
-		&:nth-child(2n) {
-			background-color: #f8f8f8;
-		}
-		&:hover {
-			background-color: #f8f8f8;
-		}
-	}
-}
-
-blockquote {
-	border-left: 4px solid #dddddd;
-	margin: 0;
-	padding-left: 1em;
-
-	p {
-		font-size: 0.85rem;
-		line-height: 1.2rem;
-		font-style: italic;
-	}
-}
-
-figure {
-	margin: 0;
-}
-
-p {
-	line-height: 1.6rem;
 }

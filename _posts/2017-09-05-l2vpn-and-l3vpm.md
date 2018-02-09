@@ -1,7 +1,8 @@
 ---
 layout: post
 title: L2VPN和L3VPN
-categories: [SDN]
+categories: [Coding]
+tags: [SDN]
 ---
 
 > VPN(virtual private network): 虚拟专用网络

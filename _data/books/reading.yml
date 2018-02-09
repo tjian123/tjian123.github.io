@@ -1,0 +1,5 @@
+books:
+  - name: book one
+    author: author one
+  - name: book two
+    author: author two

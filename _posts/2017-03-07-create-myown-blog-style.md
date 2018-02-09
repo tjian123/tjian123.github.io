@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 布局思考与样式定义
-categories: [Jekyll, Web]
+categories: [Coding]
+tags: [Jekyll, Web]
 ---
 
 > 个人Blog当然最好是有个人风格的，然而非设计出身的人做出来的Blog，总归不是太好看。Jekyll提供了很多漂亮的模板可选，网上也有不少同学共享了优秀的案例。

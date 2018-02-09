@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Python 虚拟运行环境
-categories: [Python]
+categories: [Coding]
+tags: [Python]
 ---
 
 > 如果你的一台机器有很多python项目，每个都有不同的依赖（可能相同的包，但不同的版本），仅仅在一个Python安装环境中管理这些依赖几乎不可能。

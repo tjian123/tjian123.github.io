@@ -1,7 +1,8 @@
 ---
 layout: post
 title: maven中repository实践
-categories: [Maven, Java]
+categories: [Coding]
+tags: [Maven, Java]
 ---
 
 > `Maven`仓库是按照`maven`坐标组织jar包的位置，根据存放位置不同，分为本地仓库和远程仓库。

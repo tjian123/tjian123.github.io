@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+// 标题
+
+.site-header {
+    display: block;
+    position: relative;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+
+
+    .site-title {
+        display: inline-block;
+        height: $line-height--l;
+        line-height: $line-height--l;
+    }
+
+    .site-nav {
+        float: right;
+
+        .site-nav-menu-icon {
+            display: none;
+            line-height: $line-height--l;
+
+            @include media-query($mobile) {
+            	display: block;
+            }
+        }
+
+        .site-nav-menu {
+	        padding: 0;
+	        margin: 0;
+
+            .site-nav-menu-item {
+                display: inline-block;
+                list-style: none;
+
+                &:not(:last-child) {
+                    margin-right: $spacing--l;
+                }
+
+                a {
+                    display: inline-block;
+                    line-height: $line-height--l;
+
+                    &:hover {
+                        background-color: #333;
+                        color: #fff;
+                    }
+                }
+            }
+
+            @include media-query($mobile) {
+                display: none;
+                position: absolute;
+                left: 0;
+                width: 100%;
+                z-index: $drop-down-menu-index;
+                background-color: #fff;
+
+                .site-nav-menu-item {
+                    display: block;
+                    margin: 0;
+                    padding: 0 20px;
+
+                    a {
+                        display: inline-block;
+                        line-height: $line-height--l;
+
+                        &:hover {
+                            background-color: #333;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Windows7查看端口占用
-categories: [Tool]
+categories: [Coding]
+tags: [Tool]
 ---
 
 首先查看端口被那个程序使用

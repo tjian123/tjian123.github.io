@@ -1,7 +1,8 @@
 ---
 layout: post
 title: buck配置文件
-categories: [Buck]
+categories: [Coding]
+tags: [Buck]
 ---
 
 > [buildfile]

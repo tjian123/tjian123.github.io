@@ -8,15 +8,14 @@
 # Site informations
 title: 狐狸哒黍·小馒头
 email: tjian123@foxmail.com
+author: tjian
 description: > # this means to ignore newlines until "baseurl:"
   狐狸哒黍的个人小站，包括但不限于以下内容：技术积累、生活感想、书籍推荐和创意点子。
 baseurl: "" # the subpath of your site, e.g. /blog
 #url: "http://yourdomain.com" # the base hostname & protocol for your site
 
-twitter_username: tjian
 github_username: tjian123
 google_plus_username: tjian
-weibo_username: tjian
 
 # Build settings
 markdown: kramdown
@@ -38,3 +37,7 @@ exclude: [TODO, README.md]
 # paginate            : 10          # 定义每页数量
 # paginate_path       : "page:num"  # 定义分页结果
 # gems                : ['jekyll-paginate']
+# 
+
+# 是否开启背景图片
+enable_bg_img: false

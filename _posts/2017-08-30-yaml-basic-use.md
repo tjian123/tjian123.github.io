@@ -1,7 +1,8 @@
 ---
 layout: post
 title: YAML基本用法
-categories: [YAML]
+categories: [Coding]
+tags: [YAML]
 ---
 
 > YAML - Ain't Markup Language.

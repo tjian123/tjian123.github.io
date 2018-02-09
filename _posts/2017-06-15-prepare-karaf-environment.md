@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 准备karaf环境
-categories: [Karaf]
+categories: [Coding]
+tags: [Karaf]
 ---
 
 ## 1 下载和解压

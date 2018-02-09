@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Shell脚本中获取当前路径的几种方式
-categories: [Linux, Shell]
+categories: [Coding]
+tags: [Linux, Shell]
 ---
 
 ## 1. 方式一：最常用的方式

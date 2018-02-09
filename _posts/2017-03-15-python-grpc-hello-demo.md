@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Python语言使用gRPC的hello说明
-categories: [python, gRPC]
+categories: [Coding]
+tags: [python, gRPC]
 ---
 
 还是以`helloworld`为例，步骤如下：

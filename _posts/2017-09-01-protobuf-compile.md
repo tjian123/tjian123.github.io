@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 编译protobuf
-categories: [Protobuf]
+categories: [Coding]
+tags: [Protobuf]
 ---
 
 假定我们有一个`hello.proto`的文件，现在要将其编译为程序代码。

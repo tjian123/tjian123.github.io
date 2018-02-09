@@ -1,0 +1,15 @@
+<div class="post-nav">
+  {% assign total = posts.size %}
+  <ul class="post-list">
+    {% for post in posts %}
+    <li class="post-item{% if forloop.index > 12 %} item-hidden{% endif %}">
+      <span class="post-index">{{ total }} - {{ forloop.index }}</span>
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> 
+      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> 
+    </li>
+    {% endfor %}
+    {% if posts.size > 12%}
+    <li class="post-item"><a href="#" id="scroll-down"> >>> More <<< </a></li>
+    {% endif%}
+  </ul>
+</div> 

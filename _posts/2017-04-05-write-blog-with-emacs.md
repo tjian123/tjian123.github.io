@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 配置Emacs写Markdown文章
-category: Tool
+categories: [Coding]
+tags: Tool
 ---
 
 ## 说明

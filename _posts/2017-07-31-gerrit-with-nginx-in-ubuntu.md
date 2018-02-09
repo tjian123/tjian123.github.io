@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Ubuntu 16.04中使用nginx反向代理gerrit服务器
-categories: [Gerrit, Nginx]
+categories: [Coding]
+tags: [Gerrit, Nginx]
 ---
 
 > 这里使用的测试机器，因为之前安装过其他软件，故已经具备了本文安装的一些基本前提，如jdk1.8、libtool等等。故本文只记录相关gerrit和nginx配置部分。

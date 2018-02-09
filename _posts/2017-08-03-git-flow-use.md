@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Git工作流
-categories: [Git, Tools]
+categories: [Coding]
+tags: [Git, Tools]
 ---
 
 git-flow工具提供了很好的git工作流服务，ubuntu系统安装该工具的方式为：

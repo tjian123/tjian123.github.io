@@ -1,7 +1,8 @@
 ---
 layout: post
 title: maven中repository实践
-categories: [Maven, Java]
+categories: [Coding]
+tags: [Maven, Java]
 ---
 
 Maven的Dependency scope提供5个可选值：

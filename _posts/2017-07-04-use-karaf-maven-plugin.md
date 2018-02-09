@@ -1,7 +1,8 @@
 ---
 layout: post
 title: karaf-maven-plugin 用法实践
-categories: [Karaf, OSGi, Maven]
+categories: [Coding]
+tags: [Karaf, OSGi, Maven]
 ---
 
 本文记录`karaf-maven-plugin`插件的用法：包括编译`feature`、`kar`，以及生成自定义`distribution`。
