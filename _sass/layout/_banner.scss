@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+.site-banner {
+	position: relative;
+    background-color: $black;
+    // background-image: url(#{$bg-img-2});
+    background-position: 50% 50%;
+    padding-top: $spacing--xxl*2.5;
+    padding-bottom: $spacing--xl;
+
+    .site-banner-title {
+        
+    }
+
+	.site-banner-description {
+        display: inline-block;
+        line-height: $line-height--m;
+        font-size: $font-size--s;
+    }
+
+    @include media-query($mobile) {
+	    padding-top: $spacing--xxl*1.5;
+	    padding-bottom: $spacing--xl;
+    }
+}

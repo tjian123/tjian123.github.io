@@ -6,12 +6,11 @@ $brand_background_color: #FFFFFF;
 $brand_frontend_color: #333333;
 
 $brand_leading_color: #E33333;
-$brand_border_color: #E7E7E7;
 
 $body_background_color: #FFFFFF;
-$body_frontend_color: #333333;
+$body_frontend_color: #3f3f3f;
 
 .default-style {
 
-	@include generate-theme($brand_background_color, $brand_frontend_color, $brand_leading_color, $brand_border_color, $body_background_color, $body_frontend_color);
+	@include generate-theme($brand_background_color, $brand_leading_color, $brand_frontend_color, $body_background_color, $body_frontend_color);
 }

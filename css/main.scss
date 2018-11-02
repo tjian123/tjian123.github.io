@@ -18,12 +18,11 @@
 		"tools/_response";
 
 @import 
-		"base/_text",
-        "base/_reset";
+	    "base/_reset",
+	    "base/_text",
+	    "base/_common";
 
 @import 
-		"component/_header",
-		"component/_footer",
 		"component/_dynamic-content",
 		"component/_offset-left",
 		"component/_profile";
@@ -35,6 +34,10 @@
 @import 
 		"layout/_page",
 		"layout/_post",
+		"layout/_header",
+		"layout/_banner",
+		"layout/_content",
+		"layout/_footer",
 		"layout/_default";
 
 @import 

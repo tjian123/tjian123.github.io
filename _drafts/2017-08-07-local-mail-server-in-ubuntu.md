@@ -51,6 +51,6 @@ Postfix 的主配置文件是： /etc/postfix/main.cf，这个文件是安装程
 
 参考链接：
 
-<http://wiki.ubuntu.org.cn/Postfix_%E5%9F%BA%E6%9C%AC%E8%AE%BE%E7%BD%AE%E6%8C%87%E5%8D%97>
-<http://wiki.ubuntu.org.cn/Postfix_%E5%AE%8C%E6%95%B4%E8%99%9A%E6%8B%9F%E9%82%AE%E4%BB%B6%E7%B3%BB%E7%BB%9F%E6%8C%87%E5%8D%97>这篇非常重要
-<https://www.liaoxuefeng.com/article/00137387674890099a71c0400504765b89a5fac65728976000>
+- [参考一](http://wiki.ubuntu.org.cn/Postfix_%E5%9F%BA%E6%9C%AC%E8%AE%BE%E7%BD%AE%E6%8C%87%E5%8D%97)
+- [参考二](http://wiki.ubuntu.org.cn/Postfix_%E5%AE%8C%E6%95%B4%E8%99%9A%E6%8B%9F%E9%82%AE%E4%BB%B6%E7%B3%BB%E7%BB%9F%E6%8C%87%E5%8D%97)
+- [参考三](https://www.liaoxuefeng.com/article/00137387674890099a71c0400504765b89a5fac65728976000)

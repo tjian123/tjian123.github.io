@@ -2,13 +2,13 @@
 
 .offset-left {
     position: relative;
-    padding-left: 246px;
+    padding-left: 30%;
     min-height: 320px;
 
     .fixed-left {
         position: absolute;
         left: 0;
-        width: 180px;
+        width: 30%;
         height: 300px;
         z-index: $offset-left-index;
 
@@ -26,7 +26,7 @@
                 }
 
                 @include media-query($mobile) {
-                    width: 50%;
+                    width: 100%;
                 }
 
                 a {

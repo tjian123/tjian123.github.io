@@ -5,9 +5,10 @@
 .site-header {
     display: block;
     position: relative;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-
+    
+    a {
+        text-decoration: none;
+    }
 
     .site-title {
         display: inline-block;
@@ -28,6 +29,7 @@
         }
 
         .site-nav-menu {
+            display: inline-block;
 	        padding: 0;
 	        margin: 0;
 
@@ -35,18 +37,11 @@
                 display: inline-block;
                 list-style: none;
 
-                &:not(:last-child) {
-                    margin-right: $spacing--l;
-                }
-
                 a {
-                    display: inline-block;
+                    display: block;
+                    padding: 0 $spacing--l;
                     line-height: $line-height--l;
-
-                    &:hover {
-                        background-color: #333;
-                        color: #fff;
-                    }
+                    text-decoration: none;
                 }
             }
 
@@ -56,21 +51,15 @@
                 left: 0;
                 width: 100%;
                 z-index: $drop-down-menu-index;
-                background-color: #fff;
 
                 .site-nav-menu-item {
                     display: block;
                     margin: 0;
-                    padding: 0 20px;
 
                     a {
-                        display: inline-block;
+                        display: block;
                         line-height: $line-height--l;
-
-                        &:hover {
-                            background-color: #333;
-                            color: #fff;
-                        }
+                        padding: 0 $spacing--l;
                     }
                 }
             }

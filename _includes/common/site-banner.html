@@ -1,5 +1,47 @@
-<div class="site-banner">
+{% comment %}
+
+1. bannerImage 和 bannerColor 属性在子页的头部标识，如：
+
+---
+title: Some Title
+description: Some Description
+bannerImage: '../images/bing-bg.jpg'
+bannerColor: darkblue
+---
+
+** 注 ** bannerImage 存在的情况下，bannerColor 将被忽略。
+
+2. banner 中的 title 属性，按以下顺序显示：
+	- 首先查找是否使用 assign 为 title 赋值（实现局部定制化）
+	- 然后使用本页定义的 title
+	- 最后考虑使用站点定义的 title
+
+{% endcomment %}
+
+<div class="site-banner" 
+	{% if page.bannerImage %} 
+		style="background-image: url({{ page.bannerImage }});" 
+	{% else if page.bannerColor %}
+		style="background-color: {{ page.bannerColor }};" 
+	{% endif %}>
 	<div class="container">
-		<span class="site-description">{{ site.description }}</span>
+		<h1 class="site-banner-title">
+		{% if title %}
+			{{ title }}
+		{% elsif page.title %}
+			{{ page.title }}
+		{% else %}
+			{{ site.title }}
+		{% endif %}
+		</h1>
+		<p class="site-banner-description">
+		{% if description %}
+			{{ description }}
+		{% elsif page.description %}
+			{{ page.description }}
+		{% else %}
+			{{ site.description }}
+		{% endif %}
+		</p>
 	</div>
 </div>

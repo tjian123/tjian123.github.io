@@ -2,13 +2,12 @@
 
 // 首页
 .site-bg {
-	z-index: -10 !important;
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: #fff;
+    z-index: $bg-img-index !important;
 	background-image: url(#{$bg-img});
 	background-position: 40% 80%;
 	background-repeat: no-repeat;
@@ -27,25 +26,24 @@
     }
 
     .site-profile-img {
-        width: 125px !important;
+        width: $site-profile-img-size-l !important;
         height: 100%;
         max-width: 100%;
         border-radius: 100%;
-        border-width: 0;
         margin-top: $spacing--xxl;
 
         @include media-query($mobile) {
+            width: $site-profile-img-size-s !important;
             margin-top: $spacing--m;
         }
     }
 
     .site-profile-title {
-        margin: $spacing--s 0;
+        
     }
 
     .site-profile-leading {
-        font-size: $font-size--s;
-        line-height: $line-height--m;
+
     }
 
     .site-profile-description {
@@ -56,15 +54,11 @@
         .site-profile-author-icon {
             display: inline-block;
 
-            &:not(last-child) {
-                margin-right: $spacing--xxxs;
-            }
-
             a {
                 width: 24px;
                 height: 24px;
                 line-height: 24px;
-                border: 1px solid #333;
+                padding: 2px;
                 border-radius: 50%;
                 transition: $transition--primary;
 
@@ -77,43 +71,9 @@
         }
     }
 
-    .site-profile-category {
-        .site-profile-category-item {
-            display: inline-block;
-            font-size: $font-size--xxs;
-            padding-left: $spacing--xxxs;
-            padding-right: $spacing--xxxs;
-            border-width: 1px;
-            border-style: solid;
-            border-radius: $line-height--s / 2;
-            margin: $spacing--xxxs;
-        }
-    }
-
     .site-profile-separator {
-        position: relative;
-        width: 100%;
-        margin: $line-height--s auto;
-        content: "";
-        height: 0;
-        border-bottom-width: 1px;
-        border-bottom-style: solid;
+        margin: $spacing--m auto;
         max-width: 800px;
-
-        &:before {
-            display: block;
-            position: absolute;
-            top: -4px;
-            left: 50%;
-            margin-left: -5px;
-            content: " ";
-            width: 7px;
-            height: 7px;
-            border-width: 1px;
-            border-style: solid;
-            border-radius: 3px;
-            background-color: #fff;
-        }
     }
 
     .site-profile-quick-nav {
@@ -121,12 +81,10 @@
 
         .nav-item {
             display: inline-block;
-
-            &:not(last-child) {
-                margin-right: $spacing--xxxs;
-            }
+            margin: 0 $spacing--xxxs;
 
             a {
+                display: inline-block;
                 padding: $spacing--xxxxs;
                 border: 1px solid #333;
                 font-size: $font-size--xxs;

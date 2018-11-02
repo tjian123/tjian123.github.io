@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+// 页尾
+
+.site-footer {
+    position: relative;
+    padding: $spacing--l 0;
+    font-size: $font-size--xxs;
+
+    a {
+    	text-decoration: none;
+    }
+    
+}

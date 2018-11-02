@@ -1,13 +1,13 @@
 ---
 layout: post
-title: maven中profile实践
-categories: [Coding]
+title: Maven 中 profile 实践
+categories: [编码]
 tags: [Maven, Java]
 ---
 
-### 作用
+> 使用 `profile` 可以定义一些配置信息，并指定这些配置信息的激活条件。
 
-> 使用'profile'可以定义一些配置信息，并指定这些配置信息的激活条件。
+<!--more-->
 
 比如我们的项目可能在`windows`系统和`linux`系统下有不同的配置需求，那么就可以通过`profile`定义两套信息，在`maven`检测到系统环境时使相应的`profile`生效。
 
@@ -19,7 +19,7 @@ tags: [Maven, Java]
 
 1. 属于某个`maven`项目的`pom.xml`文件中：用于定义特定项目所需要的配置信息。
 2. 用户目录下的`.m2`目录下的`settings.xml`文件中: 用于定义特定用户所需要的配置信息。
-3. `MAVEN_HOME`的`conf`目录下的`settings.xml`文件中： 用于定义一个`maven`环境的全局配置信息。
+3. `MAVEN_HOME`的`conf`目录下的`settings.xml`文件中： 用于定义一个`maven`环境的全局配置信息（可以为一个系统上的多个用户服务）。
 
 ### 配置内容
 
@@ -31,22 +31,22 @@ tags: [Maven, Java]
 - `pluginRepositories`: 定义插件仓库信息。
 - `properties`: 定义键值对（可以在`pom.xml`文件中使用）。
 
-能够定义在`pom.xml`中的信息，除了以上通常还有：
+能够定义在`pom.xml`中的信息，除了以上可以定义在`settings.xml`中的，通常还有：
 
-- `dependencies`:
-- `plugins`:
-- `dependencyManagement`:
-- `distributionManagement`:
-- `defaultGoal`:
-- `resources`:
-- `testResources`:
+- `dependencies`: 定义依赖。
+- `plugins`: 定义需要使用的插件。
+- `dependencyManagement`: 声明可能需要的依赖。
+- `distributionManagement`: 声明可能需要的发布信息。
+- `defaultGoal`: 配合`plugin`使用。
+- `resources`: 声明资源文件。
+- `testResources`: 声明测试资源文件。
 - `finalName`:
 
 ### 激活方式
 
 > `profile`定义以后，必须激活才能生效。
 
-有以下集中激活`profile`的方式：
+有以下几种激活`profile`的方式：
 
 - 控制台命令激活：`mvn <cmd> -P <profile-name>`，也可以指定不激活某个`profile`：`mvn <cmd> -P !<profile-name>`。
 - 在配置文件中使用`activateByDefault`激活，如：

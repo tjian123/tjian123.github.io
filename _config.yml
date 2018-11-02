@@ -13,6 +13,9 @@ description: > # this means to ignore newlines until "baseurl:"
   狐狸哒黍的个人小站，包括但不限于以下内容：技术积累、生活感想、书籍推荐和创意点子。
 baseurl: "" # the subpath of your site, e.g. /blog
 #url: "http://yourdomain.com" # the base hostname & protocol for your site
+#
+
+permalink: /:year/:month/:day/:title
 
 github_username: tjian123
 google_plus_username: tjian
@@ -25,7 +28,7 @@ kramdown:
 highlighter: rouge
 sass:
   style: compressed
-#excerpt_separator: <!--more--> #用于显示文章摘要
+excerpt_separator: <!--more--> #用于显示文章摘要
 
 # Default style: default, dack, light
 bodyClass: default-style

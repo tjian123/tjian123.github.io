@@ -5,37 +5,56 @@
 // 博客文章列表样式
 .post-nav {
 
+    ul, li {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+    }
+
     .post-heading {
         // TODO
     }
 
     .post-list {
-        list-style: none;
-        padding: $spacing--l 0;
-
-        .post-index {
-            display: inline-block;
-        }
-
-        .post-meta {
-            float: right;
-            font-size: $font-size--xxs;
-            padding-right: $spacing--s;
-
-            @include media-query($mobile) {
-                display: none;
-            }
-        }
 
         .post-item {
-            font-size: $font-size--s;
+            display: inline-block;
+            width: 33%;
+
+            @include media-query($mobile) {
+                display: block;
+                width: auto;
+            }
+
+            .post-title {
+                font-size: $font-size--s;
+                font-weight: 400;
+            }
+
+            .post-index {
+                display: inline-block;
+                font-size: $font-size--xxs;
+                float: right;
+            }
+
+            .post-meta {
+                font-size: $font-size--xxs;
+            }
+
+            a {
+                display: block;
+                padding: $spacing--xxs $spacing--s;
+                
+                &:hover {
+                    background-color: darken(#fff, 3%);
+                }
+            }
+
         }
         
-        li {
-            &:not(last-child) {
-                margin-bottom: $spacing--s;
-            }
-        }
     }
 }
 

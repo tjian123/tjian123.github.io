@@ -1,9 +1,13 @@
 ---
 layout: post
-title: maven中repository实践
-categories: [Coding]
+title: Maven 中 scope 实践
+categories: [编码]
 tags: [Maven, Java]
 ---
+
+> Maven 中使用 `scope` 来定义依赖的作用范围。
+
+<!--more-->
 
 Maven的Dependency scope提供5个可选值：
 

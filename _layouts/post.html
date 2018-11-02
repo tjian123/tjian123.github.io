@@ -2,10 +2,11 @@
 layout: default
 description: 用于博客文章页面的布局
 ---
+
 <article class="site-post">
 
 	<header class="post-header">
-		<h1 class="post-title">{{ page.title }}</h1>
+		<!-- <h1 class="post-title">{{ page.title }}</h1> -->
 		<p class="post-meta-info">
 			<time datetime="{{ page.date | date_to_xmlschema }}">
 				{{ page.date | date: "%b %-d, %Y" }}

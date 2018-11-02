@@ -1,10 +1,10 @@
 <div class="site-profile">
 	<div class="container">
-		<a href="{{ site.baseurl }}"><img class="site-profile-img" src="{{ "/images/profile.jpg" | prepend: site.baseurl }}"/></a>
-		<h2 class="site-title">{{ site.title }}</h2>
+		<img class="site-profile-img" src="{{ "/images/profile.jpg" | prepend: site.baseurl }}"/>
+		<h2 class="site-profile-title">{{ site.title }}</h2>
 		{% include option/social-icons.html %}
 		<p class="site-profile-description">{{ site.description }}</p>
-		<div class="site-profile-separator"></div>
+		<hr class="site-profile-separator" />
 		<!-- <h2 class="site-leading"><a href="{{ site.baseurl }}/about">简介</a></h2> -->
 		<ul class="site-profile-quick-nav">
 			{% for my_page in site.pages %}
@@ -13,16 +13,6 @@
 			{% endif %}
 			{% endfor %}
 		</ul>
-		<!-- <div class="site-profile-separator"></div> -->
-<!-- 		<h2 class="site-profile-leading"><a href="{{ site.baseurl }}/blog">博文</a></h2>
-		<p class="site-profile-description">点击下列分类标签快速浏览</p>
-		<div class="site-profile-category">
-			{% for site_category in site.categories %}
-			<a class="site-profile-category-item" href="{{ "categories.html#" | append: site_category[0] | prepend: site.baseurl }}">
-			{{ site_category | first }}({{ site_category | last | size }})
-			</a>
-			{% endfor %}
-		</div> -->
 	</div>
 </div>
 {% if site.enable_bg_img %}
