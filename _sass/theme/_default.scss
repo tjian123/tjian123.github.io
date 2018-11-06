@@ -2,15 +2,15 @@
 
 // 只涉及配色定义
 
-$brand_background_color: #FFFFFF;
-$brand_frontend_color: #333333;
+$brand-background-color: #FFFFFF;
+$brand-frontend-color: #333333;
 
-$brand_leading_color: #E33333;
+$brand-leading-color: #E33333;
 
-$body_background_color: #FFFFFF;
-$body_frontend_color: #3f3f3f;
+$body-background-color: #FFFFFF;
+$body-frontend-color: #3f3f3f;
 
 .default-style {
 
-	@include generate-theme($brand_background_color, $brand_leading_color, $brand_frontend_color, $body_background_color, $body_frontend_color);
+	@include generate-theme($brand-background-color, $brand-leading-color, $brand-frontend-color, $body-background-color, $body-frontend-color);
 }

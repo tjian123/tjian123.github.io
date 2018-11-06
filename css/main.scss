@@ -1,46 +1,20 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+
 @charset "utf-8";
 
+$SCSS_DIRS: third-party const tools base component markdown layout theme;
+
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "third-party/_normalize",
-        "third-party/_font-awesome";
 
 @import 
-		"const/_const",
-		"const/_variable";
+		"third-party/index",
+		"const/index",
+		"tools/index",
+		"base/index",
+		"component/index",
+		"markdown/index",
+		"layout/index",
+		"theme/index";
 
-@import
-		"tools/_spacing",
-		"tools/_theme",
-		"tools/_response";
-
-@import 
-	    "base/_reset",
-	    "base/_text",
-	    "base/_common";
-
-@import 
-		"component/_dynamic-content",
-		"component/_offset-left",
-		"component/_profile";
-
-@import
-		"markdown/_code-highlight",
-		"markdown/_content-style";
-
-@import 
-		"layout/_page",
-		"layout/_post",
-		"layout/_header",
-		"layout/_banner",
-		"layout/_content",
-		"layout/_footer",
-		"layout/_default";
-
-@import 
-		"theme/_light",
-		"theme/_dack",
-		"theme/_default";

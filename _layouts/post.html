@@ -13,12 +13,14 @@ description: 用于博客文章页面的布局
 			</time>
 			{% if page.author %}
 			<span class="post-meta">
-				{{ page.author }}
+				{{ page.author | capitalize }}
 			</span>
+			{% else if site.author %}
+				{{ site.author | capitalize }}
 			{% endif %}
-			{% for page-category in page.categories %}
+			{% for pageCategory in page.categories %}
 			<span class="post-meta">
-				<a href="/categories#tag-{{ page-category }}">{{ page-category }}</a>
+				<a href="/categories#tag-{{ pageCategory }}">{{ pageCategory }}</a>
 			</span>
 			{% endfor %}
 		</p>
@@ -28,13 +30,16 @@ description: 用于博客文章页面的布局
 		{{ content }}
 	</div>
 
-	<div class="post-nav">
-		{% if page.previous %}
-		<a class="post-nav-prev" href="{{ page.previous.url | prepend: site.baseurl }}">上一篇：{{ page.previous.title }}</a>
-		{% endif %}
-		{% if page.next %}
-		<a class="post-nav-next" href="{{ page.next.url | prepend: site.baseurl }}">下一篇：{{ page.next.title }}</a>
-		{% endif %}
+	<div class="post-footer">
+		{% include config/article-meta.html %}
+		<div class="post-nav">
+			{% if page.previous %}
+			<a class="post-nav-prev" href="{{ page.previous.url | prepend: site.baseurl }}">下一篇：{{ page.previous.title }}</a>
+			{% endif %}
+			{% if page.next %}
+			<a class="post-nav-next" href="{{ page.next.url | prepend: site.baseurl }}">上一篇：{{ page.next.title }}</a>	
+			{% endif %}
+		</div>
 	</div>
 
 </article>

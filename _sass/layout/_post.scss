@@ -109,10 +109,10 @@
         padding-top: 20px;
 
         .post-nav-prev {
-            float: left;
+            float: right;
         }
         .post-nav-next {
-            float: right;
+            float: left;
         }
 
         @include media-query($mobile) {

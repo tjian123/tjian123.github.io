@@ -1,14 +1,12 @@
 ---
 layout: post
-title: Blog 需求分析
-description: 本文对几个页面模板需求模板进行描述，包含展示内容、交互方式等。
+title: 需求分析
+description: 设计应来源于需求 —— Tjian Blog 需求部分
 categories: [技术积累]
-tags: [blog]
+tags: [Blog, Web, Jekyll]
 ---
 
-> 本文对几个页面模板需求模板进行描述，包含展示内容、交互方式等。
-
-<!--more-->
+> Blog 站点的基础功能就是写文章和发评论互动。另外，通常会有一些单页面，用于展示个人特色信息。<!--more-->
 
 ## 1. Home
 
