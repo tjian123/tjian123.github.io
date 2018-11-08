@@ -6,9 +6,9 @@
       <a href="#" class="site-nav-menu-icon" id="drop-down-menu"><span class="fa fa-bars"></span></a>
 
       <ul class="site-nav-menu">
-        {% for my_page in site.pages %}
-        {% if my_page.title and my_page.layout=="page" %}
-        <li class="site-nav-menu-item">{% assign thisurl=my_page.url | prepend: site.baseurl %}<a href="{{ thisurl }}" {% if page.url == thisurl %} class="active"{% endif %}>{{ my_page.title }}</a></li>
+        {% for thePage in site.pages %}
+        {% if thePage.title and thePage.layout=="page" %}
+        <li class="site-nav-menu-item">{% assign theUrl=thePage.url | prepend: site.baseurl %}<a href="{{ theUrl }}" {% if page.url == theUrl %} class="active"{% endif %}>{{ thePage.title }}</a></li>
         {% endif %}
         {% endfor %}
       </ul>

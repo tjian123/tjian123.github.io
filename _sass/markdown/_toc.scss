@@ -1,0 +1,13 @@
+#markdown-toc {
+	li {
+		list-style-type: circle;
+
+		li {
+			list-style-type: disc;
+		}
+	}
+	li a {
+		text-decoration: none;
+		color: inherit;
+	}
+}

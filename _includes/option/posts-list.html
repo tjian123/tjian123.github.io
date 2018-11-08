@@ -2,12 +2,11 @@
   <ul class="post-list">
     {% for post in posts %}
     <li class="post-item{% if forloop.index > 20 %} item-hidden{% endif %}">
-      <a href="{{ post.url | prepend: site.baseurl }}">
       <h5 class="post-title">{{ post.title }}</h5>
       <p>{{ post.excerpt | strip_html }}</p>
+      <a href="{{ post.url | prepend: site.baseurl }}">阅读全文</a>
       <!-- <span class="post-index">{{ forloop.index }} of {{ forloop.length }}</span> -->
       <span class="post-meta">{{ post.date | date: "%Y 年 %m 月 %d 日，%a" }}</span>
-      </a>
     </li>
     {% endfor %}
     {% if posts.size > 20 %}

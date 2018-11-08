@@ -5,7 +5,7 @@
     background-color: $black;
     // background-image: url(#{$bg-img-2});
     background-position: 50% 50%;
-    padding-top: $spacing--xxl*2.5;
+    padding-top: $spacing--xxl*1.5;
     padding-bottom: $spacing--xl;
 
     .site-banner-title {
@@ -19,7 +19,7 @@
     }
 
     @include media-query($mobile) {
-	    padding-top: $spacing--xxl*1.5;
+	    padding-top: $spacing--xl*1.5;
 	    padding-bottom: $spacing--xl;
     }
 }
