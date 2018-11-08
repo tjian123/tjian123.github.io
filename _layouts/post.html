@@ -7,9 +7,8 @@ description: 用于博客文章页面的布局
 
 	<header class="post-header">
 		<p class="post-meta">
-			<span class="fa fa-calendar"> 发表于：{{ page.date | date: "%Y-%m-%d" }}</span>
-			<span> | </span>
-			<span class="fa fa-folder"> 分类于：
+			<span class="fa fa-calendar" title="发表日期"> {{ page.date | date: "%Y-%m-%d" }}</span>
+			<span class="fa fa-folder" title="所属分类">
 				{% for pageCategory in page.categories %}
 				<a href="/categories#tag-{{ pageCategory }}">{{ pageCategory }}</a>
 				{% endfor %}
@@ -23,16 +22,18 @@ description: 用于博客文章页面的布局
 
 	<div class="post-footer">
 		<p class="post-meta">
+			<span class="fa fa-tag" title="相关标签">
 			{% for pageTag in page.tags %}
-			<a href="/tags#tag-{{ pageTag }}">#{{ pageTag }} </a>
+			<a href="/tags#tag-{{ pageTag }}"> {{ pageTag }} </a>
 			{% endfor %}
+			</span>
 		</p>
 		<div class="post-nav">
 			{% if page.previous %}
-			<a class="post-nav-prev" href="{{ page.previous.url | prepend: site.baseurl }}">下一篇：{{ page.previous.title }}</a>
+			<a class="post-nav-prev" href="{{ page.previous.url | prepend: site.baseurl }}">{{ page.previous.title }} <span class="fa fa-angle-double-right"></span></a>
 			{% endif %}
 			{% if page.next %}
-			<a class="post-nav-next" href="{{ page.next.url | prepend: site.baseurl }}">上一篇：{{ page.next.title }}</a>	
+			<a class="post-nav-next" href="{{ page.next.url | prepend: site.baseurl }}"><span class="fa fa-angle-double-left"></span> {{ page.next.title }}</a>	
 			{% endif %}
 		</div>
 	</div>
