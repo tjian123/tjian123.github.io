@@ -3,8 +3,7 @@ layout: default
 description: 用于博客文章页面的布局
 ---
 
-<article class="site-post">
-
+<main class="site-post">
 	<header class="post-header">
 		<p class="post-meta">
 			<span class="fa fa-calendar" title="发表日期"> {{ page.date | date: "%Y-%m-%d" }}</span>
@@ -20,7 +19,7 @@ description: 用于博客文章页面的布局
 		{{ content }}
 	</div>
 
-	<div class="post-footer">
+	<footer class="post-footer">
 		<p class="post-meta">
 			<span class="fa fa-tag" title="相关标签">
 			{% for pageTag in page.tags %}
@@ -29,13 +28,14 @@ description: 用于博客文章页面的布局
 			</span>
 		</p>
 		<div class="post-nav">
-			{% if page.previous %}
-			<a class="post-nav-prev" href="{{ page.previous.url | prepend: site.baseurl }}">{{ page.previous.title }} <span class="fa fa-angle-double-right"></span></a>
-			{% endif %}
+			<ul>
 			{% if page.next %}
-			<a class="post-nav-next" href="{{ page.next.url | prepend: site.baseurl }}"><span class="fa fa-angle-double-left"></span> {{ page.next.title }}</a>	
+			<li class="post-nav-next"><a href="{{ page.next.url | prepend: site.url }}">上一篇：{{ page.next.title }}</a></li>
 			{% endif %}
+			{% if page.previous %}
+			<li class="post-nav-prev"><a href="{{ page.previous.url | prepend: site.url }}">下一篇：{{ page.previous.title }}</span></a></li>
+			{% endif %}
+			</ul>
 		</div>
-	</div>
-
-</article>
+	</footer>
+</main>

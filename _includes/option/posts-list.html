@@ -1,16 +1,20 @@
-<div class="post-nav">
-  <ul class="post-list">
+{% if posts %}
+<div class="post-list">
+  <ul>
     {% for post in posts %}
-    <li class="post-item{% if forloop.index > 20 %} item-hidden{% endif %}">
+    <li class="post-list-item{% if forloop.index > 20 %} item-hidden{% endif %}">
       <h5 class="post-title">{{ post.title }}</h5>
       <p>{{ post.excerpt | strip_html }}</p>
       <a href="{{ post.url | prepend: site.baseurl }}">阅读全文</a>
       <!-- <span class="post-index">{{ forloop.index }} of {{ forloop.length }}</span> -->
-      <span class="post-meta">{{ post.date | date: "%Y 年 %m 月 %d 日，%a" }}</span>
+      <p class="post-meta">
+        <span class="fa fa-clock-o" title="发布时间"> {{ post.date | date: "%Y 年 %m 月 %d 日，%a" }}</span>
+      </p>
     </li>
     {% endfor %}
     {% if posts.size > 20 %}
     <li class="post-item"><a href="#" id="scroll-down"><h5 class="post-title"> >> More << </h5></a></li>
     {% endif%}
   </ul>
-</div> 
+</div>
+{% endif %}

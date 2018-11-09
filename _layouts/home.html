@@ -1,7 +1,12 @@
 ---
-layout: default
+layout: single
 description: 主页从此模板继承，可以是使用情况更新父模板，即 layout。
 ---
 
-{{ content }}
-
+{% include option/site-profile.html %}
+<main class="site-content">
+	<div class="container">
+		{{ content }}
+	</div>
+</main>
+{% include common/site-footer.html %}

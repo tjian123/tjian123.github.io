@@ -1,15 +1,16 @@
 <header class="site-header">
   <div class="container">
     <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
     <nav class="site-nav">
       <a href="#" class="site-nav-menu-icon" id="drop-down-menu"><span class="fa fa-bars"></span></a>
-
       <ul class="site-nav-menu">
         {% for thePage in site.pages %}
-        {% if thePage.title and thePage.layout=="page" %}
-        <li class="site-nav-menu-item">{% assign theUrl=thePage.url | prepend: site.baseurl %}<a href="{{ theUrl }}" {% if page.url == theUrl %} class="active"{% endif %}>{{ thePage.title }}</a></li>
-        {% endif %}
+          {% if thePage.title and thePage.layout=="page" %}
+          {% assign theUrl=thePage.url | prepend: site.baseurl %}
+          <li class="site-nav-menu-item">
+            <a href="{{ theUrl }}" {% if page.url == theUrl %} class="active"{% endif %}>{{ thePage.title }}</a>
+          </li>
+          {% endif %}
         {% endfor %}
       </ul>
     </nav>

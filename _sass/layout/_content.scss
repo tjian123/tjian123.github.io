@@ -2,6 +2,7 @@
 
 .site-content {
 	position: relative;
-	flex: 1;
+	// 保证页面内容不够填充的时候，footer也能贴底部
+	flex: 1 !important;
 	padding: $spacing--l 0;
 }

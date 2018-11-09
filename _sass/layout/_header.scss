@@ -16,6 +16,8 @@
         line-height: $line-height--l;
     }
 
+    @include clearfix;
+
     .site-nav {
         float: right;
 
@@ -51,6 +53,7 @@
                 left: 0;
                 width: 100%;
                 z-index: $drop-down-menu-index;
+                background-color: #fff;
 
                 .site-nav-menu-item {
                     display: block;

@@ -21,7 +21,7 @@ bannerColor: darkblue
 <div class="site-banner" 
 	{% if page.bannerImage %} 
 		style="background-image: url({{ page.bannerImage }});" 
-	{% else if page.bannerColor %}
+	{% elsif page.bannerColor %}
 		style="background-color: {{ page.bannerColor }};" 
 	{% endif %}>
 	<div class="container">

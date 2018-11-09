@@ -36,7 +36,7 @@ tags: [Blog, Web]
         |         |        |
       default   single   (else if needed)
         |         |
-    ---------   profile
+    ---------   home
     |       |
   page    post  
 

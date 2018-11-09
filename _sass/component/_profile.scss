@@ -25,6 +25,11 @@
         list-style: none;
     }
 
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
     .site-profile-img {
         width: $site-profile-img-size-l !important;
         height: 100%;

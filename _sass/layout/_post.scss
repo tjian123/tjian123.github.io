@@ -2,10 +2,11 @@
 
 // 文章页面
 
-// 博客文章列表样式
-.post-nav {
+// 文章导航
+.post-nav,
+.post-list {
 
-    ul, li {
+    ul, ol {
         margin: 0;
         padding: 0;
     }
@@ -14,48 +15,50 @@
         list-style: none;
     }
 
-    .post-heading {
-        // TODO
+    a {
+        text-decoration: none;
+        color: inherit;
     }
 
-    .post-list {
+}
 
-        .post-item {
-            display: inline-block;
-            width: 33%;
+.post-list {
 
-            @include media-query($mobile) {
-                display: block;
-                width: auto;
-            }
+    .post-list-item {
+        display: inline-block;
+        width: 33%;
 
-            .post-title {
-                font-size: $font-size--s;
-                font-weight: 400;
-            }
-
-            .post-index {
-                display: inline-block;
-                font-size: $font-size--xxs;
-                float: right;
-            }
-
-            .post-meta {
-                font-size: $font-size--xxs;
-            }
-
-            a {
-                display: block;
-                padding: $spacing--xxs $spacing--s;
-                
-                &:hover {
-                    background-color: darken(#fff, 3%);
-                }
-            }
-
+        @include media-query($mobile) {
+            display: block;
+            width: auto;
         }
-        
+
+        .post-title {
+            font-size: $font-size--s;
+            font-weight: 400;
+        }
+
+        .post-index {
+            display: inline-block;
+            font-size: $font-size--xxs;
+            float: right;
+        }
+
+        .post-meta {
+            font-size: $font-size--xxs;
+        }
+
+        a {
+            display: block;
+            padding: $spacing--xxs $spacing--s;
+            
+            &:hover {
+                background-color: darken(#fff, 3%);
+            }
+        }
+
     }
+    
 }
 
 .site-post {
@@ -68,18 +71,6 @@
 
 	}
 
-    .post-meta-info {
-        display: block;
-
-        &:first-child {
-            margin-left: 3px;
-        }
-
-        &:last-child {
-            margin-right: 3px;
-        }
-    }
-
     .post-meta {
         display: inline-block;
         font-size: 0.85rem;
@@ -90,40 +81,32 @@
 
     }
 
-    .post-category {
-        display: inline-block;
-        font-size: $font-size--xxs;
-        padding-left: 6px;
-        padding-right: 6px;
-        border-radius: 4px;
-
-        @include media-query($mobile) {
-            display: none;
-        }
-    }
-
     .post-nav {
         position: relative;
         width: 100%;
-        height: 56px;
-        padding-top: 20px;
+        padding: $spacing--m 0;
 
         .post-nav-prev {
+            display: inline-block;
             float: right;
         }
+
         .post-nav-next {
+            display: inline-block;
             float: left;
         }
 
+        // clearfix: 解决因为浮动导致的父元素坍缩问题
+        @include clearfix;
+
         @include media-query($mobile) {
             height: auto;
-            padding-bottom: 20px;
 
             .post-nav-prev,
             .post-nav-next {
                 display: block;
                 float: none;
-                font-size: 0.85rem;
+                font-size: $font-size--xs;
             }
 
         }
