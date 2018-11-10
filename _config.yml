@@ -29,7 +29,7 @@ kramdown:
 highlighter: rouge
 sass:
   style: compressed
-excerpt_separator: <!--more--> #用于显示文章摘要
+excerpt_separator: <!-- more --> #用于显示文章摘要
 
 # Default style: default, dack, light
 bodyClass: default-style

@@ -2,13 +2,18 @@
 layout: post
 title: 样式思考
 description: —— Tjian Blog 样式表部分
-categories: [技术积累]
-tags: [Jekyll, Web, Blog, Scss]
+categories: 
+  - 技术积累
+tags: 
+  - Jekyll
+  - Web
+  - Blog
+  - Scss
 ---
 
 > 个人 Blog 当然最好是有个人风格的，然而非设计出身的人做出来的 Blog，大多都不是太好看。
 
-<!--more-->
+<!-- more -->
 * TOC
 {:toc}
 

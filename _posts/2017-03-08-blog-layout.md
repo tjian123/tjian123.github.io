@@ -2,13 +2,16 @@
 layout: post
 title: 布局思考
 description: 搭好框架好干活 —— Tjian Blog 布局部分
-categories: [技术积累]
-tags: [Blog, Web]
+categories: 
+  - 技术积累
+tags: 
+  - Blog
+  - Web
 ---
 
 > 这里的布局是指，页面所需要的展示类型，如单页展示、上中下分栏等。
 
-<!--more-->
+<!-- more -->
 * TOC
 {:toc}
 

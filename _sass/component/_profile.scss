@@ -15,6 +15,21 @@
 
 .site-profile {
     text-align: center;
+    height: 80vh;
+    position: relative;
+
+    .site-profile-content {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+
+        @include media-query($mobile) {
+            left: 20%;
+            top: 50%;
+            transform: translateX(-12.5%) translateY(-50%);
+        }
+    }
 
     ul, li {
         padding: 0;
@@ -35,11 +50,9 @@
         height: 100%;
         max-width: 100%;
         border-radius: 100%;
-        margin-top: $spacing--xxl;
 
         @include media-query($mobile) {
             width: $site-profile-img-size-s !important;
-            margin-top: $spacing--m;
         }
     }
 
@@ -58,6 +71,7 @@
     .site-profile-author {
         .site-profile-author-icon {
             display: inline-block;
+            margin: 0 $spacing--xxxxs;
 
             a {
                 width: 24px;
@@ -65,12 +79,11 @@
                 line-height: 24px;
                 padding: 2px;
                 border-radius: 50%;
-                transition: $transition--primary;
+                transition: background-color $transition--primary;
 
                 &:hover {
                     color: #FFF;
                     background-color: #333;
-                    transition: $transition--primary;
                 }
             }
         }
@@ -78,7 +91,8 @@
 
     .site-profile-separator {
         margin: $spacing--m auto;
-        max-width: 800px;
+        weight: 100;
+        max-width: 80vw;
     }
 
     .site-profile-quick-nav {
@@ -93,12 +107,11 @@
                 padding: $spacing--xxxxs;
                 border: 1px solid #333;
                 font-size: $font-size--xxs;
-                transition: $transition--primary;
+                transition: background-color $transition--primary;
 
                 &:hover {
                     color: #FFF;
                     background-color: #333;
-                    transition: $transition--primary;
                 }
             }
         }

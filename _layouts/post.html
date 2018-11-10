@@ -9,7 +9,7 @@ description: 用于博客文章页面的布局
 			<span class="fa fa-calendar" title="发表日期"> {{ page.date | date: "%Y-%m-%d" }}</span>
 			<span class="fa fa-folder" title="所属分类">
 				{% for pageCategory in page.categories %}
-				<a href="/categories#tag-{{ pageCategory }}">{{ pageCategory }}</a>
+				<a href="/categories#tag-{{ pageCategory }}" title="查看该分类下的内容">{{ pageCategory }}</a>
 				{% endfor %}
 			</span>
 		</p>
@@ -21,9 +21,9 @@ description: 用于博客文章页面的布局
 
 	<footer class="post-footer">
 		<p class="post-meta">
-			<span class="fa fa-tag" title="相关标签">
+			<span class="fa fa-tag" title="查阅更多标签相关内容">
 			{% for pageTag in page.tags %}
-			<a href="/tags#tag-{{ pageTag }}"> {{ pageTag }} </a>
+			<a class="post-tag" href="/tags#tag-{{ pageTag }}"> {{ pageTag }} </a>
 			{% endfor %}
 			</span>
 		</p>

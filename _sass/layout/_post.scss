@@ -4,6 +4,19 @@
 
 // 文章导航
 .post-nav,
+.post-list,
+.site-post {
+    a {
+        text-decoration: none;
+        color: inherit !important;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.post-nav,
 .post-list {
 
     ul, ol {
@@ -14,12 +27,6 @@
     li {
         list-style: none;
     }
-
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
-
 }
 
 .post-list {
@@ -75,6 +82,11 @@
         display: inline-block;
         font-size: 0.85rem;
         padding: 3px;
+    }
+
+    .post-tag {
+        display: inline-block;
+        padding: $spacing--xxxxs;
     }
 
     .post-content {
