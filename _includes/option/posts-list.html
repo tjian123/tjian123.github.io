@@ -5,11 +5,11 @@
     <li class="post-list-item{% if forloop.index > 20 %} item-hidden{% endif %}">
       <h5 class="post-title">{{ post.title }}</h5>
       <p>{{ post.excerpt | strip_html }}</p>
-      <a href="{{ post.url | prepend: site.baseurl }}">阅读全文</a>
       <!-- <span class="post-index">{{ forloop.index }} of {{ forloop.length }}</span> -->
       <p class="post-meta">
         <span class="fa fa-clock-o" title="发布时间"> {{ post.date | date: "%Y 年 %m 月 %d 日，%a" }}</span>
       </p>
+      <a href="{{ post.url | prepend: site.baseurl }}">阅读全文</a>
     </li>
     {% endfor %}
     {% if posts.size > 20 %}

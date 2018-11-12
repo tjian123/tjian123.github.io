@@ -32,13 +32,8 @@
 .post-list {
 
     .post-list-item {
-        display: inline-block;
-        width: 33%;
-
-        @include media-query($mobile) {
-            display: block;
-            width: auto;
-        }
+        position: relative;
+        box-shadow: inset hoff voff blur #333;
 
         .post-title {
             font-size: $font-size--s;
@@ -56,13 +51,18 @@
         }
 
         a {
-            display: block;
+            float: right;
+            font-size: $font-size--xxs;
             padding: $spacing--xxs $spacing--s;
+            background-color: #eee;
             
             &:hover {
-                background-color: darken(#fff, 3%);
+                text-decoration: none;
+                background-color: #ddd;
             }
         }
+
+        @include clearfix;
 
     }
     
@@ -80,13 +80,21 @@
 
     .post-meta {
         display: inline-block;
+        line-height: 1.2rem;
         font-size: 0.85rem;
         padding: 3px;
+
+        >span:not(last) {
+            padding-right: $spacing--xxs;
+        }
     }
 
     .post-tag {
         display: inline-block;
-        padding: $spacing--xxxxs;
+
+        &:after {
+            content: "#";
+        }
     }
 
     .post-content {
