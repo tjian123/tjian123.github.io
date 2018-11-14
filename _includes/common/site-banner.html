@@ -1,6 +1,6 @@
 {% comment %}
 
-1. bannerImage 和 bannerColor 属性在子页的头部标识，如：
+1. bannerImage 和 bannerColor 属性可以在子页的头部配置，如：
 
 ---
 title: Some Title
@@ -9,7 +9,15 @@ bannerImage: '../images/bing-bg.jpg'
 bannerColor: darkblue
 ---
 
-** 注 ** bannerImage 存在的情况下，bannerColor 将被忽略。
+** 注 ** bannerImage 和 bannerColor 可以同时配置，但 bannerImage 优先级更高。
+
+或者是通过 assign 赋值配置，如：
+
+---
+{% assign bannerImage='../images/bing-bg.jps' %}
+{% assign bannerColor=darkblue %}
+{% include common/site-banner.html %}
+---
 
 2. banner 中的 title 属性，按以下顺序显示：
 	- 首先查找是否使用 assign 为 title 赋值（实现局部定制化）
@@ -19,6 +27,8 @@ bannerColor: darkblue
 {% endcomment %}
 
 <div class="site-banner" 
+	{% if page.bannerImage and page.bannerColor %}
+		style="background-image: url({{ page.bannerImage }}); background-color: {{ page.bannerColor }};" 
 	{% if page.bannerImage %} 
 		style="background-image: url({{ page.bannerImage }});" 
 	{% elsif page.bannerColor %}
@@ -26,8 +36,8 @@ bannerColor: darkblue
 	{% endif %}>
 	<div class="container">
 		<h1 class="site-banner-title">
-		{% if title %}
-			{{ title }}
+		{% if bannerTitle %}
+			{{ bannerTitle }}
 		{% elsif page.title %}
 			{{ page.title }}
 		{% else %}
@@ -35,8 +45,8 @@ bannerColor: darkblue
 		{% endif %}
 		</h1>
 		<p class="site-banner-description">
-		{% if description %}
-			{{ description }}
+		{% if bannerDescription %}
+			{{ bannerDescription }}
 		{% elsif page.description %}
 			{{ page.description }}
 		{% else %}

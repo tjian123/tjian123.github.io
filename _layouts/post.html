@@ -13,16 +13,17 @@ description: 用于博客文章页面的布局
 	</div>
 
 	<footer class="post-footer">
-		{% include config/post-meta.html %}
-		<div class="post-nav">
-			<ul>
+		<ul class="post-nav">
 			{% if page.next %}
-			<li class="post-nav-next"><a href="{{ page.next.url | prepend: site.url }}">上一篇：{{ page.next.title }}</a></li>
+			<li class="post-nav-next">
+				<a href="{{ page.next.url | prepend: site.url }}">上一篇：{{ page.next.title }}</a>
+			</li>
 			{% endif %}
 			{% if page.previous %}
-			<li class="post-nav-prev"><a href="{{ page.previous.url | prepend: site.url }}">下一篇：{{ page.previous.title }}</span></a></li>
+			<li class="post-nav-prev">
+				<a href="{{ page.previous.url | prepend: site.url }}">下一篇：{{ page.previous.title }}</span></a>
+			</li>
 			{% endif %}
-			</ul>
-		</div>
+		</ul>
 	</footer>
 </main>

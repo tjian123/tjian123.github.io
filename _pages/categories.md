@@ -4,26 +4,21 @@ title: 分类
 permalink: /categories
 ---
 
-{% if site.categories.size > 0 %}
-<div class="offset-left">
-	<div class="fixed-left" id="archs">
-		<ul class="fixed-left-list">
-			{% for category in site.categories %}
-			<li class="fixed-left-list-item"><a class="" href="#category-{{ category | first }}">{{ category | first }}</a></li>
-			{% endfor %}
-		</ul>
-	</div>
+<main class="site-category">
+	{% if site.categories.size > 0 %}	
+	<ul class="category-list">
 	{% for category in site.categories %}
-	<div class="collapse-base collapse-item-inactive" id="category-{{ category | first }}">
-		{% if category[1].size > 0 %}
-		{% assign posts = category[1] %}
-		{% include option/posts-list.html %}
-		{% else %}
-		<h6>该分类下尚无文章 - 这种情况应该不可能出现！</h6>
-		{% endif %}
-	</div>
-	{% endfor %}
-</div>
-{% else %}
-{% include config/warnings.html %}
-{% endif %}
+		<li class="category-list-item">
+			<h4 class="post-category" id="category-{{ category | first }}">{{ category | first }}</h4>
+			<ol class="post-list">
+			{% for post in category[1] %}
+				<li class="post-list-item">
+					<a href="{{ post.url | prepend: site.baseUrl }}">{{ site.title }}</a>
+				</li>
+			{% endfor%}
+			</ol>
+		</li>
+	{% endfor%}
+	</ul>
+	{% endif%}
+</main>

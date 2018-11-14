@@ -84,7 +84,7 @@
         font-size: 0.85rem;
         padding: 3px;
 
-        >span:not(last) {
+        >.post-meta-item:not(last) {
             padding-right: $spacing--xxs;
         }
     }
@@ -105,6 +105,15 @@
         position: relative;
         width: 100%;
         padding: $spacing--m 0;
+
+        &.ul {
+            margin: 0;
+            padding: 0;
+
+            >li {
+                list-sttyle: none;
+            }
+        }
 
         .post-nav-prev {
             display: inline-block;
