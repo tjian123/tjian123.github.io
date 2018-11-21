@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+.post-nav {
+    position: relative;
+    width: 100%;
+    padding: $spacing--m 0;
+
+    @include reset-list;
+	@include reset-link;
+
+    .post-nav-prev {
+        display: inline-block;
+        float: right;
+    }
+
+    .post-nav-next {
+        display: inline-block;
+        float: left;
+    }
+
+    // clearfix: 解决因为浮动导致的父元素坍缩问题
+    @include clearfix;
+
+    @include media-query($mobile) {
+        height: auto;
+
+        .post-nav-prev,
+        .post-nav-next {
+            display: block;
+            float: none;
+            font-size: $font-size--xs;
+        }
+
+    }
+
+}

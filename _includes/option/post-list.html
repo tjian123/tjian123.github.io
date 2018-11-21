@@ -1,20 +1,22 @@
+{% comment %}
+
+{% endcomment %}
+
 {% if posts %}
-<div class="post-list">
-  <ul>
+<ul class="post-list">
     {% for post in posts %}
-    <li class="post-list-item{% if forloop.index > 20 %} item-hidden{% endif %}">
-      <h5 class="post-title">{{ post.title }}</h5>
+    <li class="item{% if forloop.index > 20 %} item-hidden{% endif %}">
+      <h5 class="title">{{ post.title }}</h5>
       <p>{{ post.excerpt | strip_html }}</p>
       <!-- <span class="post-index">{{ forloop.index }} of {{ forloop.length }}</span> -->
-      <p class="post-meta">
+      <p class="meta">
         <span class="fa fa-clock-o" title="发布时间"> {{ post.date | date: "%Y 年 %m 月 %d 日，%a" }}</span>
       </p>
-      <a href="{{ post.url | prepend: site.baseurl }}">阅读全文</a>
+      <a class="more" href="{{ post.url | prepend: site.baseurl }}">阅读全文</a>
     </li>
     {% endfor %}
     {% if posts.size > 20 %}
-    <li class="post-item"><a href="#" id="scroll-down"><h5 class="post-title"> >> More << </h5></a></li>
+    <li class="item"><a class="more" href="#" id="scroll-down"> >> More << </a></li>
     {% endif%}
-  </ul>
-</div>
+</ul>
 {% endif %}

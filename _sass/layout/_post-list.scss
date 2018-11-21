@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+.post-list {
+	margin: 0;
+	padding: $spacing--m 0;
+
+	@include reset-list;
+	@include reset-link;
+
+    .item {
+        position: relative;
+
+        .title {
+
+        }
+
+        .meta {
+            font-size: $font-size--xxs;
+        }
+
+        a.more {
+            float: right;
+            font-size: $font-size--xxs;
+            padding: $spacing--xxs $spacing--s;
+            background-color: #eee;
+            
+            &:hover {
+                text-decoration: none;
+                background-color: #ddd;
+            }
+        }
+
+        @include clearfix;
+
+    }
+    
+}

@@ -1,143 +1,29 @@
 @charset "utf-8";
 
 // 文章页面
-
-// 文章导航
-.post-nav,
-.post-list,
 .site-post {
-    a {
-        text-decoration: none;
-        color: inherit !important;
+    flex: 1;
 
-        &:hover {
-            text-decoration: underline;
-        }
-    }
-}
-
-.post-nav,
-.post-list {
-
-    ul, ol {
-        margin: 0;
-        padding: 0;
-    }
-
-    li {
-        list-style: none;
-    }
-}
-
-.post-list {
-
-    .post-list-item {
-        position: relative;
-        box-shadow: inset hoff voff blur #333;
-
-        .post-title {
-            font-size: $font-size--s;
-            font-weight: 400;
-        }
-
-        .post-index {
-            display: inline-block;
-            font-size: $font-size--xxs;
-            float: right;
-        }
-
-        .post-meta {
-            font-size: $font-size--xxs;
-        }
-
-        a {
-            float: right;
-            font-size: $font-size--xxs;
-            padding: $spacing--xxs $spacing--s;
-            background-color: #eee;
-            
-            &:hover {
-                text-decoration: none;
-                background-color: #ddd;
-            }
-        }
-
-        @include clearfix;
-
-    }
-    
-}
-
-.site-post {
-
-	.post-header {
+	.title {
 
 	}
 
-	.post-title {
-
-	}
-
-    .post-meta {
+    .meta {
         display: inline-block;
         line-height: 1.2rem;
         font-size: 0.85rem;
         padding: 3px;
 
-        >.post-meta-item:not(last) {
+        >.item:not(last) {
             padding-right: $spacing--xxs;
         }
     }
 
-    .post-tag {
+    .tag {
         display: inline-block;
 
         &:after {
             content: "#";
-        }
-    }
-
-    .post-content {
-
-    }
-
-    .post-nav {
-        position: relative;
-        width: 100%;
-        padding: $spacing--m 0;
-
-        &.ul {
-            margin: 0;
-            padding: 0;
-
-            >li {
-                list-sttyle: none;
-            }
-        }
-
-        .post-nav-prev {
-            display: inline-block;
-            float: right;
-        }
-
-        .post-nav-next {
-            display: inline-block;
-            float: left;
-        }
-
-        // clearfix: 解决因为浮动导致的父元素坍缩问题
-        @include clearfix;
-
-        @include media-query($mobile) {
-            height: auto;
-
-            .post-nav-prev,
-            .post-nav-next {
-                display: block;
-                float: none;
-                font-size: $font-size--xs;
-            }
-
         }
     }
 

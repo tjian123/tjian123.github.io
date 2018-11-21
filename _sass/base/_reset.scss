@@ -2,15 +2,8 @@
 // reset
 
 // 说明：该文件定义对站点元素样式的重置
-
-html,
-body {
-	// vh 表示%100的视口高度，将视口高度分为100份，每份为 1vh。
-	// vw 表示视口宽度。
-	min-height: 100vh;
-}
-
 body {
 	display: flex;
 	flex-direction: column;
+	min-height: 100vh;
 }

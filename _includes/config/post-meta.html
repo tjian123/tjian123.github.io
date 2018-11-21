@@ -1,13 +1,17 @@
-<p class="post-meta">
-	<span class="post-meta-item fa fa-calendar" title="发表日期"> {{ page.date | date: "%Y-%m-%d" }}</span>
-	<span class="post-meta-item fa fa-folder" title="所属分类">
+{% comment %}
+
+{% endcomment %}
+
+<p class="meta">
+	<span class="item fa fa-clock-o" title="发表日期"> {{ page.date | date: "%Y 年 %m 月 %d 日" }}</span>
+	<span class="item fa fa-folder" title="所属分类">
 		{% for pageCategory in page.categories %}
-		<a href="/categories#tag-{{ pageCategory }}" title="查看该分类下的内容">{{ pageCategory }}</a>
+		<a href="{{ pageCategory | prepend: "/categories#category-" | prepend: site.url }}" title="查看该分类下的内容">{{ pageCategory }}</a>
 		{% endfor %}
 	</span>
-	<span class="post-meta-item fa fa-tag" title="查阅更多标签相关内容">
+	<span class="item fa fa-tag" title="查阅更多标签相关内容">
 		{% for pageTag in page.tags %}
-		<a class="post-tag" href="/tags#tag-{{ pageTag }}"> {{ pageTag }} </a>
+		<a class="tag" href="{{ pageTag | prepend: "/tags#tag-" | prepend: site.url }}"> {{ pageTag }} </a>
 		{% endfor %}
 	</span>
 </p>

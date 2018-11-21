@@ -15,10 +15,14 @@
 
 .site-profile {
     text-align: center;
+    width: 100vw;
     height: 80vh;
     position: relative;
 
-    .site-profile-content {
+    @include reset-list;
+    @include reset-link;
+
+    .container {
         position: absolute;
         left: 50%;
         top: 50%;
@@ -31,21 +35,11 @@
         }
     }
 
-    ul, li {
-        padding: 0;
-        margin: 0;
+    .content {
+
     }
 
-    li {
-        list-style: none;
-    }
-
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
-
-    .site-profile-img {
+    .image {
         width: $site-profile-img-size-l !important;
         height: 100%;
         max-width: 100%;
@@ -56,15 +50,11 @@
         }
     }
 
-    .site-profile-title {
-        
-    }
-
-    .site-profile-leading {
+    .title {
 
     }
 
-    .site-profile-description {
+    .description {
         font-size: $font-size--xxs;
     }
 
@@ -89,13 +79,16 @@
         }
     }
 
-    .site-profile-separator {
+    .separator {
+        position: relative;
         margin: $spacing--m auto;
-        weight: 100;
         max-width: 80vw;
+        border: 0;
+        height: 1px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
     }
 
-    .site-profile-quick-nav {
+    .quick-nav {
         margin: 5px auto;
 
         .nav-item {

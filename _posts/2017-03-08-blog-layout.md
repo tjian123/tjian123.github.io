@@ -45,3 +45,65 @@ tags:
 
 ```
 
+## `base` 布局
+
+顶层：
+- 统一 SEO 配置
+- 统一 CSS 导入
+- 统一 JS 导入
+
+```
+html-header —— 统一 SEO 配置，CSS 导入
+  ...
+   content 
+  ...
+html-footer —— 统一 JS 导入
+
+```
+
+## `default` 布局
+
+继承 `base`：
+- 统一导航栏导入
+- 统一 banner 导入
+- 统一底部链接，以及 copyright 配置导入
+
+```
+site-header —— 统一导航栏
+site-banner —— 统一导入 banner
+  ...
+   content 
+  ...
+site-footer —— 统一底部链接，以及 copyright
+
+```
+
+### `page` 布局
+
+继承 `default`:
+- 引入 page 入口
+
+```html
+<!-- site-page —— page 框架 -->
+<main class="site-page">
+  ...
+   content 
+  ...
+</main>
+
+```
+
+### `post` 布局
+
+继承 `default`:
+- 引入 post 入口
+
+```html
+<!-- site-post —— post 框架 -->
+<main class="site-post">
+  ...
+   content 
+  ...
+</main>
+```
+

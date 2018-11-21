@@ -6,9 +6,5 @@ description: 站点多数页面应从此模板继承
 
 {% include common/site-header.html %}
 {% include common/site-banner.html %}
-<main class="site-content">
-	<div class="container">
-		{{ content }}
-	</div>
-</main>
+{{ content }}
 {% include common/site-footer.html %}

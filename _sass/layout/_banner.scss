@@ -2,17 +2,19 @@
 
 .site-banner {
 	position: relative;
-    background-color: $black;
-    // background-image: url(#{$bg-img-2});
     background-position: 50% 50%;
     padding-top: $spacing--xxl*1.5;
     padding-bottom: $spacing--xl;
+    color: #ddd;
+    background-color: #333;
 
-    .site-banner-title {
+    @include reset-link;
+
+    .title {
         
     }
 
-	.site-banner-description {
+	.description {
         display: inline-block;
         line-height: $line-height--m;
         font-size: $font-size--s;

@@ -20,22 +20,22 @@ bannerColor: darkblue
 ---
 
 2. banner 中的 title 属性，按以下顺序显示：
-	- 首先查找是否使用 assign 为 title 赋值（实现局部定制化）
-	- 然后使用本页定义的 title
-	- 最后考虑使用站点定义的 title
+	- 首先查找是否使用 assign 为 bannerTitle 赋值（实现局部定制化）
+	- 然后考虑使用本页（page）定义的 title
+	- 最后考虑使用站点（site）定义的 title
 
 {% endcomment %}
 
 <div class="site-banner" 
 	{% if page.bannerImage and page.bannerColor %}
 		style="background-image: url({{ page.bannerImage }}); background-color: {{ page.bannerColor }};" 
-	{% if page.bannerImage %} 
+	{% elsif page.bannerImage %} 
 		style="background-image: url({{ page.bannerImage }});" 
 	{% elsif page.bannerColor %}
 		style="background-color: {{ page.bannerColor }};" 
 	{% endif %}>
 	<div class="container">
-		<h1 class="site-banner-title">
+		<h1 class="title">
 		{% if bannerTitle %}
 			{{ bannerTitle }}
 		{% elsif page.title %}
@@ -44,7 +44,7 @@ bannerColor: darkblue
 			{{ site.title }}
 		{% endif %}
 		</h1>
-		<p class="site-banner-description">
+		<p class="description">
 		{% if bannerDescription %}
 			{{ bannerDescription }}
 		{% elsif page.description %}
