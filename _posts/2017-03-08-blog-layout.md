@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 布局思考
-description: 搭好框架好干活 —— Tjian Blog 布局部分
+description: 搭好框架好干活。
 categories: 
-  - 技术积累
+  - 博客探索
 tags: 
   - Blog
   - Web

@@ -1,13 +1,11 @@
 ---
 layout: post
 title: 样式思考
-description: —— Tjian Blog 样式表部分
+description: 个人 Blog 当然最好是有个人风格的。
 categories: 
-  - 技术积累
+  - 博客探索
 tags: 
-  - Jekyll
   - Web
-  - Blog
   - Scss
 ---
 

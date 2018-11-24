@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: defaultPage
+navEnabled: true
 title: 分类
 permalink: /categories
 ---

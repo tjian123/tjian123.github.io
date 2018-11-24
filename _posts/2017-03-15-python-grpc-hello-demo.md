@@ -1,33 +1,43 @@
 ---
 layout: post
-title: Python语言使用gRPC的hello说明
-categories: [Coding]
-tags: [python, gRPC]
+title: 基于 Python 语言 gRPC HelloWorld
+description: gRPC 是 Google 公司开源的一款支持多语言的远程过程调用库。
+categories: 
+  - RPC
+tags: 
+  - Python
+  - gRPC
 ---
 
-还是以`helloworld`为例，步骤如下：
+> gRPC 是 Google 公司开源的一款支持多语言的远程过程调用库。
 
-1. 准备grpc python环境
-2. 编写`protobuf`文件
-3. 将`protobuf`文件编译为python源码
-4. 编写基于python的服务器端和客户端
+<!-- more -->
+* TOC
+{:toc}
+
+还是以 `helloworld` 为例，步骤如下：
+
+1. 准备 grpc python 环境
+2. 编写 `protobuf` 文件
+3. 将 `protobuf` 文件编译为python源码
+4. 编写基于 python 的服务器端和客户端
 5. 测试和验证
 
 ## 准备环境
 
-这里的环境主要是指两个方面：用于python代码运行时的`grpc`库，和将`protobuf`文件编译为python源码的工具。
+这里的环境主要是指两个方面：用于python代码运行时的 `grpc` 库，和将 `protobuf` 文件编译为 python 源码的工具。
 
-```
+```shell
 sudo python -m pip install grpcio
 ```
 
-```
+```shell
 sudo python -m pip install grpcio-tools
 ```
 
-## 编写`protobuf`文件
+## 编写 `protobuf` 文件
 
-```
+```protobuf
 syntax = "proto3";
 
 message HelloRequest {
@@ -43,19 +53,19 @@ service Hello {
 }
 ```
 
-## 将`protobuf`文件编译为python源码
+## 将 `protobuf` 文件编译为 python 源码
 
-```
+```shell
 python -m grpc_tools.protoc -I./proto --python_out=. --grpc_python_out=. ./proto/hello.proto
 ```
 
-生成`hello_pb2.py`和`hello_pb2_grpc.py`文件。
+生成 `hello_pb2.py` 和 `hello_pb2_grpc.py` 文件。
 
 ## 编写服务器端和客户端
 
 服务器端：`hello_server.py`
 
-{% highlight python %}
+```python
 from concurrent import futures
 
 import time
@@ -82,11 +92,11 @@ def run_server():
 
 if __name__ == '__main__':
   run_server()
-{% endhighlight %}
+```
 
 客户端：`hello_client.py`
 
-{% highlight python %}
+```python
 from __future__ import print_function
 
 import hello_pb2
@@ -97,16 +107,18 @@ def run_client():
   stub = hello_pb2_grpc.HelloStub(channel)
   response = stub.sayHello(hello_pb2.HelloRequest(name='John'))
   print("Received from server: " + response.msg)
-{% endhighlight %}
+```
 
 ## 测试和验证
 
-```
+打开终端，启动服务器：
+
+```shell
 python hello_server.py
 ```
 
 另起终端，启动客户端:
 
-```
+```shell
 python hello_client.py
 ```

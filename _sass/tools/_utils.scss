@@ -12,7 +12,9 @@
 }
 
 @mixin reset-list() {
-	ul, li {
+	&,
+	ul, 
+	li {
 	    padding: 0;
 	    margin: 0;
 	}

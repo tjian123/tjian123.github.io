@@ -1,18 +1,18 @@
 ---
 layout: post
 title: SDN 开发中常见问题
+description: SDN 开发中可能经常遇到的一些小问题。
 categories: 
-- 积累
+  - SDN
 tags: 
-- SDN
-- ONOS
+  - ONOS
 ---
 
-> 可能经常遇到的一些小问题。
+> SDN 开发中可能经常遇到的一些小问题。
 
-<!--more-->
-
-[TOC]
+<!-- more -->
+* TOC
+{:toc}
 
 #### 1. 如何查看 mininet 所使用的 openflow 版本？
 
@@ -37,7 +37,7 @@ OpenFlow versions 0x1:0x4
 
 #### 2. Ubuntu 配置好代理以后，Buck 编译时依然无法连外网？
 
-使用`buck`编译`ONOS`时无法联网，是因为需要还添加一个`download`配置项，内容为：
+使用 `buck` 编译 `ONOS `时无法联网，是因为需要还添加一个 `download` 配置项，内容为：
 
 ```
 [download]
@@ -46,15 +46,15 @@ OpenFlow versions 0x1:0x4
 	proxy_type=HTTP
 ```
 
-这个配置项可以写在`.buckconfig`文件中，但通常更多的是另建一个`.buckconfig.local`文件，在其中放本地`buck`编译相关的配置项。
+这个配置项可以写在 `.buckconfig` 文件中，但通常更多的是另建一个 `.buckconfig.local` 文件，在其中放本地 `buck` 编译相关的配置项。
 
 #### 3. dns 导致的联网失败问题
 
-有时候连代理都无法`ping`通，提示：'Could not resolve proxy: xxx'的时候，通常就是`dns`异常导致。在`linux`系统中，可以通过手动编辑`/etc/resolve.conf`文件来修复。
+有时候连代理都无法 `ping `通，提示：'Could not resolve proxy: xxx'的时候，通常就是 `dns` 异常导致。在 `linux` 系统中，可以通过手动编辑 `/etc/resolve.conf` 文件来修复。
 
 #### 4. `onos-install`安装失败问题
 
-使用`onos-install`方式将 ONOS 作为服务安装时总是不成功，原因：使用了手动配置的 jdk，可能存在权限等方面的问题。解决：使用`apt install`的方式重新安装`jdk`即可。
+使用 `onos-install` 方式将 ONOS 作为服务安装时总是不成功，原因：使用了手动配置的 `jdk`，可能存在权限等方面的问题。解决：使用 `apt install` 的方式重新安装 `jdk` 即可。
 
 #### 5. `onos`编译时代理问题
 

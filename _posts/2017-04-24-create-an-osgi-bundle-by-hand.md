@@ -1,33 +1,42 @@
 ---
 layout: post
 title: 手动创建一个 OSGi bundle
-categories: [Coding]
-tags: [Java, OSGi]
+description: 介绍如何纯手动方式创建一个可运行于任意 OSGi 框架的 `OSGi Bundle`。
+categories: 
+  - 编码积累
+tags: 
+  - Java
+  - OSGi
 ---
 
-### 前言
-本节介绍如何纯手动方式创建一个可运行于任意 OSGi 框架的`OSGi Bundle`。
+> 介绍如何纯手动方式创建一个可运行于任意 OSGi 框架的 `OSGi Bundle`。
 
-*注：一个`OSGi Bundle`本质上就是一个在`Manifest`文件添加一些特定字段的jar包。*
+<!-- more -->
+* TOC
+{:toc}
+
+*注：一个 `OSGi Bundle` 本质上就是一个在 `Manifest` 文件添加一些特定字段的jar包。*
 
 ### 概要
 
-我们将创建一个监听了 OSGi 服务和 Bundle 事件的`OSGi Bundle`，该`Bundle`启动后会监听其启动后的 OSGi 服务变化和 `Bundle`事件，如安装、卸载等，并在变化或事件发生时打印出发生了服务名称或事件的`Bundle`名称。
+我们将创建一个监听了 OSGi 服务和 Bundle 事件的 `OSGi Bundle`，该 `Bundle` 启动后会监听其启动后的 OSGi 服务变化和 `Bundle`事件，如安装、卸载等，并在变化或事件发生时打印出发生了服务名称或事件的 `Bundle` 名称。
 
-监听服务变化，需要实现`ServiceListener`接口，我们定义`InternalServiceListener`；监听`Bundle`变化，需要实现`BundleListener`接口，我们定义`InternalBundleListener`。
+监听服务变化，需要实现 `ServiceListener` 接口，我们定义 `InternalServiceListener`；监听 `Bundle` 变化，需要实现 `BundleListener` 接口，我们定义 `InternalBundleListener`。
 
 ### 目录结构
 
-    --bundle-service
-        --simple
-            Activator.java
-        Manifest.mf
+```
+--bundle-service
+    --simple
+        Activator.java
+    Manifest.mf
+```
 
 ### 代码内容
 
-> Activator.java
+* **Activator.java**
 
-```
+```java
 package simple;
 
 import org.osgi.framework.Bundle;
@@ -98,9 +107,9 @@ public class Activator implements BundleActivator {
 }
 ```
 
-> Manifest.mf
+* **Manifest.mf**
 
-```
+```ini
 Manifest-Version: 1.0
 Bundle-Activator: simple.Activator
 Bundle-ManifestVersion: 2
@@ -111,14 +120,14 @@ Bundle-Version: 0.0.1
 
 ### 编译为 OSGi Bundle
 
-> 参考一篇介绍 [javac 和 java 命令] [intro_of_java_and_javac] 的文章。
+*注：参考一篇介绍 [javac 和 java 命令] [intro_of_java_and_javac] 的文章。*
 
 [intro_of_java_and_javac]: http://blog.csdn.net/huagong_adu/article/details/6929817
 
 1. 将 java 源文件编译为 class 文件：
 
-    `javac -d target *.java`
+    javac -d target *.java
 
 2. 将 class 文件和 Manifest.mf 文件打包为 jar 文件。
 
-    `jar cfm simple-service.jar Manifest.mf -C target`
+    jar cfm simple-service.jar Manifest.mf -C target

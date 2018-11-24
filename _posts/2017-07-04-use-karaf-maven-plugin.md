@@ -1,13 +1,25 @@
 ---
 layout: post
 title: karaf-maven-plugin 用法实践
-categories: [Coding]
-tags: [Karaf, OSGi, Maven]
+description: 用于打包 OSGi bundle 的 maven 插件。
+categories: 
+  - 构建编译
+tags: 
+  - Karaf
+  - OSGi
+  - Maven
 ---
 
-本文记录`karaf-maven-plugin`插件的用法：包括编译`feature`、`kar`，以及生成自定义`distribution`。
+> 用于打包 OSGi bundle 的 maven 插件。
 
-```
+<!-- more -->
+* TOC
+{:toc}
+
+
+介绍 `karaf-maven-plugin` 插件的用法：包括编译 `feature`、`kar`，以及生成自定义 `distribution`。
+
+```xml
 <plugin>
 	<groupId>org.apache.karaf.tooling</groupId>
 	<artifactId>karaf-maven-plugin</artifactId>
@@ -17,7 +29,7 @@ tags: [Karaf, OSGi, Maven]
 
 ## 目标：`karaf:features-generate-descriptor`
 
-```
+```xml
 <plugin>
 	<groupId>org.apache.karaf.tooling</groupId>
 	<artifactId>karaf-maven-plugin</artifactId>
@@ -40,7 +52,7 @@ tags: [Karaf, OSGi, Maven]
 
 ## 目标：`karaf:kar`
 
-```
+```xml
 <packaging>kar</packaging>
 <build>
 	<plugins>
@@ -55,7 +67,7 @@ tags: [Karaf, OSGi, Maven]
 
 ## 目标：`karaf:karaf-assembly`
 
-```
+```xml
 <plugin>
 	<groupId>org.apache.karaf.tooling</groupId>
 	<artifactId>karaf-maven-plugin</artifactId>

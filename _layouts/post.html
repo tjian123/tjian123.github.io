@@ -1,18 +1,17 @@
 ---
-layout: default
+layout: base
 description: 用于博客文章页面的布局
 ---
-
+{% include common/site-header.html %}
+{% include common/site-banner.html %}
 <main class="site-post">
 	<div class="container">
 		<header class="header">
 			{% include config/post-meta.html %}
 		</header>
-
 		<article class="content">
 			{{ content }}
 		</article>
-
 		<footer class="footer">
 			<ul class="post-nav">
 				{% if page.next %}
@@ -29,3 +28,4 @@ description: 用于博客文章页面的布局
 		</footer>
 	</div>
 </main>
+{% include common/site-footer.html %}

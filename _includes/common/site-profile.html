@@ -13,13 +13,13 @@
 		{% else %}
 			{{ "/images/profile.jpg" | prepend: site.baseurl }}
 		{% endif %}" alt="Image" />
-		<h2 class="title">{{ site.title }}</h2>
+		<h2 class="title"><a href="/">{{ site.title }}</a></h2>
 		{% include option/social-icons.html %}
 		<p class="description">{{ site.description }}</p>
 		<hr class="separator" />
 		<ul class="quick-nav">
 			{% for thePage in site.pages %}
-				{% if thePage.title and thePage.layout == "page"%}
+				{% if thePage.title and thePage.navEnabled %}
 					<li class="nav-item">
 						<a href="{{ thePage.url | prepend: site.baseurl }}">{{ thePage.title }}</a>
 					</li>

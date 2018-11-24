@@ -38,9 +38,11 @@ include: [_pages]
 exclude: [TODO, README.md]
 
 # 分页 gitpage只支持在index.html中使用，故弃之
-# paginate            : 10          # 定义每页数量
-# paginate_path       : "page:num"  # 定义分页结果
-# gems                : ['jekyll-paginate']
+paginate            : 5          # 定义每页数量
+paginate_path       : "/blog/page:num"  # 定义分页结果
+
+
+#plugins                : ['jekyll-paginate']
 # 
 
 # 是否开启背景图片

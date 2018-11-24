@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+.page-nav {
+	text-align: center;
+	@include reset-list;
+
+	.item {
+		display: inline-block;
+	}
+}
