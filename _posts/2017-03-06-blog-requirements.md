@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 需求分析
 description: Blog 站点的基础功能就是写文章和发评论互动。
 categories: 

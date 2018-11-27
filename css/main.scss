@@ -4,8 +4,6 @@
 
 @charset "utf-8";
 
-$SCSS_DIRS: third-party const tools base component markdown layout theme;
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 
 @import 

@@ -8,22 +8,22 @@ layout: home
 
 <!-- 分页链接 -->
 <ul class="page-nav">
-	<li class="item">
   {% if paginator.previous_page %}
-    <a href=
+  <li class="item">
+    <a class="meta" href=
     {% if paginator.previous_page == 1 %}
     {{ site.url }}
     {% else %}
     {{ "/blog/page" | append: paginator.previous_page | prepend: site.url }}
-    {% endif %} class="previous">前一页</a>
+    {% endif %}>前一页</a>
+   </li>
   {% endif %}
-  </li>
   <li class="item">
   	<span class="meta">{{ paginator.page }} / {{ paginator.total_pages }}</span>
   </li>
-  <li class="item">
   {% if paginator.next_page %}
-    <a href="/blog/page{{ paginator.next_page }}" class="next">后一页</a>
+  <li class="item">
+    <a class="meta" href="/blog/page{{ paginator.next_page }}">后一页</a>
+  </li>
   {% endif %}
-</li>
 </ul>

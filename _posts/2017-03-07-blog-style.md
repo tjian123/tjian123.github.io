@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 样式思考
 description: 个人 Blog 当然最好是有个人风格的。
 categories: 

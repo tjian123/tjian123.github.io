@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 布局思考
 description: 搭好框架好干活。
 categories: 

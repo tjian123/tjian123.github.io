@@ -1,14 +1,16 @@
 @charset "utf-8";
 
-.footnotes {
-	
-}
+.site-post .content {
+	.footnotes {
+		
+	}
 
-blockquote {
-	margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-    padding: 1em 2em;
-    border-left: 10px solid #333;
+	blockquote {
+		margin-block-start: 0;
+	    margin-block-end: 0;
+	    margin-inline-start: 0;
+	    margin-inline-end: 0;
+	    padding: 1em 2em;
+	    border-left: 10px solid #333;
+	}
 }

@@ -1,6 +1,5 @@
 ---
-layout: post
-title: karaf-maven-plugin 用法实践
+layout: default
 description: 用于打包 OSGi bundle 的 maven 插件。
 categories: 
   - 构建编译

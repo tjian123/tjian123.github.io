@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 手动创建一个 OSGi bundle
 description: 介绍如何纯手动方式创建一个可运行于任意 OSGi 框架的 `OSGi Bundle`。
 categories: 

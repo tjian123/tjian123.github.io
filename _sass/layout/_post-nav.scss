@@ -1,22 +1,25 @@
 @charset "utf-8";
 
+/**
+ * 文章的前/后一篇导航
+ */
 .post-nav {
     position: relative;
     width: 100%;
-    padding: $spacing--m 0;
-
-    @include reset-list;
+    margin: 20px 0;
+    padding: 0;
+    
 	@include reset-link;
 
-    .post-nav-prev {
+   .prev {
         display: inline-block;
         float: right;
     }
-
-    .post-nav-next {
+    
+    .next {
         display: inline-block;
         float: left;
-    }
+    } 
 
     // clearfix: 解决因为浮动导致的父元素坍缩问题
     @include clearfix;
@@ -24,8 +27,8 @@
     @include media-query($mobile) {
         height: auto;
 
-        .post-nav-prev,
-        .post-nav-next {
+        .prev,
+        .next {
             display: block;
             float: none;
             font-size: $font-size--xs;

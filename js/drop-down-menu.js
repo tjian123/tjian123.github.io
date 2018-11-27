@@ -1,6 +1,6 @@
 (function($){
 	var opened = false;
-	var menu = $(".site-nav-menu");
+	var menu = $(".site-nav > .menu");
 	$("#drop-down-menu").on("click", function(e){
 		e.preventDefault();
 		if (!opened) {

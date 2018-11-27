@@ -17,10 +17,10 @@
 		{% include option/social-icons.html %}
 		<p class="description">{{ site.description }}</p>
 		<hr class="separator" />
-		<ul class="quick-nav">
+		<ul class="link-nav">
 			{% for thePage in site.pages %}
 				{% if thePage.title and thePage.navEnabled %}
-					<li class="nav-item">
+					<li class="item">
 						<a href="{{ thePage.url | prepend: site.baseurl }}">{{ thePage.title }}</a>
 					</li>
 				{% endif %}

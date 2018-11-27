@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Maven 中 profile 实践
 categories: 
   - 构建编译

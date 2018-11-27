@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 基于 Python 语言 gRPC HelloWorld
 description: gRPC 是 Google 公司开源的一款支持多语言的远程过程调用库。
 categories: 

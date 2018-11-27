@@ -1,10 +1,26 @@
 ---
-layout: base
+layout: bannerPost
 sitemap: false
 description: 站点多数页面应从此模板继承
 ---
 
-{% include common/site-header.html %}
-{% include common/site-banner.html %}
-{{ content }}
-{% include common/site-footer.html %}
+<header class="header">
+	{% include config/post-meta.html %}
+</header>
+<article class="content">
+	{{ content }}
+</article>
+<footer class="footer">
+	<ul class="post-nav">
+		{% if page.next %}
+		<li class="item next">
+			<a href="{{ page.next.url | prepend: site.url }}">上一篇：{{ page.next.title }}</a>
+		</li>
+		{% endif %}
+		{% if page.previous %}
+		<li class="item prev">
+			<a href="{{ page.previous.url | prepend: site.url }}">下一篇：{{ page.previous.title }}</span></a>
+		</li>
+		{% endif %}
+	</ul>
+</footer>

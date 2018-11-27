@@ -1,9 +1,12 @@
 @charset "utf-8";
 
+/**
+ * banner 展示
+ */
 .site-banner {
 	position: relative;
     background-position: 50% 50%;
-    padding-top: $spacing--xxl*1.5;
+    padding-top: $spacing--xl*1.5;
     padding-bottom: $spacing--xl;
     color: #ddd;
     background-color: #333;
@@ -21,7 +24,7 @@
     }
 
     @include media-query($mobile) {
-	    padding-top: $spacing--xl*1.5;
-	    padding-bottom: $spacing--xl;
+	    padding-top: $spacing--l*1.5;
+	    padding-bottom: $spacing--l;
     }
 }

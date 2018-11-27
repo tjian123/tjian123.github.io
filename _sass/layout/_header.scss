@@ -1,27 +1,26 @@
 @charset "utf-8";
 
-// 标题
+/**
+ * 页面头部：导航栏
+ */
 
 .site-header {
     display: block;
     position: relative;
-    
-    a {
-        text-decoration: none;
-    }
 
-    .site-title {
+    .title {
         display: inline-block;
         height: $line-height--l;
         line-height: $line-height--l;
     }
 
+    @include reset-link;
     @include clearfix;
 
     .site-nav {
         float: right;
 
-        .site-nav-menu-icon {
+        .menu-icon {
             display: none;
             line-height: $line-height--l;
 
@@ -30,12 +29,12 @@
             }
         }
 
-        .site-nav-menu {
+        .menu {
             display: inline-block;
 	        padding: 0;
 	        margin: 0;
 
-            .site-nav-menu-item {
+            .item {
                 display: inline-block;
                 list-style: none;
 
@@ -55,7 +54,7 @@
                 z-index: $drop-down-menu-index;
                 background-color: #fff;
 
-                .site-nav-menu-item {
+                .item {
                     display: block;
                     margin: 0;
 

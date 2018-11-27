@@ -1,31 +1,19 @@
 @charset "utf-8";
 
-.collapse-base {
-    position: relative;
-
-    &.collapse-item-inactive {
-        display: none;
-    }
-}
-
-.item-hidden {
-	display: none;
-}
-
-.hidden {
-	display: none;
-}
-
-.center-wraper {
-    text-align: center;
-}
-
-.container {
-
-}
-
 .title {
 
+}
+
+.header {
+
+}
+
+.footer {
+
+}
+
+.meta {
+	
 }
 
 .description {
@@ -34,4 +22,8 @@
 
 .content {
 	
+}
+
+.hidden {
+	display: none;
 }

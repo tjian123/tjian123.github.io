@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: SDN 开发中常见问题
 description: SDN 开发中可能经常遇到的一些小问题。
 categories: 

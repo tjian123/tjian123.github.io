@@ -3,10 +3,20 @@
 // 文章页面
 .site-post {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .header {
+        @include reset-link;
+    }
 
 	.title {
-
+        
 	}
+
+    .content {
+        flex: 1;
+    }
 
     .meta {
         display: inline-block;

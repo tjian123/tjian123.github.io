@@ -7,13 +7,15 @@ tags: [Makefile]
 
 ### 使用`.PHONY`来声明伪工作目标
 
-	.PHONY:clean
-	clean:
-		rm -fr *.o target
+```
+.PHONY:clean
+clean:
+	rm -fr *.o target
+```
 
-以上创建了`clean`目录，用于清除生成的中间文件。
+以上创建了 `clean` 目录，用于清除生成的中间文件。
 
-对于伪工作目标，make不会试图建立以工作目标为名的文件。
+对于伪工作目标，`make` 不会试图建立以工作目标为名的文件。
 
 一些标准的伪工作目标：
 
@@ -41,17 +43,19 @@ tags: [Makefile]
 |$+|也是所有必要条件的文件名，但是有重复|
 |$*|工作目标的主文件名|
 
-### `VPATH`或者`vpath`来指定源文件路径
+### `VPATH` 或者 `vpath` 来指定源文件路径
 
 	VPATH = src
 
-`VPATH`里面可以放入目录列表
+`VPATH` 里面可以放入目录列表
 
 但是需要主要注意的是，make会为它需要的文件搜索每一个目录，如果多个目录出现同名的文件，则以第一个为主。
 
-为避免重复，可以使用`vpath`指令：
+为避免重复，可以使用 `vpath` 指令：
 
-	vpath %.c src
-	vpath %.h include
+```
+vpath %.c src
+vpath %.h include
+```
 
-以上告诉make从src中寻找.c文件，从include中寻找.h文件
+以上告诉 `make` 从 `src` 中寻找 `.c` 文件，从 `include` 中寻找 `.h` 文件

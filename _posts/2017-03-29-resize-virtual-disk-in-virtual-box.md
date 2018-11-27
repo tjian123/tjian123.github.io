@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: Virtual Box 虚拟机重新分配虚拟硬盘大小
 description: 利用 VBoxManage 命令重分配虚拟硬盘大小，然后在虚拟机中使用 gparted 工具识别新增加的区域。
 categories: 

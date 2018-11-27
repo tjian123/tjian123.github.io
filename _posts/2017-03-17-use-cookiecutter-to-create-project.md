@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: 使用 cookiecutter 创建项目
 description: cookiecutter 是一个用于快速创建标准 python 开源项目的工具。
 categories:
