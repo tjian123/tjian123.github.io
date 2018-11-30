@@ -33,17 +33,17 @@ h3 {
 }
 
 h4 {
-    font-size: $font-size--l;
+    font-size: $font-size--m;
     margin: $spacing--xs 0;
 }
 
 h5 {
-    font-size: $font-size--m;
+    font-size: $font-size--s;
     font-weight: 300;
     margin: $spacing--xs 0;
 }
 
 h6 {
-    font-size: .9rem;
+    font-size: $font-size--xs;
     font-weight: 500;
 }

@@ -5,19 +5,21 @@
  */
 .post-nav {
     position: relative;
-    width: 100%;
     margin: 20px 0;
-    padding: 0;
     
 	@include reset-link;
+    @include reset-list;
+
+    .item {
+        display: inline-block;
+        line-height: $line-height--m;
+    }
 
    .prev {
-        display: inline-block;
         float: right;
     }
     
     .next {
-        display: inline-block;
         float: left;
     } 
 
@@ -25,11 +27,13 @@
     @include clearfix;
 
     @include media-query($mobile) {
-        height: auto;
+
+        .item {
+            display: block;
+        }
 
         .prev,
         .next {
-            display: block;
             float: none;
             font-size: $font-size--xs;
         }

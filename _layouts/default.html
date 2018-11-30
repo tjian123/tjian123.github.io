@@ -19,7 +19,7 @@ description: 站点多数页面应从此模板继承
 		{% endif %}
 		{% if page.previous %}
 		<li class="item prev">
-			<a href="{{ page.previous.url | prepend: site.url }}">下一篇：{{ page.previous.title }}</span></a>
+			<a href="{{ page.previous.url | prepend: site.url }}">下一篇：{{ page.previous.title }}</a>
 		</li>
 		{% endif %}
 	</ul>

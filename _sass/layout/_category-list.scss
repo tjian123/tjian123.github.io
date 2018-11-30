@@ -4,9 +4,6 @@
  * 分类文章列表
  */
 .category-list {
-	margin: 0;
-	padding: $spacing--m 0;
-
 	@include reset-list;
 
 	.item {
@@ -17,7 +14,6 @@
 	.category {
 		.meta {
 			font-size: .85rem;
-			color: #666;
 		}
 	}
 

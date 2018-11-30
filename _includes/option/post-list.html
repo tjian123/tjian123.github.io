@@ -6,7 +6,7 @@
 <ul class="post-list">
     {% for post in posts %}
     <li class="item{% if forloop.index > maxNum %} hidden{% endif %}">
-      <h5 class="title">{{ post.title }}</h5>
+      <h4 class="title">{{ post.title }}</h4>
       <p>
       {% if post.excerpt %}
         {{ post.excerpt | strip_html | strip_newlines | truncate: 160 }}
@@ -22,4 +22,6 @@
     </li>
     {% endfor %}
 </ul>
+{% else %}
+{% include config/warnings.html %}
 {% endif %}

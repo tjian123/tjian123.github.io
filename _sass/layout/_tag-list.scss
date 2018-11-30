@@ -1,9 +1,6 @@
 @charset "utf-8";
 
 .tag-list {
-	margin: 0;
-	padding: $spacing--m 0;
-
 	@include reset-list;
 
 	.item {
@@ -13,7 +10,6 @@
 	.tag {
 		.meta {
 			font-size: .85rem;
-			color: #666;
 		}
 	}
 

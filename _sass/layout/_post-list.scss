@@ -4,37 +4,21 @@
  * 文章列表
  */
 .post-list {
-	margin: 0;
-	padding: $spacing--m 0;
-
-	@include reset-list;
 	@include reset-link;
+    @include reset-list;
 
     .item {
-        position: relative;
-
-        .title {
-
-        }
-
-        .meta {
-            font-size: $font-size--xxs;
-        }
+        position: relative; // 为 float 对象提供坐标
 
         a.more {
             float: right;
             font-size: $font-size--xxs;
             padding: $spacing--xxs $spacing--s;
-            background-color: #eee;
-            
-            &:hover {
-                text-decoration: none;
-                background-color: #ddd;
-            }
+            border-radius: 5px;
+            box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
         }
 
         @include clearfix;
-
     }
     
 }

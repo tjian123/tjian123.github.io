@@ -1,25 +1,44 @@
 @charset "utf-8";
 
-@mixin generate-theme($brand_background_color, $brand_leading_color, $brand_frontend_color, $body_background_color, $body_frontend_color) {
+@mixin generate-theme($brand_background_color, 
+					$brand_frontend_color, 
+					$brand_leading_color, 
+					$body_background_color, 
+					$body_frontend_color) {
 
 	// body scale
-	@include site-body-theme($body_frontend_color, $body_background_color, $brand_leading_color);
-	// header: title and nav
-	@include site-header-theme($brand_background_color, $brand_leading_color, $brand_frontend_color);
-	// banner
-	@include site-banner-theme($brand_background_color, darken($brand_background_color, 10%));
-	// footer
-	@include site-footer-theme(lighten($body_frontend_color, 20%), darken($brand_background_color, 5%));
+	@include site-body-theme($body_frontend_color, 
+							$body_background_color);
 
+	// header: title and nav
+	@include site-header-theme($brand_background_color, 
+							$brand_leading_color, 
+							$brand_frontend_color);
+
+	// banner
+	@include site-banner-theme($brand_background_color, 
+							$body_frontend_color);
+
+	// footer
+	@include site-footer-theme($brand_frontend_color, 
+							$brand_background_color, 
+							$brand_leading_color);
+
+	// profile
+	@include site-profile-theme($brand_leading_color, 
+							$brand_frontend_color, 
+							$brand_background_color);
 }
 
-@mixin site-body-theme($color, $bgColor, $leading) {
+/**
+ * 全局主题基调
+ * 
+ * @param  {[type]} $color
+ * @param  {[type]} $bg   
+ */
+@mixin site-body-theme($color, $bg) {
 	color: $color;
-	background-color: $bgColor;
-
-	.site-title {
-		color: $leading;
-	}
+	background-color: $bg;
 }
 
 /**
@@ -29,19 +48,29 @@
  * @param  {[type]} $leading  大标题
  * @param  {[type]} $color    默认字体颜色
  */
-@mixin site-header-theme($headerBg, $leading, $color) {
+@mixin site-header-theme($bg, $leading, $color) {
 	.site-header {
-		background-color: $headerBg;
+		background-color: $bg;
 		color: $color;
 
-		.site-nav {
-			a {
-				color: $color;
+		.title {
+			color: $leading;
+		}
 
-				&:hover,
-				&:active,
-				&.active {
-					color: $leading;
+		.site-nav {
+
+			.menu {
+				li {
+					
+				}
+
+				a {
+					&:hover,
+					&:active,
+					&.active {
+						color: $bg;
+						background: $color;
+					}
 				}
 			}
 		}
@@ -49,63 +78,40 @@
 
 }
 
-@mixin site-banner-theme($tColor, $dColor) {
+/**
+ * banner 主题配置
+ * 
+ * @param  {[type]} $color 前景
+ * @param  {[type]} $bg    背景
+ */
+@mixin site-banner-theme($color, $bg) {
 	.site-banner {
-		.site-banner-title {
-			color: $tColor;
-		}
-
-		.site-banner-description {
-			color: $dColor;
-		}
+		color: $color;
+		background-color: $bg;
 	}
 }
 
-@mixin site-profile-theme($leading, $border, $separator, $bg) {
+@mixin site-profile-theme($leading, $color, $bg) {
 	.site-profile {
-
-		.site-category {
-			.site-category-item {
-				color: $gray;
-				border-color: #E05555;
-			}
-			a:hover {
-				color: $black;
-				border-color: darken($leading, 20%);
-			}
-		}
-
-		.site-separator {
-			border-color: $border;
-			&:before {
-				background-color: $bg;
-				border-color: $border;
-			}
+		.title {
+			color: $leading;
 		}
 	}
 }
 
-@mixin post-theme($border, $front) {
-	.post-nav {
-		.post-list {
-			border-top-color: $border;
-			.post-meta {
-				color: lighten($front, 20%);
-			}
-			.post-item {
-				color: $front;
-			}
-			.post-category {
-				color: lighten($front, 20%);
-				border: $dark-gray 1px solid;
-			}
-		}
+@mixin site-post-theme($border, $front) {
+	.site-post {
+
 	}
 }
 
-@mixin site-footer-theme($footerColor, $footerBg) {
+@mixin site-footer-theme($color, $bg, $leading) {
 	.site-footer {
-		background-color: $footerBg;
-		color: $footerColor;
+		background-color: $bg;
+		color: $color;
+
+		.title {
+			color: $leading;
+		}
 	}
 }

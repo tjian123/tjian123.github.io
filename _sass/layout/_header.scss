@@ -10,61 +10,11 @@
 
     .title {
         display: inline-block;
+        font-size: $font-size--m;
         height: $line-height--l;
         line-height: $line-height--l;
     }
 
     @include reset-link;
     @include clearfix;
-
-    .site-nav {
-        float: right;
-
-        .menu-icon {
-            display: none;
-            line-height: $line-height--l;
-
-            @include media-query($mobile) {
-            	display: block;
-            }
-        }
-
-        .menu {
-            display: inline-block;
-	        padding: 0;
-	        margin: 0;
-
-            .item {
-                display: inline-block;
-                list-style: none;
-
-                a {
-                    display: block;
-                    padding: 0 $spacing--l;
-                    line-height: $line-height--l;
-                    text-decoration: none;
-                }
-            }
-
-            @include media-query($mobile) {
-                display: none;
-                position: absolute;
-                left: 0;
-                width: 100%;
-                z-index: $drop-down-menu-index;
-                background-color: #fff;
-
-                .item {
-                    display: block;
-                    margin: 0;
-
-                    a {
-                        display: block;
-                        line-height: $line-height--l;
-                        padding: 0 $spacing--l;
-                    }
-                }
-            }
-        }
-    }
 }
