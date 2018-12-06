@@ -60,16 +60,16 @@
 		.site-nav {
 
 			.menu {
-				li {
-					
-				}
-
 				a {
+					color: $color;
+					background-color: $bg;
+					
+
 					&:hover,
 					&:active,
 					&.active {
 						color: $bg;
-						background: $color;
+						background-color: $color;
 					}
 				}
 			}

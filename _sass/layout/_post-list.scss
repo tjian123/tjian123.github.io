@@ -9,13 +9,13 @@
 
     .item {
         position: relative; // 为 float 对象提供坐标
+        margin: $spacing--m 0;
 
         a.more {
             float: right;
             font-size: $font-size--xxs;
             padding: $spacing--xxs $spacing--s;
             border-radius: 5px;
-            box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
         }
 
         @include clearfix;

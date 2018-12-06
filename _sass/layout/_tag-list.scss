@@ -4,7 +4,7 @@
 	@include reset-list;
 
 	.item {
-
+		margin: $spacing--l 0;
 	}
 
 	.tag {
@@ -16,6 +16,7 @@
 	.post-list {
 		
 		.item {
+			margin: $spacing--xxxxs 0;
 
 			>a {
 				display: flex;

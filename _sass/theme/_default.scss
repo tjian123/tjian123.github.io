@@ -11,9 +11,9 @@
 	 * $body-background-color
 	 * $body-frontend-color
 	 */
-	@include generate-theme(#FFF, 
-							#333, 
+	@include generate-theme(#FFFFFF, 
+							#333333, 
 							#E33333, 
-							#FFF, 
+							#FFFFFF, 
 							#3f3f3f);
 }
