@@ -1,5 +1,10 @@
 ---
+layout: default
 title: k8s 的基本用法
+categories: 
+  - 容器技术
+tags: 
+  - k8s
 ---
 
 前置条件：
