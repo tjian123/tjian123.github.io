@@ -7,6 +7,12 @@ tags:
   - k8s
 ---
 
+> `k8s` 的简单应用。
+
+<!-- more -->
+* TOC
+{:toc}
+
 前置条件：
 - 安装 minikube 及 kubectl
 - 安装 nodejs
