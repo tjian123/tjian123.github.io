@@ -30,13 +30,12 @@
         @include media-query($mobile) {
             display: none;
             position: absolute;
-            left: 0;
-            width: 100%;
+            left: -20px;
+            right: -20px;
             z-index: $drop-down-menu-index;
 
             .item {
                 display: block;
-                margin: 0;
                 text-align: center;
 
                 a {

@@ -1,9 +1,19 @@
 ---
-layout: post
+layout: default
 title: Git工作流
-categories: [Coding]
-tags: [Git, Tools]
+categories: 
+  - 版本管理
+tags: 
+  - Git
 ---
+
+> 使用 `git-flow` 创建标准的工作流。
+
+<!-- more -->
+* TOC
+{:toc}
+
+## 安装
 
 git-flow工具提供了很好的git工作流服务，ubuntu系统安装该工具的方式为：
 

@@ -52,6 +52,8 @@ bannerColor: darkblue
 			{{ bannerDescription }}
 		{% elsif page.description %}
 			{{ page.description }}
+		{% elsif page.excerpt %}
+			{{ page.excerpt | strip_html }}
 		{% else %}
 			{{ site.description }}
 		{% endif %}
