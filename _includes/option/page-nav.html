@@ -11,7 +11,7 @@
    </li>
   {% endif %}
   <li class="item shadow-box">
-  	<span class="meta">{{ paginator.page }} / {{ paginator.total_pages }}</span>
+  	<span class="meta">第 {{ paginator.page }} 页 / 共 {{ paginator.total_pages }} 页</span>
   </li>
   {% if paginator.next_page %}
   <li class="item shadow-box">
