@@ -3,7 +3,7 @@
     <a class="title" href="{{ site.baseurl }}/">{{ site.title }}</a>
     <nav class="site-nav">
       <a href="#" class="menu-icon" id="drop-down-menu"><span class="fa fa-bars"></span></a>
-      <ul class="menu">
+      <ul class="menu animated fadeInDown">
         {% for thePage in site.pages %}
           {% if thePage.title and thePage.navEnabled %}
           {% assign theUrl = thePage.url %}
