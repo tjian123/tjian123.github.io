@@ -8,5 +8,24 @@
 {% endcomment %}
 
 <script type="text/javascript" src="{{ "/js/third-party/jquery-3.3.1.min.js" | prepend: site.url }}"></script>
+<script type="text/javascript" src="{{ "/js/third-party/mermaid.min.js" | prepend: site.url }}"></script>
 <script type="text/javascript" src="{{ "/js/component/scroll-down.js" | prepend: site.url }}"></script>
 <script type="text/javascript" src="{{ "/js/component/drop-down-menu.js" | prepend: site.url }}"></script>
+<script>
+mermaid.initialize({
+  "startOnLoad": true,
+  "flowchart": {
+    "useMaxWidth": false,
+    "htmlLabels": true
+  },
+  "sequence": {
+    "height": 40,
+    "actorMargin": 80,
+    "mirrorActors": false,
+    "bottomMarginAdj": 1
+  },
+  "theme": "forest",
+  "themeCSS": ".node rect { fill: transparent; }"
+});
+window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
+</script>
