@@ -20,9 +20,9 @@
   {% endif %}">
   <meta name="keywords" content="
   {% if page.tags.size > 0 %}
-	{% for tag in page.tags limit:5 %}
-	  {{ tag | prepend: "," }}
-	{% endfor %}
+    {% for tag in page.tags limit:5 %}
+      {{ tag | prepend: "," }}
+    {% endfor %}
   {% endif %}
   {{ site.title }}">
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">

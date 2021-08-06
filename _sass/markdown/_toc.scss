@@ -1,35 +1,35 @@
 #markdown-toc {
-	li {
-		list-style-type: circle;
-		line-height: 1.6 rem;
+    li {
+        list-style-type: circle;
+        line-height: 1.6 rem;
 
-		li {
-			list-style-type: disc;
-		}
+        li {
+            list-style-type: disc;
+        }
 
-		a {
-			text-decoration: none;
-			color: inherit;
+        a {
+            text-decoration: none;
+            color: inherit;
 
-			&:hover {
-				text-decoration: underline;
-			}
-		}
-	}
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
 
-	@include media-query($mobile) {
-		display: none;
-		position: fixed;
-		top: 80%;
-		right: 20px;
-		z-index: 3;
-		background-color: #f3f3f3;
-		padding: $spacing--xxs $spacing--xxs $spacing--xxs $spacing--l;
+    @include media-query($mobile) {
+        display: none;
+        position: fixed;
+        top: 80%;
+        right: 20px;
+        z-index: 3;
+        background-color: #f3f3f3;
+        padding: $spacing--xxs $spacing--xxs $spacing--xxs $spacing--l;
 
-		ul {
-			padding: 0;
-		}
+        ul {
+            padding: 0;
+        }
 
-	}
+    }
 
 }

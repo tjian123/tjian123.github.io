@@ -16,48 +16,48 @@ tags: [Python]
 
 创建一个虚拟环境：
 
-	virtualenv <env name>
+    virtualenv <env name>
 
 该命令会在~目录下创建一个`<env name>`的文件夹，其中放置了python执行包，lib和include
 
 激活虚拟环境：
 
-	cd ~/<env name>
-	source ./bin/activate
+    cd ~/<env name>
+    source ./bin/activate
 
 激活后，终端字符提示发生改变，显示当前虚拟环境名称`<env name>`。
 
 关闭该虚拟环境：
 
-	deactivate
+    deactivate
 
 关闭后，终端字符恢复原样。
 
 显示当前所有依赖：
 
-	pip freeze
+    pip freeze
 
 生成依赖文件：
 
-	pip freeze > requirement.txt
+    pip freeze > requirement.txt
 
 根据依赖文件安装依赖：
 
-	pip install -r requirement.txt
+    pip install -r requirement.txt
 
 可以使用`-p PYTHON_EXE`来指定Python的版本：
 
 创建2.7的环境：
 
-	virtualenv -p /usr/bin/python2.7 ENV2.7
+    virtualenv -p /usr/bin/python2.7 ENV2.7
 
 创建3.5的环境：
 
-	virtualenv -p /usr/local/bin/python3.5 ENV3.5
+    virtualenv -p /usr/local/bin/python3.5 ENV3.5
 
 虚拟环境迁移：
 
-	virtualenv --relocatable <path>
+    virtualenv --relocatable <path>
 
 参考链接：
 

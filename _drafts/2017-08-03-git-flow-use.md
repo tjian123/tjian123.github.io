@@ -17,7 +17,7 @@ tags:
 
 git-flow工具提供了很好的git工作流服务，ubuntu系统安装该工具的方式为：
 
-	sudo apt-get install git-flow
+    sudo apt-get install git-flow
 
 其他OS安装方式请参考[这里] [git-flow-install]。
 
@@ -25,13 +25,13 @@ git-flow工具提供了很好的git工作流服务，ubuntu系统安装该工具
 
 新建一个git项目：
 
-	mkdir -p ~/git-flow-demo
-	cd ~/git-flow-demo
-	git init
+    mkdir -p ~/git-flow-demo
+    cd ~/git-flow-demo
+    git init
 
 在`git-flow-demo`项目中初始化git工作流：
 
-	git flow init
+    git flow init
 
 该过程会提问一些默认项，我们可以直接使用默认值。
 
@@ -59,11 +59,11 @@ git-flow工具提供了很好的git工作流服务，ubuntu系统安装该工具
 
 使用以下命令创建一个新的feature分支：
 
-	git flow feature start <feature name>
+    git flow feature start <feature name>
 
 通常会在该分支完成开发，当准备好的时候，使用下面的命令合入devlop分支：
 
-	git flow feature finish <feature name>
+    git flow feature finish <feature name>
 
 该命令还会自动删除<feature name>分支。
 
@@ -86,11 +86,11 @@ git-flow工具提供了很好的git工作流服务，ubuntu系统安装该工具
 
 使用以下命令创建一个新的release分支：
 
-	git flow release start <release number>
+    git flow release start <release number>
 
 即将发布新版本时创建该分支，当准备好的时候，使用下面的命令合入：
 
-	git flow release finish <release number>
+    git flow release finish <release number>
 
 该命令会自动将当前代码合入master分支和devlop分支，并且创建一个tag，最后删除该release分支。
 
@@ -109,11 +109,11 @@ git-flow工具提供了很好的git工作流服务，ubuntu系统安装该工具
 
 使用以下命令创建一个新的hotfix分支：
 
-	git flow hotfix start <release number>
+    git flow hotfix start <release number>
 
 即将发布新版本时创建该分支，当准备好的时候，使用下面的命令合入：
 
-	git flow hotfix finish <release number>
+    git flow hotfix finish <release number>
 
 该命令会自动将当前代码合入master分支和devlop分支，并且创建一个tag，最后删除该hotfix分支。
 

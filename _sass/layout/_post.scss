@@ -10,9 +10,9 @@
         @include reset-link;
     }
 
-	.title {
-        
-	}
+    .title {
+        display: block;
+    }
 
     .content {
         flex: 1;
@@ -35,6 +35,10 @@
         &:after {
             content: "#";
         }
+    }
+
+    .language-mermaid {
+        display: block;
     }
 
 }

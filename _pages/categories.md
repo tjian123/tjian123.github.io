@@ -1,5 +1,5 @@
 ---
-layout: bannerPage
+layout: banner-page
 navEnabled: true
 title: 分类
 permalink: /categories
