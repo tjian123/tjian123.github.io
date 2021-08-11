@@ -2,16 +2,12 @@
 <ul class="page-nav">
   {% if paginator.previous_page %}
   <li class="item shadow-box">
-    <a class="meta" href=
-    {% if paginator.previous_page == 1 %}
-    {{ site.url }}
-    {% else %}
-    {{ "/blog/page" | append: paginator.previous_page | prepend: site.url }}
-    {% endif %}>前一页</a>
-   </li>
+    <a class="meta" href={% if paginator.previous_page==1 %} {{ site.url }} {% else %} {{ "/blog/page" | append:
+      paginator.previous_page | prepend: site.url }} {% endif %}>前一页</a>
+  </li>
   {% endif %}
   <li class="item shadow-box">
-  	<span class="meta">第 {{ paginator.page }} 页 / 共 {{ paginator.total_pages }} 页</span>
+    <span class="meta">第 {{ paginator.page }} 页 / 共 {{ paginator.total_pages }} 页</span>
   </li>
   {% if paginator.next_page %}
   <li class="item shadow-box">

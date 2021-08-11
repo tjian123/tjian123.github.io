@@ -1,6 +1,8 @@
 _site/
 .sass-cache/
+.jekyll-cache/
 *.md~
 *.sublime-workspace
 TODO
 .vscode
+Gemfile.lock
