@@ -1,5 +1,4 @@
+description: 最近正在阅读的书
 books:
-  - name: book one
-    author: author one
-  - name: book two
-    author: author two
+  - name: 刻意练习
+    description: 以“一万小时定律”为立意点，强调刻意练习才是制胜法宝。

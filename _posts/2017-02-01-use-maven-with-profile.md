@@ -58,22 +58,22 @@ tags:
 
 ```xml
 <profiles>
-	<profile>
-		<id>default-name</id>
-		<properties>
-			<name>Jack</name>
-		</properties>
-		<activation>
-			<activateByDefault></activateByDefault>
-		</activation>
-	</profile>
+    <profile>
+        <id>default-name</id>
+        <properties>
+            <name>Jack</name>
+        </properties>
+        <activation>
+            <activateByDefault></activateByDefault>
+        </activation>
+    </profile>
 
-	<profile>
-		<id>name</id>
-		<properties>
-			<name>Rose</name>
-		</properties>
-	</profile>
+    <profile>
+        <id>name</id>
+        <properties>
+            <name>Rose</name>
+        </properties>
+    </profile>
 </profiles>
 ```
 
@@ -83,7 +83,7 @@ tags:
 
 ```xml
 <activeProfile>
-	<activeProfile>name</activeProfile>
+    <activeProfile>name</activeProfile>
 </activeProfiles>
 ```
 
@@ -114,12 +114,12 @@ tags:
     <profile>  
         <id>test3</id>  
         <activation>  
-	        <os>  
-	            <name>Windows XP</name>  
-	            <family>Windows</family>  
-	            <arch>x86</arch>  
-	            <version>5.1.2600</version>  
-	        </os>  
+            <os>  
+                <name>Windows XP</name>  
+                <family>Windows</family>  
+                <arch>x86</arch>  
+                <version>5.1.2600</version>  
+            </os>  
         </activation>  
     </profile>  
 </profiles>  
@@ -134,9 +134,9 @@ tags:
     <profile>  
         <id>profileTest1</id>  
         <activation>  
-			<property>  
-			   <name>hello</name>  
-			</property>  
+            <property>  
+               <name>hello</name>  
+            </property>  
         </activation>  
     </profile>  
 </profiles>  
@@ -148,14 +148,14 @@ tags:
 
 ```xml
 <profiles>  
-	<profile>  
-	    <id>profileTest1</id>  
-	    <activation>  
-			<file>  
-				<exists>target</exists>  
-			</file>  
-	    </activation>  
-	</profile>  
+    <profile>  
+        <id>profileTest1</id>  
+        <activation>  
+            <file>  
+                <exists>target</exists>  
+            </file>  
+        </activation>  
+    </profile>  
 </profiles>  
 ```
 
@@ -163,14 +163,14 @@ tags:
 
 ```xml
 <profiles>  
-	<profile>  
-	    <id>profileTest1</id>  
-	    <activation>  
-			<file>  
-				<missing>target</missing>  
-			</file>  
-	    </activation>  
-	</profile>  
+    <profile>  
+        <id>profileTest1</id>  
+        <activation>  
+            <file>  
+                <missing>target</missing>  
+            </file>  
+        </activation>  
+    </profile>  
 </profiles>  
 ```
 

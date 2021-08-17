@@ -48,16 +48,16 @@ tags:
 
 ```xml
 <repositories>
-	<repository>
-		<id>jboss-repo</id>
-		<url>http://repository.jboss.com/maven2/</url>
-		<releases>
-			<enabled>true</enabled>
-		</releases>
-		<snapshots>
-			<enabled>false</enabled>
-		<snapshots>
-	</repository>
+    <repository>
+        <id>jboss-repo</id>
+        <url>http://repository.jboss.com/maven2/</url>
+        <releases>
+            <enabled>true</enabled>
+        </releases>
+        <snapshots>
+            <enabled>false</enabled>
+        <snapshots>
+    </repository>
 </repositories>
 ```
 
@@ -65,18 +65,18 @@ tags:
 
 ```xml
 <profiles>
-	<profile>
-		<id>dev-repository</id>
-		<repositories>
-			...
-		</repositories>
-		<pluginRepositories>
-			...
-		</pluginRepositories>
-	</profile>
+    <profile>
+        <id>dev-repository</id>
+        <repositories>
+            ...
+        </repositories>
+        <pluginRepositories>
+            ...
+        </pluginRepositories>
+    </profile>
 </profiles>
 <activeProfiles>
-	<activeProfile>dev-repository</activeProfile>
+    <activeProfile>dev-repository</activeProfile>
 </activeProfiles>
 ```
 
@@ -86,12 +86,12 @@ tags:
 
 ```xml
 <mirrors>
-	<mirror>
-		<id>china-repository</id>
-		<name>China Repository mirror of Maven central.</name>
-		<url>http://maven.net.cn/content/groups/public/</url>
-		<morrorOf>central</mirrorOf>
-	</mirror>
+    <mirror>
+        <id>china-repository</id>
+        <name>China Repository mirror of Maven central.</name>
+        <url>http://maven.net.cn/content/groups/public/</url>
+        <morrorOf>central</mirrorOf>
+    </mirror>
 </mirrors>
 ```
 
@@ -108,11 +108,11 @@ tags:
 
 ```xml
 <servers>
-	<server>
-		<id>dev-repository</id>
-		<username>admin</username>
-		<password>admin</password>
-	</server>
+    <server>
+        <id>dev-repository</id>
+        <username>admin</username>
+        <password>admin</password>
+    </server>
 </servers>
 ```
 
@@ -122,16 +122,16 @@ tags:
 
 ```xml
 <distributionManagement>
-	<repository>
-		<id>proj-release</id>
-		<name></name>
-		<url></url>
-	</repository>
-	<snapshotRepository>
-		<id>proj-snapshot</id>
-		<name></name>
-		<url></url>
-	</snapshotRepository>
+    <repository>
+        <id>proj-release</id>
+        <name></name>
+        <url></url>
+    </repository>
+    <snapshotRepository>
+        <id>proj-snapshot</id>
+        <name></name>
+        <url></url>
+    </snapshotRepository>
 </distributionManagement>
 ```
 

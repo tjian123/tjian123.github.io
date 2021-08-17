@@ -6,25 +6,25 @@
 {% endcomment %}
 
 <main class="site-profile animated zoomIn">
-	<div class="container">
-		<img class="image" src="
-		{% if site.profileImg %}
-			{{ site.profileImg | prepend: site.baseurl }}
-		{% else %}
-			{{ "/images/profile.jpg" | prepend: site.baseurl }}
-		{% endif %}" alt="Image" />
-		<h2 class="title"><a href="/">{{ site.title }}</a></h2>
-		{% include option/social-icons.html %}
-		<p class="description">{{ site.description }}</p>
-		<hr class="separator" />
-		<ul class="link-nav">
-			{% for thePage in site.pages %}
-				{% if thePage.title and thePage.navEnabled %}
-					<li class="item">
-						<a href="{{ thePage.url | prepend: site.baseurl }}">{{ thePage.title }}</a>
-					</li>
-				{% endif %}
-			{% endfor %}
-		</ul>
-	</div>
+    <div class="container">
+        <img class="image" src="
+        {% if site.profileImg %}
+            {{ site.profileImg | prepend: site.baseurl }}
+        {% else %}
+            {{ "/images/profile.jpg" | prepend: site.baseurl }}
+        {% endif %}" alt="Image" />
+        <h2 class="title"><a href="/">{{ site.title }}</a></h2>
+        {% include option/social-icons.html %}
+        <p class="description">{{ site.description }}</p>
+        <hr class="separator" />
+        <ul class="link-nav">
+            {% for thePage in site.pages %}
+                {% if thePage.title and thePage.navEnabled %}
+                    <li class="item">
+                        <a href="{{ thePage.url | prepend: site.baseurl }}">{{ thePage.title }}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
 </main>

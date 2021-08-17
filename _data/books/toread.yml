@@ -1,3 +1,4 @@
+description: 列入计划清单将要读的书
 books:
-  - name: to read one
-  - name: to read two
+  - name: 原则
+    description: 作者以自身经历介绍总结的人生原则。
