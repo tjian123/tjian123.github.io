@@ -2,12 +2,12 @@
 
 1. bannerImage 和 bannerColor 属性可以在子页的头部配置，如：
 
----
+```
 title: Some Title
 description: Some Description
 bannerImage: '../images/bing-bg.jpg'
 bannerColor: darkblue
----
+```
 
 ** 注: ** 
 
@@ -16,11 +16,11 @@ bannerColor: darkblue
 
 或者是通过 assign 赋值配置，如：
 
----
+```
 {% assign bannerImage='../images/bing-bg.jps' %}
 {% assign bannerColor=darkblue %}
 {% include common/site-banner.html %}
----
+```
 
 2. banner 中的 title 属性，按以下顺序显示：
 	- 首先查找是否使用 assign 为 bannerTitle 赋值（实现局部定制化）

@@ -8,7 +8,5 @@ permalink: /tags
 
 {% if site.tags.size > 0%}
     {% assign tags = site.tags %}
-    {% include option/tag-list.html %}
-{% else %}
-    {% include config/warnings.html %}
+    {% include option/page-tag-list.html %}
 {% endif %}

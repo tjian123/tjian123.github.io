@@ -1,11 +1,11 @@
 @charset "utf-8";
 
 @mixin set-v-padding($padding) {
-	padding-left: $padding;
-	padding-right: $padding;
+    padding-left: $padding;
+    padding-right: $padding;
 }
 
 @mixin set-h-padding($padding) {
-	padding-top: $padding;
-	padding-bottom: $padding;
+    padding-top: $padding;
+    padding-bottom: $padding;
 }

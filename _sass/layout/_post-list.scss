@@ -5,7 +5,7 @@
  * 文章列表
  */
 .post-list {
-	@include reset-link;
+    @include reset-link;
     @include reset-list;
 
     .item {

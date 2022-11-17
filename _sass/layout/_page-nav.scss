@@ -4,19 +4,19 @@
  * 分页导航样式
  */
 .page-nav {
-	text-align: center;
-	margin: 20px 0;
-	padding: 0;
-	@include reset-link;
+    text-align: center;
+    margin: 20px 0;
+    padding: 0;
+    @include reset-link;
 
-	.item {
-		display: inline-block;
-		line-height: 18px;
-		padding: 3px 10px;
-		border-radius: 5px;
-	}
+    .item {
+        display: inline-block;
+        line-height: 18px;
+        padding: 3px 10px;
+        border-radius: 5px;
+    }
 
-	.meta {
-		font-size: $font-size--xxs;
-	}
+    .meta {
+        font-size: $font-size--xxs;
+    }
 }

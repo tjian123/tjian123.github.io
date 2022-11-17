@@ -18,7 +18,7 @@ tags:
 
 ## 作用范围
 
-**'profile'定义在不同的位置，生效的范围也不一样。**
+**`profile` 定义在不同的位置，生效的范围也不一样。**
 
 通常来说，`profile` 可以定义在以下三个位置：
 
@@ -32,20 +32,20 @@ tags:
 
 能够定义在 `settings.xml` 中信息通常为：
 
-- `repositories`: 定义远程仓库信息。
-- `pluginRepositories`: 定义插件仓库信息。
-- `properties`: 定义键值对（可以在 `pom.xml` 文件中使用）。
+* `repositories`: 定义远程仓库信息。
+* `pluginRepositories`: 定义插件仓库信息。
+* `properties`: 定义键值对（可以在 `pom.xml` 文件中使用）。
 
 能够定义在 `pom.xml` 中的信息，除了以上可以定义在 `settings.xml` 中的，通常还有：
 
-- `dependencies`: 定义依赖。
-- `plugins`: 定义需要使用的插件。
-- `dependencyManagement`: 声明可能需要的依赖。
-- `distributionManagement`: 声明可能需要的发布信息。
-- `defaultGoal`: 配合 `plugin` 使用。
-- `resources`: 声明资源文件。
-- `testResources`: 声明测试资源文件。
-- `finalName`:
+* `dependencies`: 定义依赖。
+* `plugins`: 定义需要使用的插件。
+* `dependencyManagement`: 声明可能需要的依赖。
+* `distributionManagement`: 声明可能需要的发布信息。
+* `defaultGoal`: 配合 `plugin` 使用。
+* `resources`: 声明资源文件。
+* `testResources`: 声明测试资源文件。
+* `finalName`:
 
 ## 激活方式
 
@@ -53,8 +53,8 @@ tags:
 
 有以下几种激活 `profile` 的方式：
 
-- 控制台命令激活：`mvn <cmd> -P <profile-name>`，也可以指定不激活某个 `profile`：`mvn <cmd> -P !<profile-name>`。
-- 在配置文件中使用 `activateByDefault` 激活，如：
+* 控制台命令激活：`mvn <cmd> -P <profile-name>`，也可以指定不激活某个 `profile`：`mvn <cmd> -P !<profile-name>`。
+* 在配置文件中使用 `activateByDefault` 激活，如：
 
 ```xml
 <profiles>
@@ -79,7 +79,7 @@ tags:
 
 默认情况下，`default-name` 会生效，如果通过 `-P` 指定了 `name` 生效则默认项失效。
 
-- 在 `settings.xml` 中使用 `activeProfiles` 来激活，如：
+* 在 `settings.xml` 中使用 `activeProfiles` 来激活，如：
 
 ```xml
 <activeProfile>
@@ -87,7 +87,7 @@ tags:
 </activeProfiles>
 ```
 
-- 根据环境自动激活 `profile`，如：
+* 根据环境自动激活 `profile`，如：
 
 **根据 `jdk` 版本激活：**
 

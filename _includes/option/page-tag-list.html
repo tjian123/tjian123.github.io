@@ -4,7 +4,7 @@
 
 
 {% if tags %}
-<ul class="tag-list animated slideInLeft">
+<ul class="tag-list">
     {% for tag in tags %}
         <li class="item">
             <h4 class="tag" id="tag-{{ tag | first }}"><span class="fa fa-tag"></span> {{ tag | first }} <span class="meta">共 {{ tag | last | size}} 篇</span></h4>
@@ -26,5 +26,5 @@
     {% endfor%}
 </ul>
 {% else %}
-{% include config/warnings.html %}
+{% include config/post-warnings.html %}
 {% endif%}

@@ -1,33 +1,33 @@
 @charset "utf-8";
 
 @mixin generate-theme($brand_background_color, 
-					$brand_frontend_color, 
-					$brand_leading_color, 
-					$body_background_color, 
-					$body_frontend_color) {
+                    $brand_frontend_color, 
+                    $brand_leading_color, 
+                    $body_background_color, 
+                    $body_frontend_color) {
 
-	// body scale
-	@include site-body-theme($body_frontend_color, 
-							$body_background_color);
+    // body scale
+    @include site-body-theme($body_frontend_color, 
+                            $body_background_color);
 
-	// header: title and nav
-	@include site-header-theme($brand_background_color, 
-							$brand_leading_color, 
-							$brand_frontend_color);
+    // header: title and nav
+    @include site-header-theme($brand_background_color, 
+                            $brand_leading_color, 
+                            $brand_frontend_color);
 
-	// banner
-	@include site-banner-theme($brand_background_color, 
-							$body_frontend_color);
+    // banner
+    @include site-banner-theme($brand_background_color, 
+                            $body_frontend_color);
 
-	// footer
-	@include site-footer-theme($brand_frontend_color, 
-							$brand_background_color, 
-							$brand_leading_color);
+    // footer
+    @include site-footer-theme($brand_frontend_color, 
+                            $brand_background_color, 
+                            $brand_leading_color);
 
-	// profile
-	@include site-profile-theme($brand_leading_color, 
-							$brand_frontend_color, 
-							$brand_background_color);
+    // profile
+    @include site-profile-theme($brand_leading_color, 
+                            $brand_frontend_color, 
+                            $brand_background_color);
 }
 
 /**
@@ -37,8 +37,8 @@
  * @param  {[type]} $bg   
  */
 @mixin site-body-theme($color, $bg) {
-	color: $color;
-	background-color: $bg;
+    color: $color;
+    background-color: $bg;
 }
 
 /**
@@ -49,32 +49,32 @@
  * @param  {[type]} $color    默认字体颜色
  */
 @mixin site-header-theme($bg, $leading, $color) {
-	.site-header {
-		background-color: $bg;
-		color: $color;
+    .site-header {
+        background-color: $bg;
+        color: $color;
 
-		.title {
-			color: $leading;
-		}
+        .title {
+            color: $leading;
+        }
 
-		.site-nav {
+        .site-nav {
 
-			.menu {
-				a {
-					color: $color;
-					background-color: $bg;
-					
+            .menu {
+                a {
+                    color: $color;
+                    background-color: $bg;
+                    
 
-					&:hover,
-					&:active,
-					&.active {
-						color: $bg;
-						background-color: $color;
-					}
-				}
-			}
-		}
-	}
+                    &:hover,
+                    &:active,
+                    &.active {
+                        color: $bg;
+                        background-color: $color;
+                    }
+                }
+            }
+        }
+    }
 
 }
 
@@ -85,33 +85,33 @@
  * @param  {[type]} $bg    背景
  */
 @mixin site-banner-theme($color, $bg) {
-	.site-banner {
-		color: $color;
-		background-color: $bg;
-	}
+    .site-banner {
+        color: $color;
+        background-color: $bg;
+    }
 }
 
 @mixin site-profile-theme($leading, $color, $bg) {
-	.site-profile {
-		.title {
-			color: $leading;
-		}
-	}
+    .site-profile {
+        .title {
+            color: $leading;
+        }
+    }
 }
 
 @mixin site-post-theme($border, $front) {
-	.site-post {
+    .site-post {
 
-	}
+    }
 }
 
 @mixin site-footer-theme($color, $bg, $leading) {
-	.site-footer {
-		background-color: $bg;
-		color: $color;
+    .site-footer {
+        background-color: $bg;
+        color: $color;
 
-		.title {
-			color: $leading;
-		}
-	}
+        .title {
+            color: $leading;
+        }
+    }
 }

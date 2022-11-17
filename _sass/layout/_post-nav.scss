@@ -7,7 +7,7 @@
     position: relative;
     margin: 20px 0;
     
-	@include reset-link;
+    @include reset-link;
     @include reset-list;
 
     .item {

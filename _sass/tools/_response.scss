@@ -3,22 +3,24 @@
 // Responsive tools
 
 @mixin media-query($device) {
-	@media screen and (max-width: $device) {
-		@content;
-	}
+    @media screen and (max-width: $device) {
+        @content;
+    }
 }
 
 // 用法
-/* @include media-query($mobile) {
-	.container {
-		padding-left: $space / 2;
-		padding-right: $space / 2;
-	}
-}
-
-.container {
-	width: 80%;
-	@include media-query($mobile) {
-		width: 100%;
-	}
-} */
+/* 
+ * @include med·ia-query($mobile) {
+ *     .container {
+ *         padding-left: $space / 2;
+ *         padding-right: $space / 2;
+ *     }
+ * }
+ * 
+ * .container {
+ *     width: 80%;
+ *     @include media-query($mobile) {
+ *         width: 100%;
+ *     }
+ * } 
+ */

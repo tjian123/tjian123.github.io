@@ -8,14 +8,14 @@
         line-height: $line-height--l;
 
         @include media-query($mobile) {
-        	display: block;
+            display: block;
         }
     }
 
     .menu {
         display: inline-block;
         
-		@include reset-list;
+        @include reset-list;
 
         .item {
             display: inline-block;

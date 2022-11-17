@@ -7,7 +7,5 @@ permalink: /categories
 
 {% if site.categories.size > 0%}
     {% assign categories = site.categories %}
-    {% include option/category-list.html %}
-{% else %}
-    {% include config/warnings.html %}
+    {% include option/page-category-list.html %}
 {% endif %}

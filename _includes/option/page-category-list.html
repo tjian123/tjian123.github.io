@@ -3,7 +3,7 @@
 {% endcomment %}
 
 {% if categories %}	
-<ul class="category-list animated slideInLeft">
+<ul class="category-list">
 {% for category in categories %}
     <li class="item">
         <h4 class="category" id="category-{{ category | first }}"><span class="fa fa-folder"></span> {{ category | first }} <span class="meta">共 {{ category | last | size}} 篇</span></h4>
@@ -25,5 +25,5 @@
 {% endfor%}
 </ul>
 {% else %}
-{% include config/warnings.html %}
+{% include config/post-warnings.html %}
 {% endif%}
