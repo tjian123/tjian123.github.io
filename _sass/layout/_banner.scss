@@ -4,7 +4,7 @@
  * banner 展示
  */
 .site-banner {
-	position: relative;
+    position: relative;
     background-position: 50% 50%;
     padding-top: $spacing--xl*1.5;
     padding-bottom: $spacing--xl;
@@ -15,13 +15,13 @@
         
     }
 
-	.description {
+    .description {
         line-height: $line-height--m;
         font-size: $font-size--s;
     }
 
     @include media-query($mobile) {
-	    padding-top: $spacing--l*1.5;
-	    padding-bottom: $spacing--l;
+        padding-top: $spacing--l*1.5;
+        padding-bottom: $spacing--l;
     }
 }

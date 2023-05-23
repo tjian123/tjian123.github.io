@@ -6,3 +6,4 @@ _site/
 TODO
 .vscode
 Gemfile.lock
+.bundle

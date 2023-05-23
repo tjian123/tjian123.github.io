@@ -1,14 +1,14 @@
 @charset "utf-8";
 
 // Responsive
-$device--xxxs				: 320px;	// small phone
-$device--xxs                : 480px;	// mid phone
-$device--xs					: 512px;	// large phone
-$device--s					: 640px;
-$device						: 768px;
-$device--l					: 1024px;
-$device--xl					: 1280px;
-$device--xxl				: 1440px;
+$device--xxxs               : 320px;    // small phone
+$device--xxs                : 480px;    // mid phone
+$device--xxs                : 512px;    // large phone
+$device--xxs                : 640px;
+$device                     : 768px;
+$device--l                  : 1024px;
+$device--xl                 : 1280px;
+$device--xxl                : 1440px;
 
 // variables
 $mobile                     : $device--xxs;
