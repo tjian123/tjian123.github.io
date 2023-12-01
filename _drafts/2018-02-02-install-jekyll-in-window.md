@@ -1,9 +1,19 @@
 ---
 layout: post
 title: 在 window 环境下安装 jekyll
-categories: [Coding]
-tags: [Jekyll]
+description: 在 window 环境下安装 jekyll
+categories: 
+    - 博客搭建
+tags: 
+    - Jekyll
 ---
+
+> 在 window 环境下安装 jekyll
+
+<!-- more -->
+
+* TOC
+{:toc}
 
 ## Step 1：下载并安装 Ruby
 
@@ -15,7 +25,7 @@ tags: [Jekyll]
 
 如果不安装该工具，使用`gem install jekyll`时会报如下错误：
 
-```
+```shell
 λ gem install jekyll -v 3.7.2
 ERROR:  Error installing jekyll:
         The 'http_parser.rb' native gem requires installed build tools.
@@ -29,15 +39,11 @@ at 'http://github.com/oneclick/rubyinstaller/wiki/Development-Kit'
 
 ## Step 3: 设置代理
 
-如果需要使用代理才能上网（主要是使用 `gem` 下载安装 ruby 包），则需要此步：
-
-	set http_proxy=<some.proxy.com:port>
+如果需要使用代理才能上网（主要是使用 `gem` 下载安装 ruby 包），则需要此步：`set http_proxy=<some.proxy.com:port>`
 
 ## Step 4: 安装 Jekyll
 
-使用`gem`安装：
-
-	gem install jekyll -v 3.8.0
+使用`gem`安装：`gem install jekyll -v 3.8.0`
 
 可以不指定版本号。
 
@@ -45,7 +51,7 @@ at 'http://github.com/oneclick/rubyinstaller/wiki/Development-Kit'
 
 打开控制台输入 `jekyll -v`，输出版本信息。可以使用 `-h` 查看更多 `jekyll` 用法：
 
-```
+```shell
 λ jekyll -h
 jekyll 3.7.2 -- Jekyll is a blog-aware, static site generator in Ruby
 
@@ -78,7 +84,7 @@ Subcommands:
 
 我们可以快速体验一下。先使用 `jekyll new demo` 创建一个名为 demo 的项目，默认在当前目录下创建一个 demo 目录：
 
-```
+```shell
 λ jekyll new mydemo
 Running bundle install in F:/WorkspaceForTEST/mydemo...
   Bundler: Fetching gem metadata from https://rubygems.org/...........

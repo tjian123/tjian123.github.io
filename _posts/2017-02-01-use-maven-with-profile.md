@@ -11,6 +11,7 @@ tags:
 > 使用 `profile` 可以定义一些配置信息，并指定这些配置信息的激活条件。
 
 <!-- more -->
+
 * TOC
 {:toc}
 
@@ -53,7 +54,8 @@ tags:
 
 有以下几种激活 `profile` 的方式：
 
-* 控制台命令激活：`mvn <cmd> -P <profile-name>`，也可以指定不激活某个 `profile`：`mvn <cmd> -P !<profile-name>`。
+* 控制台命令激活：`mvn <cmd> -P <profile-name>`
+* 也可以指定不激活某个 `profile`：`mvn <cmd> -P !<profile-name>`。
 * 在配置文件中使用 `activateByDefault` 激活，如：
 
 ```xml
@@ -64,7 +66,7 @@ tags:
             <name>Jack</name>
         </properties>
         <activation>
-            <activateByDefault></activateByDefault>
+            <activateByDefault />
         </activation>
     </profile>
 
@@ -105,7 +107,7 @@ tags:
 <profiles>  
 ```
 
-以上识别 `jdk `版本为1.4时激活 `test1`，版本为1.5到1.7时激活 `test2`。
+以上识别 `jdk` 版本为 1.4 时激活 `test1`，版本为 1.5 到 1.7 时激活 `test2`。
 
 **根据系统信息自动激活：**
 

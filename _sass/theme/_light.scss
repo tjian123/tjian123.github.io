@@ -1,1 +1,17 @@
 @charset "utf-8";
+
+.light {
+
+    /**
+     * $brand-background-color
+     * $brand-frontend-color
+     * $brand-leading-color
+     * $body-background-color
+     * $body-frontend-color
+     */
+    @include generate-theme(#FFFFFF,
+        #333333,
+        #E33333,
+        #FFFFFF,
+        #3f3f3f);
+}

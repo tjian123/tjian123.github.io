@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+/**
+ * 分页导航样式
+ */
+.page-nav {
+    text-align: center;
+    margin: $spacing--s 0;
+    padding: 0;
+    @include reset-link;
+
+    .item {
+        display: inline-block;
+        line-height: 18px;
+        padding: 3px 10px;
+        border-radius: 5px;
+    }
+
+    .meta {
+        font-size: $font-size--xxs;
+    }
+}

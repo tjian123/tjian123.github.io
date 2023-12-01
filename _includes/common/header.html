@@ -1,0 +1,20 @@
+<header class="header">
+  <div class="container">
+    <a class="title" href="{{ site.baseurl }}/">
+    <img class="logo" src="{{ "/images/logo/logo.svg" | prepend:site.baseurl }}" alt="Image" />
+    {{ site.title }}</a>
+    <nav class="nav">
+      <a href="#" class="menu-icon" id="drop-down-menu"><span class="fa fa-bars"></span></a>
+      <ul class="menu">
+        {% for thePage in site.pages %}
+          {% if thePage.title and thePage.navEnabled %}
+          {% assign theUrl = thePage.url %}
+          <li class="item">
+            <a href="{{ theUrl }}" {% if page.url == theUrl %} class="active"{% endif %}>{{ thePage.title }}</a>
+          </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+/**
+ * 页面头部：导航栏
+ */
+
+$headerHeight: $line-height--xxl;
+
+header.header {
+    display: block;
+    position: relative;
+
+    .logo,
+    .title {
+        display: inline-block;
+        font-size: $font-size--m;
+        height: $headerHeight;
+        line-height: $headerHeight;
+    }
+
+    .logo {
+        vertical-align: top;
+    }
+
+    @include reset-link;
+    @include clearfix;
+
+    nav.nav {
+        float: right;
+
+        .menu-icon {
+            display: none;
+            line-height: $headerHeight;
+
+            @include media-query($mobile) {
+                display: block;
+            }
+        }
+
+        .menu {
+            display: inline-flex;
+
+            @include reset-list;
+
+            .item {
+                display: inline-block;
+
+                a {
+                    display: inline-block;
+                    padding: 0 $spacing--l;
+                    line-height: $headerHeight;
+                }
+            }
+
+            @include media-query($mobile) {
+                display: none;
+                position: absolute;
+                left: -20px;
+                right: -20px;
+                z-index: $drop-down-menu-index;
+
+                .item {
+                    display: block;
+                    text-align: center;
+
+                    a {
+                        display: block;
+                        line-height: $headerHeight;
+                        padding: 0 $spacing--l;
+                    }
+                }
+            }
+        }
+    }
+}

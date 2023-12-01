@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-// 首页
 .site-profile {
     text-align: center;
     width: 100vw;
@@ -85,7 +84,7 @@
 
             a {
                 display: inline-block;
-                padding: $spacing--xxxxs;
+                padding: $spacing--xxxs;
                 border: 1px solid #333;
                 font-size: $font-size--xxs;
                 transition: background-color $transition--primary;

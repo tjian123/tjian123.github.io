@@ -1,8 +1,8 @@
-# 狐狸哒黍.小馒头
+# 哒黍.馒头
 
-越努力，越幸运！
-
-Much efforts, much prosperity!
+> 越努力，越幸运！
+>
+> The harder you work, the luckier you get!
 
 ## 特色
 
@@ -47,12 +47,12 @@ Much efforts, much prosperity!
         - `html-header.html`，定义 SEO 等元素，引入 CSS 样式文件
         - `html-footer.html`，引入 Js 脚本文件
       - `_include/common` 目录
-        - `site-banner.html`，通用 `banner` 元素
-        - `site-header.html`，通用 `header` 元素，定义了 LOGO 和菜单栏
-        - `site-footer.html`，通用 `footer` 元素，定义了 CopyRight 等
-        - `site-profile.html`，定义作者简介等
-        - `site-slide.html`，用于 slide 展示，暂不可用
-        - `page-social-icons.html` 用于展示 APP 图标
+        - `banner.html`，通用 `banner` 元素
+        - `header.html`，通用 `header` 元素，定义了 LOGO 和菜单栏
+        - `footer.html`，通用 `footer` 元素，定义了 CopyRight 等
+        - `profile.html`，定义作者简介等
+        - `slide.html`，用于 slide 展示，暂不可用
+        - `social-icons.html` 用于展示 APP 图标
       - `_include/config` 目录
         - `post-meta.html`，通用页面简介展示元素
         - `post-warnings.html`，通用提示页面
@@ -102,6 +102,3 @@ Much efforts, much prosperity!
 - 但是我还是会坚持把这个 blog 完成，毕竟有始无终更不好玩；
 - 我希望完结的时候，这个 blog 能够成为一个很好的 jekyll 教程，里面应该包含了 jekyll 涉及到的绝大多数东西；
 
-## 代码环境
-
-Ubuntu:16.10

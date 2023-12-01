@@ -1,16 +1,10 @@
 @charset "utf-8";
 
 // Responsive tools
-
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
-}
-
-// 用法
-/* 
- * @include med·ia-query($mobile) {
+/**
+ * 响应式媒体查询工具
+ *
+ * @include media-query($mobile) {
  *     .container {
  *         padding-left: $space / 2;
  *         padding-right: $space / 2;
@@ -24,3 +18,8 @@
  *     }
  * } 
  */
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}

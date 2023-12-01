@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <!-- header 样式定义以及头部定义 -->
-{% include base/html-header.html %}
+{% include base/html/header.html %}
 <!-- 设置 bodyClass 来改变整体风格，其中 bodyClass 在 _config.yml 中定义 -->
 <body class="{% if page.bodyClass %}{{ page.bodyClass }}{% else %}{{ site.bodyClass }}{% endif %}">
     {{ content }}
 </body>
 <!-- footer js 脚本 -->
-{% include base/html-footer.html %}
+{% include base/html/footer.html %}
 </html>

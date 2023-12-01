@@ -7,3 +7,30 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+
+// 全局三线表表格样式
+table {
+    width: auto;
+    border-collapse: collapse;
+    line-height: $line-height--m;
+
+    thead {
+        border-bottom: 1px solid #000;
+    }
+
+    th,
+    td {
+        padding-right: $spacing--xxs;
+    }
+
+    tbody {
+        tr ~ tr {
+            border-top: 1px solid #ccc;
+        }
+    }
+
+    tfoot {
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+    }
+}

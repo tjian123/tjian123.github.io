@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+/**
+ * 生成站点配色主题
+ *
+ * 只应该调用这一个入口
+ */
 @mixin generate-theme($brand_background_color, 
                     $brand_frontend_color, 
                     $brand_leading_color, 
@@ -49,7 +54,7 @@
  * @param  {[type]} $color    默认字体颜色
  */
 @mixin site-header-theme($bg, $leading, $color) {
-    .site-header {
+    .header {
         background-color: $bg;
         color: $color;
 
@@ -57,7 +62,7 @@
             color: $leading;
         }
 
-        .site-nav {
+        .nav {
 
             .menu {
                 a {
@@ -85,7 +90,7 @@
  * @param  {[type]} $bg    背景
  */
 @mixin site-banner-theme($color, $bg) {
-    .site-banner {
+    .banner {
         color: $color;
         background-color: $bg;
     }
@@ -99,14 +104,14 @@
     }
 }
 
-@mixin site-post-theme($border, $front) {
-    .site-post {
+@mixin post-theme($border, $front) {
+    .post {
 
     }
 }
 
 @mixin site-footer-theme($color, $bg, $leading) {
-    .site-footer {
+    .footer {
         background-color: $bg;
         color: $color;
 

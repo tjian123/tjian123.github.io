@@ -3,26 +3,26 @@
 {% endcomment %}
 
 {% if posts %}
-<ul class="post-list">
-    {% for post in posts %}
-    <li class="item animated slideInUp">
-      <h4 class="title">{{ post.title }}</h4>
-      <p class="description">
-      {% if post.excerpt %}
-        {{ post.excerpt | strip_html | strip_newlines | truncate: 160 }}
-      {% else %}
-        {{ post.description }}
-      {% endif %}
-      </p>
-      <!-- <span class="post-index">{{ forloop.index }} of {{ forloop.length }}</span> -->
-      <p class="meta">
-        <span class="fa fa-clock-o" title="发布时间"> {{ post.date | date: "%Y 年 %m 月 %d 日，%a" }}</span>
-      </p>
-      <a class="more shadow-box" href="{{ post.url | prepend: site.url }}">阅读全文</a>
-    </li>
-    {% endfor %}
-</ul>
-{% include option/page-list-nav.html %}
+    <ul class="post-list">
+        {% for post in posts %}
+        <li class="item animated fadeIn">
+        <h4 class="title">{{ post.title }}</h4>
+        <p class="description">
+        {% if post.excerpt %}
+            {{ post.excerpt | strip_html | strip_newlines | truncate: 160 }}
+        {% else %}
+            {{ post.description }}
+        {% endif %}
+        </p>
+        <!-- <span class="post-index">{{ forloop.index }} of {{ forloop.length }}</span> -->
+        <p class="meta">
+            <span class="fa fa-clock-o" title="发布时间"> {{ post.date | date: "%Y 年 %m 月 %d 日，%a" }}</span>
+        </p>
+        <a class="more shadow-box" href="{{ post.url | prepend: site.url }}">阅读全文</a>
+        </li>
+        {% endfor %}
+    </ul>
+    {% include option/page-list-nav.html %}
 {% else %}
-{% include config/post-warnings.html %}
+    {% include config/post-warnings.html %}
 {% endif %}

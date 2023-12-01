@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+// 文章页面
+.post {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+    .header {
+        @include reset-link;
+    }
+
+    .title {
+        
+    }
+
+    .content {
+        flex: 1;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    .meta {
+        display: inline-block;
+        line-height: 1.2rem;
+        font-size: 0.85rem;
+        padding: 3px;
+
+        > .item:not(last) {
+            padding-right: $spacing--xxs;
+        }
+    }
+
+    .tag {
+        display: inline-block;
+
+        &:after {
+            content: "#";
+        }
+    }
+
+}
+
+/**
+ * 文章列表
+ */
+.post-list {
+    @include reset-link;
+    @include reset-list;
+
+    .item {
+        position: relative; // 为 float 对象提供坐标
+        margin: $spacing--m 0;
+
+        a.more {
+            float: right;
+            font-size: $font-size--xxs;
+            padding: $spacing--xxs $spacing--s;
+            border-radius: 5px;
+        }
+
+        @include clearfix;
+    }
+
+}

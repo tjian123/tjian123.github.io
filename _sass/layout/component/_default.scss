@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+// Layout
+
+// 控制内容显示范围
+.container {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    max-width: $container-width--xxxxl;
+
+    @include media-query($mobile) {
+        width: auto;
+        margin: 0 20px;
+    }
+
+    main & {
+        padding: 20px 0;
+    }
+}

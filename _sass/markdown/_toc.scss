@@ -1,11 +1,23 @@
-#markdown-toc {
-    li {
-        list-style-type: circle;
-        line-height: 1.6 rem;
+@charset "utf-8";
 
-        li {
-            list-style-type: disc;
-        }
+// 目录显示控制
+
+#markdown-toc {
+
+    list-style: none;
+    padding: 0;
+    margin-bottom: $spacing--l;
+
+    &::before {
+        display: block;
+        content: "目录";
+        font-size: large;
+        font-weight: bold;
+        margin: $spacing--l 0;
+    }
+
+    li {
+        margin-bottom: $spacing--xxxs;
 
         a {
             text-decoration: none;

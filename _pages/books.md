@@ -1,6 +1,6 @@
 ---
-layout: bannerPage
-navEnabled: false
+layout: page
+navEnabled: true
 title: 收藏
 permalink: /mark
 ---

@@ -1,5 +1,12 @@
 ---
-layout: base
+layout: bannerTriple
+description: 用于博客文章页面的布局
 ---
 
-{{ content }}
+<article class="post">
+  <div class="container">
+    <header class="header">{%- include config/post/meta.html -%}</header>
+    <div class="content">{{ content }}</div>
+    <footer class="footer">{%- include config/post/nav.html -%}</footer>
+  </div>
+</article>

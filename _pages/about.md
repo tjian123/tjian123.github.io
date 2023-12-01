@@ -5,4 +5,4 @@ title: 关于
 permalink: /about
 ---
 
-{% include common/site-profile.html %}
+{% include common/profile.html %}

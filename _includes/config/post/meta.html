@@ -1,0 +1,19 @@
+{% comment %}
+
+用于每篇文章基本信息描述。
+
+{% endcomment %}
+
+<div class="meta">
+	<span class="item fa fa-clock-o" title="发表日期"> {{ page.date | date: "%Y 年 %m 月 %d 日" }}</span>
+	<span class="item fa fa-folder" title="所属分类">
+		{% for pageCategory in page.categories %}
+		<a href="{{ pageCategory | prepend: "/categories#category-" | prepend: site.url }}" title="查看{{ pageCategory }}分类下的内容">{{ pageCategory }}</a>
+		{% endfor %}
+	</span>
+	<span class="item fa fa-tag" title="查阅{{}}标签相关内容">
+		{% for pageTag in page.tags %}
+		<a class="tag" href="{{ pageTag | prepend: "/tags#tag-" | prepend: site.url }}" title="查看{{ pageTag }}标签相关的内容"> {{ pageTag }} </a>
+		{% endfor %}
+	</span>
+</div>

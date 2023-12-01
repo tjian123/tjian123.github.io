@@ -1,0 +1,175 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="506px" height="421px" viewBox="-0.5 -0.5 506 421" content="&lt;mxfile&gt;&lt;diagram id=&quot;_MS_01opW_cDq_dlUbaO&quot; name=&quot;第 1 页&quot;&gt;7VlJd9s4DP41PGaedtFHyZZnesh7nfqQzlGxOLbeyKJD0Vt/fQGK2iLJTSeOnYMvCQkBJAh8WEgTe7o5/ini7fqRJywjlpEciT0jlmX67gT+IeWkKaatKSuRJprWEBbpD6aJhqbu0oQVHUbJeSbTbZe45HnOlrJDi4Xghy7bvzzr7rqNV6xHWCzjrE99ShO5LqnU8hv6XyxdraudTU+fbxNXzPokxTpO+KFFsiNiTwXnshxtjlOWofUqu5Ry85GvtWKC5fItAlrjfZzt9Nm0XvJUHZYlcHY9zXkO/8K13GQwM2FYsiPPqAaaVPCdWGouvYuMxYppLrc+PeCG8Q2T4gQsgmWxTPfd1WPtv1XN1xwRBvqUwye2eifenJ5hi+Jhm+0KYnkZKBQ+CxitcEQih4SUhDBwSTAn4RQHFMauGkxxHCk6jJE5IpMZiUDEJRMPjXOULC9SnvdMK/guT1iiTXlYp5IttrEy0gFCZ8jSeyYkO563dd+KWsB23VJEB57taRgeGhSbvqatWwh2jPcb3j5r+Ic4z7mEKZqp7wMwpUGoQyKfhKZyhkdCmwQUDR34JLCVe8D0EfLQiIRGw3xzu1d21nb3jAG7ex9kd7Nv+KvEuNOPcftKMe6ch9qSCzYEMo8EBsY6ICmcEzoIqSribw4p2oWUaw1AyvooSBm3gZTbh5RzJUi55yHVyvFDyYsGZDLHVAWgCmcKV5bClYt1Iww+Ea5epSrHuWaq8m6DK6+PK+tKuOqfuIOrZ+gEHwpQTDLx6bBh0Stig/YM9WXBxD6F42J3YEH86PmXzRYFFXmqWgRI7DMSOK1+TfV0wWwow1et3HCBqNaBv9DcYZc3JxO1BexFoc03Hkv/LV6yBSswJczjpeTiFLI4V2r5ZBKoXqa392sH/8KlXf/HYqlvSq6B0yxd5TBZgnMBO3aIrk/hDhPoD5s0SXCjsJCC/1dfZNRSO8mLci2cFqBBmq9g5sBMCsbmcGMqKaamPPJ9Q8jZIWqFKfEBfd7LDi81YRO/NYnYQet7LlN5+qbijOfRALc1bSYqNAK80o0sp1LEsCzLk/8pWbDVBmOmLYg1scWy3Ik9uKbD0V1D5Z+vTKQQCkwstI3bAt0Vy+z0CwF/dplQt7qRbvv9SLeNgUh3LxDpk98rAmOA6YCjrhW102tK5UyArtE4TiN/2En2zBh3SPmRHVP5vTX+B8d/uHo2O7Y+zU56MlK82mWJvr1Pekfx0qJfeYogrzBhOiOtQbWEtlYp9crftRpvawTMHgbCuGCP8XaLdfBmuf1JlBpENoHaR82/d0ycnl400cclgA8F5up9gOKLAbR6A6m+p8E9+d+T/6dM/o5Hr5f8zf773D37V9nf/I2Xl4unf3fkweEDsv/Aq7R+hQ1aD3/VK6xlLLYCbB/iqznWBqqS81R12o5irVtuin8nahVI1FTlfUjLoXf24RfSOPCbrRrjoWww1TywHQ7gkg/ME1UtjEaq0k83/1AIIBugSqCk1+hmGc/qhnAvA/cy8CnKgNP9scAaeGGsk8LFy0D/un8vA3UZ8EdcOfCqdfky4I88Ar27DsC0+eGzZG9+P7ajnw==&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs/>
+    <g>
+        <path d="M 420 180 L 420 213.63" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 420 218.88 L 416.5 211.88 L 420 213.63 L 423.5 211.88 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <rect x="335" y="140" width="170" height="40" rx="6" ry="6" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 168px; height: 1px; padding-top: 160px; margin-left: 336px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                mybatis-plus
+                                <br/>
+                                主导入包，依赖 extension
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="420" y="164" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    mybatis-plus...
+                </text>
+            </switch>
+        </g>
+        <rect x="340" y="380" width="160" height="40" rx="6" ry="6" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 158px; height: 1px; padding-top: 400px; margin-left: 341px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                mybatis-plus-annotation
+                                <br/>
+                                各类注解实现类
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="420" y="404" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    mybatis-plus-annotation...
+                </text>
+            </switch>
+        </g>
+        <path d="M 420 340 L 420 373.63" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 420 378.88 L 416.5 371.88 L 420 373.63 L 423.5 371.88 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <rect x="360" y="300" width="120" height="40" rx="6" ry="6" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 118px; height: 1px; padding-top: 320px; margin-left: 361px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                mybatis-plus-core
+                                <br/>
+                                核心实现包
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="420" y="324" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    mybatis-plus-core...
+                </text>
+            </switch>
+        </g>
+        <path d="M 420 260 L 420 293.63" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 420 298.88 L 416.5 291.88 L 420 293.63 L 423.5 291.88 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <rect x="340" y="220" width="160" height="40" rx="6" ry="6" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 158px; height: 1px; padding-top: 240px; margin-left: 341px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                mybatis-plus-extension
+                                <br/>
+                                功能增强包
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="420" y="244" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    mybatis-plus-extension...
+                </text>
+            </switch>
+        </g>
+        <path d="M 420 100 L 420 133.63" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/>
+        <path d="M 420 138.88 L 416.5 131.88 L 420 133.63 L 423.5 131.88 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"/>
+        <rect x="340" y="60" width="160" height="40" rx="6" ry="6" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 158px; height: 1px; padding-top: 80px; margin-left: 341px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                mybatis-plus-boot-starter
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="420" y="84" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    mybatis-plus-boot-starter
+                </text>
+            </switch>
+        </g>
+        <rect x="0" y="150" width="300" height="50" rx="25" ry="25" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 294px; height: 1px; padding-top: 175px; margin-left: 3px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                IService和ServiceImpl 在此包中实现，
+                                <br/>
+                                此外还有 MybatisSqlSessionFactoryBean 的实现
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="150" y="179" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    IService和ServiceImpl 在此包中实现，...
+                </text>
+            </switch>
+        </g>
+        <path d="M 340 240 Q 330 240 320 207.5 Q 310 175 300 175" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/>
+        <rect x="0" y="248" width="300" height="50" rx="25" ry="25" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 294px; height: 1px; padding-top: 273px; margin-left: 3px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                BaseMapper 在此包中实现，
+                                <br/>
+                                此外还有 Wrapper、QueryWqapper等查询实现
+                                <br/>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="150" y="277" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    BaseMapper 在此包中实现，...
+                </text>
+            </switch>
+        </g>
+        <path d="M 360 320 Q 350 320 330 296.5 Q 310 273 300 273" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/>
+        <rect x="25" y="0" width="250" height="50" rx="25" ry="25" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 244px; height: 1px; padding-top: 25px; margin-left: 28px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                为注入 SpringBoot 而用的脚手架
+                                <br/>
+                                主要包括一些需要 Spring 管理的 bean
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="150" y="29" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">
+                    为注入 SpringBoot 而用的脚手架...
+                </text>
+            </switch>
+        </g>
+        <path d="M 340 80 Q 330 80 307.5 52.5 Q 285 25 275 25" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"/>
+    </g>
+    <switch>
+        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+        <a transform="translate(0,-5)" xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems" target="_blank">
+            <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                Text is not SVG - cannot display
+            </text>
+        </a>
+    </switch>
+</svg>

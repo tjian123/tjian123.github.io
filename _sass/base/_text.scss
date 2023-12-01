@@ -5,45 +5,39 @@ $baseFont: $arialFont;
 $codeFont: $consolasFont;
 
 // Text
+:root,
 html {
     font-family: $baseFont;
     font-size: $font-size--primary;
+    line-height: $line-height--primary;
 }
 
 code,
 pre {
     font-family: $codeFont;
+    font-size: $font-size--primary;
 }
 
 h1 {
     font-size: $font-size--xxl;
-    margin: $spacing--s 0;
 }
 
 h2 {
     font-size: $font-size--xl;
-    font-weight: 300;
-    margin: $spacing--s 0;
 }
 
 h3 {
     font-size: $font-size--l;
-    font-weight: 500;
-    margin: $spacing--xs 0;
 }
 
 h4 {
     font-size: $font-size--m;
-    margin: $spacing--xs 0;
 }
 
 h5 {
     font-size: $font-size--s;
-    font-weight: 300;
-    margin: $spacing--xs 0;
 }
 
 h6 {
     font-size: $font-size--xs;
-    font-weight: 500;
 }

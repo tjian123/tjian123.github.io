@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 .title {
-
+    font-weight: bold;
 }
 
 .header {
@@ -13,7 +13,7 @@
 }
 
 .meta {
-    font-size: .65rem;
+    font-size: $font-size--xxs;
 }
 
 .description {

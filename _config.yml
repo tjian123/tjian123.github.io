@@ -6,19 +6,21 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site informations
-title: 狐狸哒黍·小馒头
-email: tjian123@foxmail.com
+title: 哒黍·馒头
+email: tjianadm@live.com
 author: tjian
 description: > # this means to ignore newlines until "baseurl:"
-  狐狸哒黍的个人小站，包括但不限于以下内容：技术积累、生活感想、书籍推荐和创意点子。
+  哒黍·馒头的个人小站，包括但可能不限于以下内容：技术积累、生活感想、书籍推荐和创意点子。
 baseurl: "" # the subpath of your site, e.g. /blog
 #url: "http://yourdomain.com" # the base hostname & protocol for your site
 #
 
 permalink: /:year/:month/:day/:title
 
+# socail account
 github_username: tjian123
 google_plus_username: tjian
+zhihu_username: tjian123
 
 # Build settings
 markdown: kramdown
@@ -31,8 +33,8 @@ sass:
   style: compressed
 excerpt_separator: <!-- more --> #用于显示文章摘要
 
-# Default style: default, dack, light
-bodyClass: default-style
+# Default style: default, dark, light
+bodyClass: default
 
 include: [_pages]
 exclude: [TODO, README.md]
