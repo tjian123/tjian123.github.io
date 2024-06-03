@@ -2,7 +2,7 @@
 layout: default
 title: Maven 中 repository 实践
 categories: 
-  - 构建编译
+  - 技术积累
 tags: 
   - Maven
   - Java
@@ -25,15 +25,15 @@ tags:
 
 根据功能不同，远程仓库又可以分为：中央仓库、镜像仓库和私有仓库等。
 
-- 中央仓库
+* 中央仓库
 
 中央仓库是指 `maven` 官方提供的远程仓库，默认情况下，本地仓库不存在的构建会从中央仓库下载。
 
-- 镜像仓库
+* 镜像仓库
 
 镜像仓库是指对中央仓库的镜像，通常也是公共仓库，为了提供更好的访问服务，或者提供一些中央仓库不存在的构建而取代中央仓库。
 
-- 私有仓库
+* 私有仓库
 
 私有仓库则是为了某个局域网内的私有构建共享、共有构建查询提供服务。
 
@@ -97,11 +97,10 @@ tags:
 ```
 
 *注：*
-+ `<mirrorOf>*</mirrorOf>`：匹配所有仓库;
-+ `<mirrorOf>external:*</mirrorOf>`：匹配不在本机上的所有远程仓库;
-+ `<mirrorOf>repo1,repo2</mirrorOf>`：匹配repo1和repo2;
-+ `<mirrorOf>*, !repo1</mirrorOf>`：匹配除了repo1的远程仓库。
-
+* `<mirrorOf>*</mirrorOf>`：匹配所有仓库;
+* `<mirrorOf>external:*</mirrorOf>`：匹配不在本机上的所有远程仓库;
+* `<mirrorOf>repo1,repo2</mirrorOf>`：匹配repo1和repo2;
+* `<mirrorOf>*, !repo1</mirrorOf>`：匹配除了repo1的远程仓库。
 
 ### 配置私人仓库认证信息
 

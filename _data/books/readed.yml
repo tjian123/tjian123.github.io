@@ -1,4 +1,12 @@
 description: 已经读完的书
 books:
   - name: 这里是中国
-    description: 按照三级阶梯科普中国的主要地理知识。
+    author: 星球研究所&中国青藏高原研究会
+    publisher: 中信出版集团
+    publish_date: 2019-06
+    description: 按照三级阶梯科普中国地理知识，插图精美丰富，阅读过程颇感享受，值得多刷。
+  - name: Redis 设计与实现
+    author: 黄健宏
+    publisher: 机械工业出版社
+    publish_date: 2014-06
+    description: 基于 Redis 早期版本的实现（成书时最新版本），介绍了 Redis 的设计和实现原理，细节到位，详略得当。

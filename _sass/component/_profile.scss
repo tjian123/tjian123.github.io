@@ -89,7 +89,8 @@
                 font-size: $font-size--xxs;
                 transition: background-color $transition--primary;
 
-                &:hover {
+                &:hover,
+                &.active {
                     color: #FFF;
                     background-color: #333;
                 }

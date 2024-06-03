@@ -2,7 +2,7 @@
 layout: page
 navEnabled: true
 description: 中南大学.软件工程.硕士研究生
-title: 个人简介
+title: 简介
 permalink: /me
 ---
 

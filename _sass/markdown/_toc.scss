@@ -44,4 +44,58 @@
 
     }
 
+    // 目录自动编号
+    counter-reset: toc-h2;
+    & > li {
+        & > a::before {
+            counter-increment: toc-h2;
+            content: counter(toc-h2) " ";
+        }
+
+        & > ul {
+            counter-reset: toc-h3;
+
+            & > li {
+                & > a::before {
+                    counter-increment: toc-h3;
+                    content: counter(toc-h2) "." counter(toc-h3) " ";
+                }
+
+                & > ul {
+                    counter-reset: toc-h4;
+
+                    & > li {
+                        & > a::before {
+                            counter-increment: toc-h4;
+                            content: counter(toc-h2) "." counter(toc-h3) "." counter(toc-h4) " ";
+                        }
+                
+                        & > ul {
+                            counter-reset: toc-h5;
+
+                            & > li {
+                                & > a::before {
+                                    counter-increment: toc-h5;
+                                    content: counter(toc-h2) "." counter(toc-h3) "." counter(toc-h4) "." counter(toc-h5) " ";
+                                }
+
+                                & > ul {
+                                    counter-reset: toc-h6;
+
+                                    & > li {
+                                        & > a::before {
+                                            counter-increment: toc-h6;
+                                            content: counter(toc-h2) "." counter(toc-h3) "." counter(toc-h4) "." counter(toc-h5) "." counter(toc-h6) " ";
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
 }

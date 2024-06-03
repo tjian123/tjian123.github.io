@@ -3,6 +3,7 @@ _site/
 .jekyll-cache/
 *.md~
 *.sublime-workspace
+task.todo
 TODO
 .vscode
 Gemfile.lock

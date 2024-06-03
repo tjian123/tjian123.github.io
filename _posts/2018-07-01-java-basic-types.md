@@ -3,7 +3,8 @@ layout: default
 title: Java 基础 —— 8 种基本数据类型
 description: 优雅的 JDK 之 8 种基本数据类型、各种类型的二进制表示，以及对应包装类型的实现细节
 categories: 
-   - 学习积累
+  - 技术积累
+  - Java 基础
 tags: 
    - Java
 ---

@@ -3,7 +3,8 @@ layout: default
 title: Java 基础 —— 列表和队列
 description: Java 中常用列表、队列的基本用法和实现原理
 categories: 
-   - 技术积累
+  - 技术积累
+  - Java 基础
 tags: 
    - Java
 ---

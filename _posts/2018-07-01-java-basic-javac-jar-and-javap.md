@@ -4,6 +4,7 @@ title: Java 基础 —— 4个命令：java、javac、jar 和 javap
 description: Java 的4个基础命令行
 categories: 
   - 技术积累
+  - Java 基础
 tags: 
   - Java
 ---

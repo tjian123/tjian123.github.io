@@ -3,7 +3,8 @@ layout: default
 title: Java 基础 —— 泛型
 description: 泛型的基本用法和实现原理，以及使用细节
 categories: 
-   - 技术积累
+  - 技术积累
+  - Java 基础
 tags: 
    - Java
 ---

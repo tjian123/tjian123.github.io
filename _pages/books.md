@@ -1,7 +1,7 @@
 ---
 layout: page
 navEnabled: true
-title: 收藏
+title: 书籍
 permalink: /mark
 ---
 

@@ -2,7 +2,7 @@
 layout: default
 title: Maven 中 scope 实践
 categories: 
-  - 构建编译
+  - 技术积累
 tags: 
   - Maven
   - Java

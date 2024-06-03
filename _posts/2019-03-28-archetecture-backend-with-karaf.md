@@ -1,8 +1,8 @@
 ---
 layout: default
 title: 基于 Karaf 搭建后端服务（一）
-categories:
-  - 架构积累
+categories: 
+  - 技术积累
 tags:
   - Backend
   - Java
@@ -12,7 +12,6 @@ tags:
 
 > 本文介绍基于 [`Karaf`][karaf] 搭建大型后端服务系统的一般规则。理解本文需要一定的 [`OSGi`][osgi] 知识和 [`Maven`][maven] 技术积累。
 
-
 <!-- more -->
 * TOC
 {:toc}
@@ -21,38 +20,38 @@ tags:
 
 一个大型的项目，通常需要分成以下模块：
 
-- lib: 用于管理加载第三方依赖 `jar`
-- artifacts: 用于管理本项目中的 `bundle`
-- core: 项目的核心 `bundle`，每次启动都会自动加载的内容
-- features: 以 `features` 形式组织和管理 `bundle` 的 `bundle`
-- apps: 基于核心 `bundle` 开发的可选启用的业务功能
-- runtime: 用于打包最终的项目
+* lib: 用于管理加载第三方依赖 `jar`
+* artifacts: 用于管理本项目中的 `bundle`
+* core: 项目的核心 `bundle`，每次启动都会自动加载的内容
+* features: 以 `features` 形式组织和管理 `bundle` 的 `bundle`
+* apps: 基于核心 `bundle` 开发的可选启用的业务功能
+* runtime: 用于打包最终的项目
 
 假定我们的项目名为 `shopping-hall`，那么按照以上说明，我们的目录结构应如下：
 
 ```shell
 --shopping-hall
-	--artifacts
-	--apps
-	--core
-	--lib
-	--features
-	--runtime
-	pom.xml
+ --artifacts
+ --apps
+ --core
+ --lib
+ --features
+ --runtime
+ pom.xml
 ```
 
 其中：
 
-- `lib` 依赖 `artifacts`
-- `shopping-hall` 继承 `lib`，同时聚合所有项目，提供统一编译入口
-- 除了 `lib` 和 `artifacts` 以外的其他 `bundle` 都直接依赖 `shopping-hall` （通过继承间接依赖 `lib` 和 `artifacts`）
+* `lib` 依赖 `artifacts`
+* `shopping-hall` 继承 `lib`，同时聚合所有项目，提供统一编译入口
+* 除了 `lib` 和 `artifacts` 以外的其他 `bundle` 都直接依赖 `shopping-hall` （通过继承间接依赖 `lib` 和 `artifacts`）
 
 ## `artifacts` 模块
 
 `artifacts` 模块本身并没有需要编译的内容，打包方式为 `pom`。`artifacts` 模块的主要作用为：
 
-- 将可能被其他模块依赖的 `bundle` 聚合于 `dependencyManagement` 中
-- 统一内部被依赖 `bundle` 的版本管理和依赖范围（如 `runtime`、`test` 等），减少重复
+* 将可能被其他模块依赖的 `bundle` 聚合于 `dependencyManagement` 中
+* 统一内部被依赖 `bundle` 的版本管理和依赖范围（如 `runtime`、`test` 等），减少重复
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -76,7 +75,7 @@ tags:
                 <artifactId>shopping-mall-core-api</artifactId>
                 <version>${project.version}</version>
             </dependency>
-			<!-- other dependencies -->
+   <!-- other dependencies -->
             <dependency>
                 <groupId>${project.groupId}</groupId>
                 <artifactId>shopping-mall-features</artifactId>
@@ -298,7 +297,7 @@ tags:
         </dependencies>
     </dependencyManagement>
 
-	<!-- 必要的公共依赖 -->
+ <!-- 必要的公共依赖 -->
     <dependencies>
         <dependency>
             <groupId>org.osgi</groupId>

@@ -3,10 +3,11 @@ layout: default
 title: 样式思考
 description: 介绍关于本篇 Blog 样式设计的思路和框架。
 categories: 
-  - 博客搭建
+  - 技术积累
 tags: 
   - Web
   - SCSS
+  - Jekyll
 ---
 
 > 个人 Blog 当然最好是有个人风格的，然而非设计出身的人做出来的 Blog，大多都不是太好看。

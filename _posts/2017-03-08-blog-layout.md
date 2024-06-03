@@ -3,10 +3,11 @@ layout: default
 title: 布局思考
 description: 搭好框架好干活。
 categories: 
-  - 博客探索
+  - 技术积累
 tags: 
-  - Blog
   - Web
+  - SCSS
+  - Jekyll
 ---
 
 > 这里的布局是指，页面所需要的展示类型，如单页展示、上中下分栏等。

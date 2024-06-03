@@ -14,7 +14,7 @@
       {% for thePage in site.pages %} {% if thePage.title and thePage.navEnabled
       %}
       <li class="item">
-        <a href="{{ thePage.url | prepend: site.baseurl }}"
+        <a href="{{ thePage.url | prepend: site.baseurl }}" {% if page.url == thePage.url %} class="active"{% endif %}
           >{{ thePage.title }}</a
         >
       </li>

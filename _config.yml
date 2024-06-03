@@ -11,6 +11,8 @@ email: tjianadm@live.com
 author: tjian
 description: > # this means to ignore newlines until "baseurl:"
   哒黍·馒头的个人小站，包括但可能不限于以下内容：技术积累、生活感想、书籍推荐和创意点子。
+additional: >
+  哒黍·馒头的个人小站，除了 Jekyll 原生部分，站点样式、布局规则都是手敲，欢迎邮件讨论自建博客技术细节。
 baseurl: "" # the subpath of your site, e.g. /blog
 #url: "http://yourdomain.com" # the base hostname & protocol for your site
 #
@@ -19,7 +21,6 @@ permalink: /:year/:month/:day/:title
 
 # socail account
 github_username: tjian123
-google_plus_username: tjian
 zhihu_username: tjian123
 
 # Build settings
@@ -39,13 +40,9 @@ bodyClass: default
 include: [_pages]
 exclude: [TODO, README.md]
 
-# 分页 gitpage只支持在index.html中使用，故弃之
+# 分页
 paginate            : 5          # 定义每页数量
 paginate_path       : "/blog/page:num"  # 定义分页结果
-
-
-#plugins                : ['jekyll-paginate']
-# 
 
 # 是否开启背景图片
 enable_bg_img: false
